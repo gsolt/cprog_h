@@ -156,6 +156,7 @@ ST[0].nSiteList[43]= 296;   ST[0].nLinkList[43]	=RADIO4_1;	/* RADIO4_1	 	Kisbér,
 
 ST[0].nSiteList[44]= 8250;  ST[0].nLinkList[44] =RADIO7_5;	/* RADIO7_5	 	Vértesacsa ISM	 			BICS */
 
+ST[0].nSiteList[45]	=7180;	ST[0].nLinkList[45]	=RADIO7_6; 	/* RADIO7_6 32-77						BICS */
 
 
 
@@ -226,7 +227,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 13; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 15; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -260,7 +261,7 @@ ST[0].sRAD_K2[0].nIndx[7]=40;
 
 
 /* K3 : DOR, SOP, KOR, BI */
-ST[0].sRAD_K3[0].nRtuNumRad = 20;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 22;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -282,6 +283,7 @@ ST[0].sRAD_K3[0].nIndx[17]=36; /**/
 ST[0].sRAD_K3[0].nIndx[18]=37; /**/
 ST[0].sRAD_K3[0].nIndx[19]=41; /**/
 ST[0].sRAD_K3[0].nIndx[20]=44; /**/
+ST[0].sRAD_K3[0].nIndx[21]=45; /**/
 
 
 
