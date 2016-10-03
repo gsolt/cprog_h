@@ -154,7 +154,7 @@ ST[0].nSiteList[41]	=5169;	ST[0].nLinkList[41]	=RADIO5_4; /* RADIO5_4 40-55					
 ST[0].nSiteList[42]= 1013;  ST[0].nLinkList[42]	=RADIO4_1;	/* RADIO4_1	 	Kisbér, Sews (kábelköri)	VARS */
 ST[0].nSiteList[43]= 296;   ST[0].nLinkList[43]	=RADIO4_1;	/* RADIO4_1	 	Kisbér, ORTECH (USIN)		VARS */
 
-ST[0].nSiteList[44]= 8250;   ST[0].nLinkList[44]	=RADIO7_5;	/* RADIO7_5	 	Vértesacsa ISM	 			BICS */
+ST[0].nSiteList[44]= 8250;  ST[0].nLinkList[44] =RADIO7_5;	/* RADIO7_5	 	Vértesacsa ISM	 			BICS */
 
 
 
