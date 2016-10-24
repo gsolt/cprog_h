@@ -18,6 +18,9 @@
 
 #define	LINE1			21
 #define	LINE2			22
+#define	LINE11			81
+#define	LINE12			82
+
 
 #define	ALL_LINK		0
 #define	RSLINK1			51

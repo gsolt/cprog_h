@@ -150,16 +150,20 @@ ST[0].nSiteList[38]	=10003;	ST[0].nLinkList[38]	=RADIO3_5; /* RADIO3_5 Berhida, 
 ST[0].nSiteList[39]	=10004;	ST[0].nLinkList[39]	=RADIO3_5; /* RADIO3_5 Peremarton I., naperõmû		VESZ */
 ST[0].nSiteList[40]	=10005;	ST[0].nLinkList[40]	=RADIO3_5; /* RADIO3_5 Peremarton II., naperõmû		VESZ */
 ST[0].nSiteList[41]	=5169;	ST[0].nLinkList[41]	=RADIO5_4; /* RADIO5_4 40-55						KOR */
-
 ST[0].nSiteList[42]= 1013;  ST[0].nLinkList[42]	=RADIO4_1;	/* RADIO4_1	 	Kisbér, Sews (kábelköri)	VARS */
 ST[0].nSiteList[43]= 296;   ST[0].nLinkList[43]	=RADIO4_1;	/* RADIO4_1	 	Kisbér, ORTECH (USIN)		VARS */
-
 ST[0].nSiteList[44]= 8250;  ST[0].nLinkList[44] =RADIO7_5;	/* RADIO7_5	 	Vértesacsa ISM	 			BICS */
-
 ST[0].nSiteList[45]	=7180;	ST[0].nLinkList[45]	=RADIO7_6; 	/* RADIO7_6 32-77						BICS */
 
+ST[0].nSiteList[46]	=88;	ST[0].nLinkList[46]	=LINE11; 	/* LINE11	14-44						KIM */
+ST[0].nSiteList[47]	=5268;	ST[0].nLinkList[47]	=LINE11; 	/* LINE11	12-85						KIM */
+ST[0].nSiteList[48]	=5270;	ST[0].nLinkList[48]	=LINE11; 	/* LINE11	12-96						KIM */
+ST[0].nSiteList[49]	=7046;	ST[0].nLinkList[49]	=LINE11; 	/* LINE11	14-10						KIM */
+ST[0].nSiteList[50]	=5153;	ST[0].nLinkList[50]	=LINE11; 	/* LINE11	14-45						KIM */
 
 
+ST[0].nSiteList[51]	=10006;	ST[0].nLinkList[51]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Bercsényi liget		GYOR */
+ST[0].nSiteList[52]	=10007;	ST[0].nLinkList[52]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Töltés utca			GYOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -227,7 +231,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 15; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 17; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -243,11 +247,14 @@ ST[0].sRAD_K1[0].nIndx[11]=24;
 ST[0].sRAD_K1[0].nIndx[12]=25; 
 ST[0].sRAD_K1[0].nIndx[13]=42; 
 ST[0].sRAD_K1[0].nIndx[14]=43; 
+ST[0].sRAD_K1[0].nIndx[15]=51; 
+ST[0].sRAD_K1[0].nIndx[16]=52; 
 
 
 
-/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR */
-ST[0].sRAD_K2[0].nRtuNumRad = 8; /*76*/
+
+/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM */
+ST[0].sRAD_K2[0].nRtuNumRad = 13; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -256,8 +263,11 @@ ST[0].sRAD_K2[0].nIndx[4]=34;
 ST[0].sRAD_K2[0].nIndx[5]=38;
 ST[0].sRAD_K2[0].nIndx[6]=39;
 ST[0].sRAD_K2[0].nIndx[7]=40;
-
-
+ST[0].sRAD_K2[0].nIndx[8]=46;
+ST[0].sRAD_K2[0].nIndx[9]=47;
+ST[0].sRAD_K2[0].nIndx[10]=48;
+ST[0].sRAD_K2[0].nIndx[11]=49;
+ST[0].sRAD_K2[0].nIndx[12]=50;
 
 
 /* K3 : DOR, SOP, KOR, BI */

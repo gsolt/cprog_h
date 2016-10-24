@@ -128,7 +128,14 @@ sT[0].sCP[0].sCPR[43].nDCStart = 143;   sT[0].sCP[0].sCPR[43].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[44].nDCStart = 0;     sT[0].sCP[0].sCPR[44].nDCNum = 0;    sT[0].sCP[0].sCPR[44].nSCStart = 149;   sT[0].sCP[0].sCPR[44].nAckStart =0;      sT[0].sCP[0].sCPR[44].nAckNum =0;   sT[0].sCP[0].sCPR[44].nSPOffsetCS = 797;  sT[0].sCP[0].sCPR[44].nSPOffsetLek = 798;
 sT[0].sCP[0].sCPR[45].nDCStart = 150;   sT[0].sCP[0].sCPR[45].nDCNum = 1;    sT[0].sCP[0].sCPR[45].nSCStart = 151;   sT[0].sCP[0].sCPR[45].nAckStart =152;    sT[0].sCP[0].sCPR[45].nAckNum =1;   sT[0].sCP[0].sCPR[45].nSPOffsetCS = 813;  sT[0].sCP[0].sCPR[45].nSPOffsetLek = 814;
 
+sT[0].sCP[0].sCPR[46].nDCStart = 153;   sT[0].sCP[0].sCPR[46].nDCNum = 1;    sT[0].sCP[0].sCPR[46].nSCStart = 154;   sT[0].sCP[0].sCPR[46].nAckStart =155;    sT[0].sCP[0].sCPR[46].nAckNum =1;   sT[0].sCP[0].sCPR[46].nSPOffsetCS = 829;  sT[0].sCP[0].sCPR[46].nSPOffsetLek = 830;
+sT[0].sCP[0].sCPR[47].nDCStart = 156;   sT[0].sCP[0].sCPR[47].nDCNum = 1;    sT[0].sCP[0].sCPR[47].nSCStart = 157;   sT[0].sCP[0].sCPR[47].nAckStart =158;    sT[0].sCP[0].sCPR[47].nAckNum =1;   sT[0].sCP[0].sCPR[47].nSPOffsetCS = 845;  sT[0].sCP[0].sCPR[47].nSPOffsetLek = 846;
+sT[0].sCP[0].sCPR[48].nDCStart = 159;   sT[0].sCP[0].sCPR[48].nDCNum = 1;    sT[0].sCP[0].sCPR[48].nSCStart = 160;   sT[0].sCP[0].sCPR[48].nAckStart =161;    sT[0].sCP[0].sCPR[48].nAckNum =1;   sT[0].sCP[0].sCPR[48].nSPOffsetCS = 861;  sT[0].sCP[0].sCPR[48].nSPOffsetLek = 862;
+sT[0].sCP[0].sCPR[49].nDCStart = 162;   sT[0].sCP[0].sCPR[49].nDCNum = 1;    sT[0].sCP[0].sCPR[49].nSCStart = 163;   sT[0].sCP[0].sCPR[49].nAckStart =164;    sT[0].sCP[0].sCPR[49].nAckNum =1;   sT[0].sCP[0].sCPR[49].nSPOffsetCS = 877;  sT[0].sCP[0].sCPR[49].nSPOffsetLek = 878;
+sT[0].sCP[0].sCPR[50].nDCStart = 165;   sT[0].sCP[0].sCPR[50].nDCNum = 1;    sT[0].sCP[0].sCPR[50].nSCStart = 166;   sT[0].sCP[0].sCPR[50].nAckStart =167;    sT[0].sCP[0].sCPR[50].nAckNum =1;   sT[0].sCP[0].sCPR[50].nSPOffsetCS = 893;  sT[0].sCP[0].sCPR[50].nSPOffsetLek = 894;
 
+sT[0].sCP[0].sCPR[51].nDCStart = 168;   sT[0].sCP[0].sCPR[51].nDCNum = 4;    sT[0].sCP[0].sCPR[51].nSCStart = 172;   sT[0].sCP[0].sCPR[51].nAckStart =0;	  sT[0].sCP[0].sCPR[51].nAckNum =0;   sT[0].sCP[0].sCPR[51].nSPOffsetCS = 930;  sT[0].sCP[0].sCPR[51].nSPOffsetLek = 931;
+sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 4;    sT[0].sCP[0].sCPR[52].nSCStart = 175;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -507,6 +514,73 @@ sT[0].sTI[45].nType = TYP_TMOK;
 	sT[0].sMOT[45].nIEC_SP				= 799;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[45].nIEC_DP				= 95;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[45].nIEC_NM				= 165;		/* Mérések IEC kezdõcíme */	
-	
+
+
+/* 14-44 -----------------------------------------------------------*/	
+sT[0].sTI[46].nType = TYP_TMOK;
+
+	sT[0].sMOT[46].nIEC_SP				= 815;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[46].nIEC_DP				= 96;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[46].nIEC_NM				= 168;		/* Mérések IEC kezdõcíme */		
+
+/* 12-85 -----------------------------------------------------------*/	
+sT[0].sTI[47].nType = TYP_TMOK;
+
+	sT[0].sMOT[47].nIEC_SP				= 831;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[47].nIEC_DP				= 97;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[47].nIEC_NM				= 171;		/* Mérések IEC kezdõcíme */		
+
+/* 12-96 -----------------------------------------------------------*/	
+sT[0].sTI[48].nType = TYP_TMOK;
+
+	sT[0].sMOT[48].nIEC_SP				= 847;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[48].nIEC_DP				= 98;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[48].nIEC_NM				= 174;		/* Mérések IEC kezdõcíme */	
+
+/* 14-10 -----------------------------------------------------------*/	
+sT[0].sTI[49].nType = TYP_TMOK;
+
+	sT[0].sMOT[49].nIEC_SP				= 863;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[49].nIEC_DP				= 99;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[49].nIEC_NM				= 177;		/* Mérések IEC kezdõcíme */	
+
+/* 14-45 -----------------------------------------------------------*/	
+sT[0].sTI[50].nType = TYP_TMOK;
+
+	sT[0].sMOT[50].nIEC_SP				= 879;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[50].nIEC_DP				= 100;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[50].nIEC_NM				= 180;		/* Mérések IEC kezdõcíme */	
+
+/* Gyõr, Bercsényi liget -----------------------------------------------------------*/
+sT[0].sTI[51].nType = TYP_TAL;
+
+		sT[0].sTAL[51].nIEC_SP       		= 895;
+		sT[0].sTAL[51].nIEC_OsszevontHiba	= 927;
+		sT[0].sTAL[51].nIEC_MT_KommHiba		= 928;
+		sT[0].sTAL[51].nIEC_DP       		= 101;
+		sT[0].sTAL[51].nIEC_DP_FSZ1  		= 105;
+		sT[0].sTAL[51].nIEC_NM				= 183;
+		sT[0].sTAL[51].nNMNum		  		= 4;
+		sT[0].sTAL[51].nKommStatusNum		= 2;
+
+/* Gyõr, Töltés utca -----------------------------------------------------------*/
+sT[0].sTI[52].nType = TYP_TAL;
+
+		sT[0].sTAL[52].nIEC_SP       		= 932;
+		sT[0].sTAL[52].nIEC_OsszevontHiba	= 964;
+		sT[0].sTAL[52].nIEC_MT_KommHiba		= 965;
+		sT[0].sTAL[52].nIEC_DP       		= 109;
+		sT[0].sTAL[52].nIEC_DP_FSZ1  		= 113;
+		sT[0].sTAL[52].nIEC_NM				= 187;
+		sT[0].sTAL[52].nNMNum		  		= 4;
+		sT[0].sTAL[52].nKommStatusNum		= 2;
+		
+	sT[0].sTAL[52].nIEC_DP_12BIT1		= 117;
+	sT[0].sTAL[52].nIEC_DP_12BIT2		= 118;
+	sT[0].sTAL[52].nIEC_DP_12BIT3		= 119;
+	sT[0].sTAL[52].nIEC_DP_2BIT_BK1		= 912;
+	sT[0].sTAL[52].nIEC_DP_2BIT_BK2		= 920;
+	sT[0].sTAL[52].nIEC_DP_2BIT_BK3		= 926;		
+
 } /* end fnSetDataPar()*/
 
