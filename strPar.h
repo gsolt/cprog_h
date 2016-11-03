@@ -8,7 +8,7 @@
 #define  TYP_MOT2		5
 #define  TYP_SEP		6
 #define  TYP_ARKAD		7
-
+#define  TYP_TMOK2		8
 
 #define	TOPICAL			1
 #define NOT_TOPICAL		0
