@@ -3228,6 +3228,12 @@ int		nMs2;
 
 
 
+
+        MOSCAD_sprintf(message,"TMOK2 data: %d",rx_buf[5]);
+        MOSCAD_error(message );
+
+
+
 	p_col_RxBuf = (short *)(rx_buf);	
 
 
@@ -3372,7 +3378,7 @@ if (	nDPStart > 0)
 
 	}
 }/*end if*/	
-} /*TMOK_DATA*/
+} /*TMOK_DATA2*/
 /*-----------------------------------------------------------------------------------------------*/
 
 

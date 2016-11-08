@@ -204,11 +204,12 @@ sT[0].sTI[6].nType = TYP_TMOK;
 	sT[0].sMOT[6].nIEC_NM				= 28;		/* Mérések IEC kezdõcíme */	
 
 /* 42-83  -----------------------------------------------------------*/	
-sT[0].sTI[7].nType = TYP_TMOK;
+sT[0].sTI[7].nType = TYP_TMOK2;
 
 	sT[0].sMOT[7].nIEC_SP				= 122;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[7].nIEC_DP				= 17;		/* Kétbites értékek IEC kezdõcíme*/
-	sT[0].sMOT[7].nIEC_NM				= 31;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[7].nIEC_NM				= 191;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[7].nNMNum      			= 4;		/* Mérések száma */
 
 	
 /* 43-17  -----------------------------------------------------------*/	
