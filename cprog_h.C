@@ -44,6 +44,7 @@ void MOT_DATA2(STATION_DESC_MOT	*pMOT, unsigned char *buf);
 void TALUS_EVENT(STATION_DESC_TALUS *pTAL, unsigned char *rx_buf);
 void TALUS_DAT(STATION_DESC_TALUS *pTAL, unsigned char *rx_buf);
 void TMOK_DATA(STATION_DESC_MOT	*pMOT, unsigned char *buf);
+void TMOK_DATA2(STATION_DESC_MOT	*pMOT, unsigned char *buf);
 void fnWriteDPData(int nIEC_Offset, int nDataH,int nDataL, int nMS1, int nMS2, int nMin, int nCTAct);
 void ARKAD_EVENT( unsigned char *rx_buf);
 void ARKAD_DAT(unsigned char *rx_buf);
@@ -3204,7 +3205,7 @@ if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TY
 
 
 /****************************************************************************/
-/* TMOK allomas adatfeldolgozas, 3 fázisáram méréssel											*/
+/* TMOK2 allomas adatfeldolgozas, 3 fázisáram méréssel											*/
 /****************************************************************************/
 void TMOK_DATA2(STATION_DESC_MOT	*pMOT, unsigned char *rx_buf)
 {

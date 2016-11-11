@@ -135,7 +135,7 @@ sT[0].sCP[0].sCPR[49].nDCStart = 162;   sT[0].sCP[0].sCPR[49].nDCNum = 1;    sT[
 sT[0].sCP[0].sCPR[50].nDCStart = 165;   sT[0].sCP[0].sCPR[50].nDCNum = 1;    sT[0].sCP[0].sCPR[50].nSCStart = 166;   sT[0].sCP[0].sCPR[50].nAckStart =167;    sT[0].sCP[0].sCPR[50].nAckNum =1;   sT[0].sCP[0].sCPR[50].nSPOffsetCS = 893;  sT[0].sCP[0].sCPR[50].nSPOffsetLek = 894;
 
 sT[0].sCP[0].sCPR[51].nDCStart = 168;   sT[0].sCP[0].sCPR[51].nDCNum = 4;    sT[0].sCP[0].sCPR[51].nSCStart = 172;   sT[0].sCP[0].sCPR[51].nAckStart =0;	  sT[0].sCP[0].sCPR[51].nAckNum =0;   sT[0].sCP[0].sCPR[51].nSPOffsetCS = 930;  sT[0].sCP[0].sCPR[51].nSPOffsetLek = 931;
-sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 4;    sT[0].sCP[0].sCPR[52].nSCStart = 175;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
+sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 5;    sT[0].sCP[0].sCPR[52].nSCStart = 178;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -571,17 +571,19 @@ sT[0].sTI[52].nType = TYP_TAL;
 		sT[0].sTAL[52].nIEC_OsszevontHiba	= 964;
 		sT[0].sTAL[52].nIEC_MT_KommHiba		= 965;
 		sT[0].sTAL[52].nIEC_DP       		= 109;
-		sT[0].sTAL[52].nIEC_DP_FSZ1  		= 113;
+		sT[0].sTAL[52].nIEC_DP_FSZ1  		= 114;
 		sT[0].sTAL[52].nIEC_NM				= 187;
 		sT[0].sTAL[52].nNMNum		  		= 4;
 		sT[0].sTAL[52].nKommStatusNum		= 2;
 		
-	sT[0].sTAL[52].nIEC_DP_12BIT1		= 117;
-	sT[0].sTAL[52].nIEC_DP_12BIT2		= 118;
-	sT[0].sTAL[52].nIEC_DP_12BIT3		= 119;
+	sT[0].sTAL[52].nIEC_DP_12BIT1		= 119;
+	sT[0].sTAL[52].nIEC_DP_12BIT2		= 120;
+	sT[0].sTAL[52].nIEC_DP_12BIT3		= 121;
 	sT[0].sTAL[52].nIEC_DP_2BIT_BK1		= 912;
 	sT[0].sTAL[52].nIEC_DP_2BIT_BK2		= 920;
 	sT[0].sTAL[52].nIEC_DP_2BIT_BK3		= 926;		
+
+	sT[0].sTAL[52].nLeagNum		= 5;		
 
 } /* end fnSetDataPar()*/
 
