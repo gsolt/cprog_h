@@ -3185,7 +3185,7 @@ if (sTI[nI].nType == TYP_TAL) /* TALUS-os allomas eseten -----------------------
 	
 	} /* end if TYP_TAL */
 	
-if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TYP_MOT2) /* MOTOROLA-s allomas eseten --------------------------*/
+if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TYP_MOT2 || sTI[nI].nType == TYP_TMOK2) /* MOTOROLA-s allomas eseten --------------------------*/
 	{
 		/* Egy bites jelzesek --------------------------------*/
 		for (nJ=0;nJ<sMOT[nI].nIEC_SP_NUM;nJ++)
