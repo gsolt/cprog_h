@@ -164,6 +164,7 @@ ST[0].nSiteList[50]	=5153;	ST[0].nLinkList[50]	=LINE11; 	/* LINE11	14-45						KI
 
 ST[0].nSiteList[51]	=10006;	ST[0].nLinkList[51]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Bercsényi liget		GYOR */
 ST[0].nSiteList[52]	=10007;	ST[0].nLinkList[52]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Töltés utca			GYOR */
+ST[0].nSiteList[53]	=10008;	ST[0].nLinkList[53]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Rudolph napelempark	GYOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -231,7 +232,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 17; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 18; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -249,6 +250,7 @@ ST[0].sRAD_K1[0].nIndx[13]=42;
 ST[0].sRAD_K1[0].nIndx[14]=43; 
 ST[0].sRAD_K1[0].nIndx[15]=51; 
 ST[0].sRAD_K1[0].nIndx[16]=52; 
+ST[0].sRAD_K1[0].nIndx[17]=53; 
 
 
 

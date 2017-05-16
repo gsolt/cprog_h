@@ -136,6 +136,7 @@ sT[0].sCP[0].sCPR[50].nDCStart = 165;   sT[0].sCP[0].sCPR[50].nDCNum = 1;    sT[
 
 sT[0].sCP[0].sCPR[51].nDCStart = 168;   sT[0].sCP[0].sCPR[51].nDCNum = 4;    sT[0].sCP[0].sCPR[51].nSCStart = 172;   sT[0].sCP[0].sCPR[51].nAckStart =0;	  sT[0].sCP[0].sCPR[51].nAckNum =0;   sT[0].sCP[0].sCPR[51].nSPOffsetCS = 930;  sT[0].sCP[0].sCPR[51].nSPOffsetLek = 931;
 sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 5;    sT[0].sCP[0].sCPR[52].nSCStart = 178;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
+sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 14;   sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -584,6 +585,24 @@ sT[0].sTI[52].nType = TYP_TAL;
 	sT[0].sTAL[52].nIEC_DP_2BIT_BK3		= 926;		
 
 	sT[0].sTAL[52].nLeagNum		= 5;		
+
+/* Gyõr, Rudolph napelempark, AD  -----------------------------------------------------------*/
+sT[0].sTI[53].nType = TYP_TAL;
+
+		sT[0].sTAL[53].nIEC_SP       		= 969;
+		sT[0].sTAL[53].nIEC_OsszevontHiba	= 1001;
+		sT[0].sTAL[53].nIEC_MT_KommHiba		= 1002;
+		sT[0].sTAL[53].nIEC_DP       		= 122;
+		sT[0].sTAL[53].nIEC_DP_FSZ1  		= 126;
+		sT[0].sTAL[53].nIEC_NM				= 195;
+		sT[0].sTAL[53].nNMNum		  		= 11;
+		sT[0].sTAL[53].nKommStatusNum		= 2;
+		
+	sT[0].sTAL[53].nIEC_DP_12BIT1		= 130;
+
+	sT[0].sTAL[53].nIEC_DP_2BIT_BK1		= 912;
+
+
 
 } /* end fnSetDataPar()*/
 
