@@ -3216,7 +3216,7 @@ if (nI==53)
 		}
 		/* Meresek ------------------------------------------------*/
 
-			for (nJ=0;nJ<25;nJ++)
+			for (nJ=0;nJ<26;nJ++)
 			{
 				fnWriteNMStatus( nJ+sTAL[nI].nIEC_NM, nValue);
 			}
