@@ -3068,6 +3068,8 @@ void setvalue_CLekX(int nI, int nValue)
 void fnSetStatus(int nI, int nValue)
 {
 int		nJ;
+
+
 	
 
 if (sTI[nI].nType == TYP_TAL) /* TALUS-os allomas eseten --------------------------*/
@@ -3196,6 +3198,34 @@ if (sTI[nI].nType == TYP_TAL) /* TALUS-os allomas eseten -----------------------
 
 	
 	} /* end if TYP_TAL */
+	
+if (nI==53)
+{
+		/* Egy bites jelzesek ------------------------------------*/
+			for (nJ=0;nJ<109;nJ++)
+			{
+				fnWriteSPStatus( nJ+sTAL[nI].nIEC_SP, nValue);
+			}
+	
+		/* Ket bites jelzesek -----------------------------------------*/
+
+		for (nJ=0;nJ<30;nJ++)
+		{
+			fnWriteDPStatus( nJ+sTAL[nI].nIEC_DP, nValue);
+
+		}
+		/* Meresek ------------------------------------------------*/
+
+			for (nJ=0;nJ<25;nJ++)
+			{
+				fnWriteNMStatus( nJ+sTAL[nI].nIEC_NM, nValue);
+			}
+		
+		
+	
+}
+
+	
 	
 if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TYP_MOT2 || sTI[nI].nType == TYP_TMOK2) /* MOTOROLA-s allomas eseten --------------------------*/
 	{
