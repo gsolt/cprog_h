@@ -136,7 +136,8 @@ sT[0].sCP[0].sCPR[50].nDCStart = 165;   sT[0].sCP[0].sCPR[50].nDCNum = 1;    sT[
 
 sT[0].sCP[0].sCPR[51].nDCStart = 168;   sT[0].sCP[0].sCPR[51].nDCNum = 4;    sT[0].sCP[0].sCPR[51].nSCStart = 172;   sT[0].sCP[0].sCPR[51].nAckStart =0;	  sT[0].sCP[0].sCPR[51].nAckNum =0;   sT[0].sCP[0].sCPR[51].nSPOffsetCS = 930;  sT[0].sCP[0].sCPR[51].nSPOffsetLek = 931;
 sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 5;    sT[0].sCP[0].sCPR[52].nSCStart = 178;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
-sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 14;   sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
+sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 8;   sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
+sT[0].sCP[0].sCPR[54].nDCStart = 188;   sT[0].sCP[0].sCPR[54].nDCNum = 1;    sT[0].sCP[0].sCPR[54].nSCStart = 189;   sT[0].sCP[0].sCPR[54].nAckStart =0;	  sT[0].sCP[0].sCPR[54].nAckNum =0;   sT[0].sCP[0].sCPR[54].nSPOffsetCS = 1094; sT[0].sCP[0].sCPR[54].nSPOffsetLek = 1095;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -205,7 +206,7 @@ sT[0].sTI[6].nType = TYP_TMOK;
 	sT[0].sMOT[6].nIEC_NM				= 28;		/* Mérések IEC kezdõcíme */	
 
 /* 42-83  -----------------------------------------------------------*/	
-sT[0].sTI[7].nType = TYP_TMOK2;
+sT[0].sTI[7].nType = TYP_TMOK;
 
 	sT[0].sMOT[7].nIEC_SP				= 122;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[7].nIEC_DP				= 17;		/* Kétbites értékek IEC kezdõcíme*/
@@ -602,6 +603,14 @@ sT[0].sTI[53].nType = TYP_TAL;
 
 	sT[0].sTAL[53].nIEC_DP_2BIT_BK1		= 912;
 
+
+/* 42-83  -----------------------------------------------------------*/	
+sT[0].sTI[54].nType = TYP_TMOK;
+
+	sT[0].sMOT[54].nIEC_SP				= 1080;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[54].nIEC_DP				= 152;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[54].nIEC_NM				= 221;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[54].nNMNum      			= 4;		/* Mérések száma */
 
 
 } /* end fnSetDataPar()*/
