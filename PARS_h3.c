@@ -136,8 +136,9 @@ sT[0].sCP[0].sCPR[50].nDCStart = 165;   sT[0].sCP[0].sCPR[50].nDCNum = 1;    sT[
 
 sT[0].sCP[0].sCPR[51].nDCStart = 168;   sT[0].sCP[0].sCPR[51].nDCNum = 4;    sT[0].sCP[0].sCPR[51].nSCStart = 172;   sT[0].sCP[0].sCPR[51].nAckStart =0;	  sT[0].sCP[0].sCPR[51].nAckNum =0;   sT[0].sCP[0].sCPR[51].nSPOffsetCS = 930;  sT[0].sCP[0].sCPR[51].nSPOffsetLek = 931;
 sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 5;    sT[0].sCP[0].sCPR[52].nSCStart = 178;   sT[0].sCP[0].sCPR[52].nAckStart =0;	  sT[0].sCP[0].sCPR[52].nAckNum =0;   sT[0].sCP[0].sCPR[52].nSPOffsetCS = 967;  sT[0].sCP[0].sCPR[52].nSPOffsetLek = 968;
-sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 8;   sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
+sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 8;    sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
 sT[0].sCP[0].sCPR[54].nDCStart = 188;   sT[0].sCP[0].sCPR[54].nDCNum = 1;    sT[0].sCP[0].sCPR[54].nSCStart = 189;   sT[0].sCP[0].sCPR[54].nAckStart =0;	  sT[0].sCP[0].sCPR[54].nAckNum =0;   sT[0].sCP[0].sCPR[54].nSPOffsetCS = 1094; sT[0].sCP[0].sCPR[54].nSPOffsetLek = 1095;
+sT[0].sCP[0].sCPR[55].nDCStart = 191;   sT[0].sCP[0].sCPR[55].nDCNum = 6;    sT[0].sCP[0].sCPR[55].nSCStart = 197;   sT[0].sCP[0].sCPR[55].nAckStart =0;      sT[0].sCP[0].sCPR[55].nAckNum =0;   sT[0].sCP[0].sCPR[55].nSPOffsetCS = 1122; sT[0].sCP[0].sCPR[55].nSPOffsetLek = 1123;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -611,6 +612,16 @@ sT[0].sTI[54].nType = TYP_TMOK;
 	sT[0].sMOT[54].nIEC_DP				= 152;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[54].nIEC_NM				= 221;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[54].nNMNum      			= 4;		/* Mérések száma */
+
+/* Gyõr, Híd utca -----------------------------------------------*/
+sT[0].sTI[55].nType = TYP_MOT;
+
+	sT[0].sMOT[55].nIEC_SP				= 1096;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[55].nIEC_SP_NUM			= 26;		/* Egybites értékek száma*/
+	sT[0].sMOT[55].nIEC_DP				= 153;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[55].nIEC_DP_NUM			= 12;   		/* Két bites értékek száma*/
+	sT[0].sMOT[55].nIEC_NM				= 225;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[55].nNMNum				= 6;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/

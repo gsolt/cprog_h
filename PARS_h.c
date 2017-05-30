@@ -168,6 +168,7 @@ ST[0].nSiteList[53]	=10008;	ST[0].nLinkList[53]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Ru
 
 ST[0].nSiteList[54]	=10009;	ST[0].nLinkList[54]	=RADIO6_1; 	/* RADIO6_1 51-29						ASZ */
 
+ST[0].nSiteList[55]	=10010;	ST[0].nLinkList[55]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Híd utca				GYORV */
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
@@ -257,8 +258,8 @@ ST[0].sRAD_K1[0].nIndx[17]=53;
 
 
 
-/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ */
-ST[0].sRAD_K2[0].nRtuNumRad = 14; /*76*/
+/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
+ST[0].sRAD_K2[0].nRtuNumRad = 15; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -273,6 +274,7 @@ ST[0].sRAD_K2[0].nIndx[10]=48;
 ST[0].sRAD_K2[0].nIndx[11]=49;
 ST[0].sRAD_K2[0].nIndx[12]=50;
 ST[0].sRAD_K2[0].nIndx[13]=54;
+ST[0].sRAD_K2[0].nIndx[14]=55;
 
 
 /* K3 : DOR, SOP, KOR, BI */
