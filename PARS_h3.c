@@ -139,6 +139,8 @@ sT[0].sCP[0].sCPR[52].nDCStart = 173;   sT[0].sCP[0].sCPR[52].nDCNum = 5;    sT[
 sT[0].sCP[0].sCPR[53].nDCStart = 179;   sT[0].sCP[0].sCPR[53].nDCNum = 8;    sT[0].sCP[0].sCPR[53].nSCStart = 187;   sT[0].sCP[0].sCPR[53].nAckStart =0;	  sT[0].sCP[0].sCPR[53].nAckNum =0;   sT[0].sCP[0].sCPR[53].nSPOffsetCS = 1078; sT[0].sCP[0].sCPR[53].nSPOffsetLek = 1079;
 sT[0].sCP[0].sCPR[54].nDCStart = 188;   sT[0].sCP[0].sCPR[54].nDCNum = 1;    sT[0].sCP[0].sCPR[54].nSCStart = 189;   sT[0].sCP[0].sCPR[54].nAckStart =0;	  sT[0].sCP[0].sCPR[54].nAckNum =0;   sT[0].sCP[0].sCPR[54].nSPOffsetCS = 1094; sT[0].sCP[0].sCPR[54].nSPOffsetLek = 1095;
 sT[0].sCP[0].sCPR[55].nDCStart = 191;   sT[0].sCP[0].sCPR[55].nDCNum = 6;    sT[0].sCP[0].sCPR[55].nSCStart = 197;   sT[0].sCP[0].sCPR[55].nAckStart =0;      sT[0].sCP[0].sCPR[55].nAckNum =0;   sT[0].sCP[0].sCPR[55].nSPOffsetCS = 1122; sT[0].sCP[0].sCPR[55].nSPOffsetLek = 1123;
+sT[0].sCP[0].sCPR[56].nDCStart = 198;   sT[0].sCP[0].sCPR[56].nDCNum = 4;    sT[0].sCP[0].sCPR[56].nSCStart = 202;   sT[0].sCP[0].sCPR[56].nAckStart =0;      sT[0].sCP[0].sCPR[56].nAckNum =0;   sT[0].sCP[0].sCPR[56].nSPOffsetCS = 1140; sT[0].sCP[0].sCPR[56].nSPOffsetLek = 1141;
+sT[0].sCP[0].sCPR[57].nDCStart = 203;   sT[0].sCP[0].sCPR[57].nDCNum = 4;    sT[0].sCP[0].sCPR[57].nSCStart = 207;   sT[0].sCP[0].sCPR[57].nAckStart =0;      sT[0].sCP[0].sCPR[57].nAckNum =0;   sT[0].sCP[0].sCPR[57].nSPOffsetCS = 1158; sT[0].sCP[0].sCPR[57].nSPOffsetLek = 1159;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -623,6 +625,25 @@ sT[0].sTI[55].nType = TYP_MOT;
 	sT[0].sMOT[55].nIEC_NM				= 225;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[55].nNMNum				= 6;		/* Analóg mérések száma*/
 
+/* Balatonfüred, VW szerviz -----------------------------------------------*/
+sT[0].sTI[56].nType = TYP_MOT;
+
+	sT[0].sMOT[56].nIEC_SP				= 1124;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[56].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[56].nIEC_DP				= 165;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[56].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[56].nIEC_NM				= 231;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[56].nNMNum				= 4;		/* Analóg mérések száma*/
+
+/* Balatonfüred, VW szerviz -----------------------------------------------*/
+sT[0].sTI[57].nType = TYP_MOT;
+
+	sT[0].sMOT[57].nIEC_SP				= 1142;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[57].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[57].nIEC_DP				= 173;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[57].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[57].nIEC_NM				= 235;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[57].nNMNum				= 4;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
