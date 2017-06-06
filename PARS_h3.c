@@ -625,7 +625,7 @@ sT[0].sTI[55].nType = TYP_MOT;
 	sT[0].sMOT[55].nIEC_NM				= 225;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[55].nNMNum				= 6;		/* Analóg mérések száma*/
 
-/* Balatonfüred, VW szerviz -----------------------------------------------*/
+/* Balatonfüred, Castricum -----------------------------------------------*/
 sT[0].sTI[56].nType = TYP_MOT;
 
 	sT[0].sMOT[56].nIEC_SP				= 1124;		/* Egybites értékek IEC kezdõcíme*/

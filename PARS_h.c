@@ -170,6 +170,11 @@ ST[0].nSiteList[54]	=10009;	ST[0].nLinkList[54]	=RADIO6_1; 	/* RADIO6_1 51-29			
 
 ST[0].nSiteList[55]	=10010;	ST[0].nLinkList[55]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Híd utca				GYORV */
 
+ST[0].nSiteList[56]	=10011;	ST[0].nLinkList[56]	=RADIO6_1; 	/* RADIO6_1 Balatonfüred, Castricum		ASZ */
+ST[0].nSiteList[57]	=10012;	ST[0].nLinkList[57]	=RADIO6_1; 	/* RADIO6_1 Balatonfüred, VW szerviz	ASZ */
+
+
+
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
 
@@ -259,7 +264,7 @@ ST[0].sRAD_K1[0].nIndx[17]=53;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
-ST[0].sRAD_K2[0].nRtuNumRad = 15; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 17; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -275,6 +280,8 @@ ST[0].sRAD_K2[0].nIndx[11]=49;
 ST[0].sRAD_K2[0].nIndx[12]=50;
 ST[0].sRAD_K2[0].nIndx[13]=54;
 ST[0].sRAD_K2[0].nIndx[14]=55;
+ST[0].sRAD_K2[0].nIndx[15]=56;
+ST[0].sRAD_K2[0].nIndx[16]=57;
 
 
 /* K3 : DOR, SOP, KOR, BI */
