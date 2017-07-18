@@ -141,6 +141,8 @@ sT[0].sCP[0].sCPR[54].nDCStart = 188;   sT[0].sCP[0].sCPR[54].nDCNum = 1;    sT[
 sT[0].sCP[0].sCPR[55].nDCStart = 191;   sT[0].sCP[0].sCPR[55].nDCNum = 6;    sT[0].sCP[0].sCPR[55].nSCStart = 197;   sT[0].sCP[0].sCPR[55].nAckStart =0;      sT[0].sCP[0].sCPR[55].nAckNum =0;   sT[0].sCP[0].sCPR[55].nSPOffsetCS = 1122; sT[0].sCP[0].sCPR[55].nSPOffsetLek = 1123;
 sT[0].sCP[0].sCPR[56].nDCStart = 198;   sT[0].sCP[0].sCPR[56].nDCNum = 4;    sT[0].sCP[0].sCPR[56].nSCStart = 202;   sT[0].sCP[0].sCPR[56].nAckStart =0;      sT[0].sCP[0].sCPR[56].nAckNum =0;   sT[0].sCP[0].sCPR[56].nSPOffsetCS = 1140; sT[0].sCP[0].sCPR[56].nSPOffsetLek = 1141;
 sT[0].sCP[0].sCPR[57].nDCStart = 203;   sT[0].sCP[0].sCPR[57].nDCNum = 4;    sT[0].sCP[0].sCPR[57].nSCStart = 207;   sT[0].sCP[0].sCPR[57].nAckStart =0;      sT[0].sCP[0].sCPR[57].nAckNum =0;   sT[0].sCP[0].sCPR[57].nSPOffsetCS = 1158; sT[0].sCP[0].sCPR[57].nSPOffsetLek = 1159;
+sT[0].sCP[0].sCPR[58].nDCStart = 208;   sT[0].sCP[0].sCPR[58].nDCNum = 1;    sT[0].sCP[0].sCPR[58].nSCStart = 209;   sT[0].sCP[0].sCPR[58].nAckStart =0;	  sT[0].sCP[0].sCPR[58].nAckNum =0;   sT[0].sCP[0].sCPR[58].nSPOffsetCS = 1174; sT[0].sCP[0].sCPR[58].nSPOffsetLek = 1175;
+sT[0].sCP[0].sCPR[59].nDCStart = 211;   sT[0].sCP[0].sCPR[59].nDCNum = 4;    sT[0].sCP[0].sCPR[59].nSCStart = 215;   sT[0].sCP[0].sCPR[59].nAckStart =0;      sT[0].sCP[0].sCPR[59].nAckNum =0;   sT[0].sCP[0].sCPR[59].nSPOffsetCS = 1211; sT[0].sCP[0].sCPR[59].nSPOffsetLek = 1212;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -644,6 +646,28 @@ sT[0].sTI[57].nType = TYP_MOT;
 	sT[0].sMOT[57].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[57].nIEC_NM				= 235;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[57].nNMNum				= 4;		/* Analóg mérések száma*/
+
+/* 51-31  -----------------------------------------------------------*/	
+sT[0].sTI[58].nType = TYP_TMOK;
+
+	sT[0].sMOT[58].nIEC_SP				= 1160;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[58].nIEC_DP				= 181;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[58].nIEC_NM				= 239;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[58].nNMNum      			= 4;		/* Mérések száma */
+
+/* Várpalota, napelempark  -----------------------------------------------------------*/
+sT[0].sTI[59].nType = TYP_TAL;
+
+		sT[0].sTAL[59].nIEC_SP       		= 1176;
+		sT[0].sTAL[59].nIEC_OsszevontHiba	= 1208;
+		sT[0].sTAL[59].nIEC_MT_KommHiba		= 1209;
+		sT[0].sTAL[59].nIEC_DP       		= 182;
+		sT[0].sTAL[59].nIEC_DP_FSZ1  		= 186;
+		sT[0].sTAL[59].nIEC_NM				= 243;
+		sT[0].sTAL[59].nNMNum		  		= 11;
+		sT[0].sTAL[59].nKommStatusNum		= 2;
+		
+
 
 } /* end fnSetDataPar()*/
 

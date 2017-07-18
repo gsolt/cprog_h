@@ -173,6 +173,9 @@ ST[0].nSiteList[55]	=10010;	ST[0].nLinkList[55]	=RADIO1_1; 	/* RADIO1_1 Gyõr, Hí
 ST[0].nSiteList[56]	=10011;	ST[0].nLinkList[56]	=RADIO6_1; 	/* RADIO6_1 Balatonfüred, Castricum		ASZ */
 ST[0].nSiteList[57]	=10012;	ST[0].nLinkList[57]	=RADIO6_1; 	/* RADIO6_1 Balatonfüred, VW szerviz	ASZ */
 
+ST[0].nSiteList[58]	=10013;	ST[0].nLinkList[58]	=RADIO6_1; 	/* RADIO6_1 51-31						ASZ */
+
+ST[0].nSiteList[59]	=10014;	ST[0].nLinkList[59]	=RADIO3_5; 	/* RADIO3_5 Várpalota, napelempark		ASZ */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -240,7 +243,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 18; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 19; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -259,12 +262,13 @@ ST[0].sRAD_K1[0].nIndx[14]=43;
 ST[0].sRAD_K1[0].nIndx[15]=51; 
 ST[0].sRAD_K1[0].nIndx[16]=52; 
 ST[0].sRAD_K1[0].nIndx[17]=53; 
+ST[0].sRAD_K1[0].nIndx[18]=59; 
 
 
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
-ST[0].sRAD_K2[0].nRtuNumRad = 17; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 18; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -282,6 +286,7 @@ ST[0].sRAD_K2[0].nIndx[13]=54;
 ST[0].sRAD_K2[0].nIndx[14]=55;
 ST[0].sRAD_K2[0].nIndx[15]=56;
 ST[0].sRAD_K2[0].nIndx[16]=57;
+ST[0].sRAD_K2[0].nIndx[17]=58;
 
 
 /* K3 : DOR, SOP, KOR, BI */
