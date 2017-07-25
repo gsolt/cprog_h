@@ -176,6 +176,9 @@ ST[0].nSiteList[57]	=10012;	ST[0].nLinkList[57]	=RADIO6_1; 	/* RADIO6_1 Balatonf
 ST[0].nSiteList[58]	=10013;	ST[0].nLinkList[58]	=RADIO6_1; 	/* RADIO6_1 51-31						ASZ */
 
 ST[0].nSiteList[59]	=10014;	ST[0].nLinkList[59]	=RADIO3_5; 	/* RADIO3_5 Várpalota, napelempark		ASZ */
+ST[0].nSiteList[60]	=10015;	ST[0].nLinkList[60]	=RADIO6_1; 	/* RADIO6_1 Balatonudvari napelempark	ASZ */
+ST[0].nSiteList[61]	=10016;	ST[0].nLinkList[61]	=RADIO5_1; 	/* RADIO5_1 Szil napelempark			CSOR */
+
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -268,7 +271,7 @@ ST[0].sRAD_K1[0].nIndx[18]=59;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
-ST[0].sRAD_K2[0].nRtuNumRad = 18; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 20; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -287,7 +290,8 @@ ST[0].sRAD_K2[0].nIndx[14]=55;
 ST[0].sRAD_K2[0].nIndx[15]=56;
 ST[0].sRAD_K2[0].nIndx[16]=57;
 ST[0].sRAD_K2[0].nIndx[17]=58;
-
+ST[0].sRAD_K2[0].nIndx[18]=60;
+ST[0].sRAD_K2[0].nIndx[19]=61;
 
 /* K3 : DOR, SOP, KOR, BI */
 ST[0].sRAD_K3[0].nRtuNumRad = 22;  /**/

@@ -143,6 +143,8 @@ sT[0].sCP[0].sCPR[56].nDCStart = 198;   sT[0].sCP[0].sCPR[56].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[57].nDCStart = 203;   sT[0].sCP[0].sCPR[57].nDCNum = 4;    sT[0].sCP[0].sCPR[57].nSCStart = 207;   sT[0].sCP[0].sCPR[57].nAckStart =0;      sT[0].sCP[0].sCPR[57].nAckNum =0;   sT[0].sCP[0].sCPR[57].nSPOffsetCS = 1158; sT[0].sCP[0].sCPR[57].nSPOffsetLek = 1159;
 sT[0].sCP[0].sCPR[58].nDCStart = 208;   sT[0].sCP[0].sCPR[58].nDCNum = 1;    sT[0].sCP[0].sCPR[58].nSCStart = 209;   sT[0].sCP[0].sCPR[58].nAckStart =0;	  sT[0].sCP[0].sCPR[58].nAckNum =0;   sT[0].sCP[0].sCPR[58].nSPOffsetCS = 1174; sT[0].sCP[0].sCPR[58].nSPOffsetLek = 1175;
 sT[0].sCP[0].sCPR[59].nDCStart = 211;   sT[0].sCP[0].sCPR[59].nDCNum = 4;    sT[0].sCP[0].sCPR[59].nSCStart = 215;   sT[0].sCP[0].sCPR[59].nAckStart =0;      sT[0].sCP[0].sCPR[59].nAckNum =0;   sT[0].sCP[0].sCPR[59].nSPOffsetCS = 1211; sT[0].sCP[0].sCPR[59].nSPOffsetLek = 1212;
+sT[0].sCP[0].sCPR[60].nDCStart = 216;   sT[0].sCP[0].sCPR[60].nDCNum = 4;    sT[0].sCP[0].sCPR[60].nSCStart = 220;   sT[0].sCP[0].sCPR[60].nAckStart =0;      sT[0].sCP[0].sCPR[60].nAckNum =0;   sT[0].sCP[0].sCPR[60].nSPOffsetCS = 1229; sT[0].sCP[0].sCPR[60].nSPOffsetLek = 1230;
+sT[0].sCP[0].sCPR[61].nDCStart = 221;   sT[0].sCP[0].sCPR[61].nDCNum = 4;    sT[0].sCP[0].sCPR[61].nSCStart = 225;   sT[0].sCP[0].sCPR[61].nAckStart =0;      sT[0].sCP[0].sCPR[61].nAckNum =0;   sT[0].sCP[0].sCPR[61].nSPOffsetCS = 1247; sT[0].sCP[0].sCPR[61].nSPOffsetLek = 1248;
 
 
 /* TMOK jelszámok inicializálása ciklusban */	
@@ -667,6 +669,25 @@ sT[0].sTI[59].nType = TYP_TAL;
 		sT[0].sTAL[59].nNMNum		  		= 11;
 		sT[0].sTAL[59].nKommStatusNum		= 2;
 		
+/* Balatonudvari,  napelempark -----------------------------------------------*/
+sT[0].sTI[60].nType = TYP_MOT;
+
+	sT[0].sMOT[60].nIEC_SP				= 1213;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[60].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[60].nIEC_DP				= 190;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[60].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[60].nIEC_NM				= 254;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[60].nNMNum				= 4;		/* Analóg mérések száma*/
+
+/* Szil,  napelempark -----------------------------------------------*/
+sT[0].sTI[61].nType = TYP_MOT;
+
+	sT[0].sMOT[61].nIEC_SP				= 1231;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[61].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[61].nIEC_DP				= 198;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[61].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[61].nIEC_NM				= 265;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[61].nNMNum				= 4;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/
