@@ -677,7 +677,7 @@ sT[0].sTI[60].nType = TYP_MOT;
 	sT[0].sMOT[60].nIEC_DP				= 190;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[60].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[60].nIEC_NM				= 254;		/* Mérések IEC kezdõcíme */
-	sT[0].sMOT[60].nNMNum				= 4;		/* Analóg mérések száma*/
+	sT[0].sMOT[60].nNMNum				= 11;		/* Analóg mérések száma*/
 
 /* Szil,  napelempark -----------------------------------------------*/
 sT[0].sTI[61].nType = TYP_MOT;
@@ -687,7 +687,7 @@ sT[0].sTI[61].nType = TYP_MOT;
 	sT[0].sMOT[61].nIEC_DP				= 198;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[61].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[61].nIEC_NM				= 265;		/* Mérések IEC kezdõcíme */
-	sT[0].sMOT[61].nNMNum				= 4;		/* Analóg mérések száma*/
+	sT[0].sMOT[61].nNMNum				= 11;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/
