@@ -178,7 +178,10 @@ ST[0].nSiteList[58]	=10013;	ST[0].nLinkList[58]	=RADIO6_1; 	/* RADIO6_1 51-31			
 ST[0].nSiteList[59]	=10014;	ST[0].nLinkList[59]	=RADIO3_5; 	/* RADIO3_5 Várpalota, napelempark		ASZ */
 ST[0].nSiteList[60]	=10015;	ST[0].nLinkList[60]	=RADIO6_1; 	/* RADIO6_1 Balatonudvari napelempark	ASZ */
 ST[0].nSiteList[61]	=10016;	ST[0].nLinkList[61]	=RADIO5_1; 	/* RADIO5_1 Szil napelempark			CSOR */
-
+ST[0].nSiteList[62]=2000; 	ST[0].nLinkList[63]=RSLINK11;	/* Front end B							*/
+ST[0].nSiteList[63]=6000; 	ST[0].nLinkList[63]=RSLINK11;	/* Front end D							*/
+ST[0].nSiteList[64]=8000;	ST[0].nLinkList[64]=RSLINK11;	/* Front end F							*/
+ST[0].nSiteList[65]=8999; 	ST[0].nLinkList[65]=RSLINK11;	/* B redundancia						*/
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
