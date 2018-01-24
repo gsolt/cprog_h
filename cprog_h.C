@@ -4820,7 +4820,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 2;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 4;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -4833,7 +4833,21 @@ TMOKAllasjelzesOffsetek[1] = 261; 		/* Az állásjelzés offsete a DP adatbázisban 
 TMOK_ID[1] =  2;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[1][0] = 65;			/* B redundancia */															/**/
 ReteszesTMOK_RTUNum[1] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 2. TMOK: Front end D -> 62-78; RTU: Fertõd, naperõmû  -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[2] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[2] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[2][0] = 68;			/* Fertõd, maperõmû */															/**/
+ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 																													/**/
+/* 3. TMOK: Front end D -> 62-78; RTU: Fertõd, naperõmû  -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[3] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[3] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[3][0] = 68;			/* Fertõd, maperõmû */															/**/
+ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+																													/**/
+                                                          
+                                                          
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
