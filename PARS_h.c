@@ -185,7 +185,9 @@ ST[0].nSiteList[65]=8999; 	ST[0].nLinkList[65]=RSLINK11;	/* B redundancia						*
 
 ST[0].nSiteList[66]	=273;	  ST[0].nLinkList[66]	=RADIO5_4; 	/* RADIO5_4 42-63						KOR */
 ST[0].nSiteList[67]	=3045;	ST[0].nLinkList[67]	=RADIO1_8; 	/* RADIO1_8 64-26						KAP */
-ST[0].nSiteList[68]	=10017;	ST[0].nLinkList[68]	=RADIO3_1; 	/* RADIO5_1 Fertõd, napelempark			SOP */
+ST[0].nSiteList[68]	=10017;	ST[0].nLinkList[68]	=RADIO3_1; 	/* RADIO3_1 Fertõd, napelempark			SOP */
+ST[0].nSiteList[69]	=10018;	ST[0].nLinkList[69]	=RADIO1_4; 	/* RADIO1_4 Gyõr, Pásztor u.			GYOR */
+
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
@@ -252,7 +254,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 20; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 21; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -273,6 +275,7 @@ ST[0].sRAD_K1[0].nIndx[16]=52;
 ST[0].sRAD_K1[0].nIndx[17]=53; 
 ST[0].sRAD_K1[0].nIndx[18]=59; 
 ST[0].sRAD_K1[0].nIndx[19]=67; 
+ST[0].sRAD_K1[0].nIndx[20]=69; 
 
 
 
