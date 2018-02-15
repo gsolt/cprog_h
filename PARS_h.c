@@ -183,10 +183,11 @@ ST[0].nSiteList[63]=6000; 	ST[0].nLinkList[63]=RSLINK11;	/* Front end D							*/
 ST[0].nSiteList[64]=8000;	ST[0].nLinkList[64]=RSLINK11;	/* Front end F							*/
 ST[0].nSiteList[65]=8999; 	ST[0].nLinkList[65]=RSLINK11;	/* B redundancia						*/
 
-ST[0].nSiteList[66]	=273;	  ST[0].nLinkList[66]	=RADIO5_4; 	/* RADIO5_4 42-63						KOR */
+ST[0].nSiteList[66]	=273;	  ST[0].nLinkList[66]	=RADIO5_4; 	/* RADIO5_4 42-68						KOR */
 ST[0].nSiteList[67]	=3045;	ST[0].nLinkList[67]	=RADIO1_8; 	/* RADIO1_8 64-26						KAP */
 ST[0].nSiteList[68]	=10017;	ST[0].nLinkList[68]	=RADIO3_1; 	/* RADIO3_1 Fertõd, napelempark			SOP */
 ST[0].nSiteList[69]	=10018;	ST[0].nLinkList[69]	=RADIO1_4; 	/* RADIO1_4 Gyõr, Pásztor u.			GYOR */
+ST[0].nSiteList[70]	=10019;	ST[0].nLinkList[70]	=RADIO3_1; 	/* RADIO3_1 Sopron, Bútoripar			SOP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -304,7 +305,7 @@ ST[0].sRAD_K2[0].nIndx[18]=60;
 ST[0].sRAD_K2[0].nIndx[19]=61;
 
 /* K3 : DOR, SOP, KOR, BI */
-ST[0].sRAD_K3[0].nRtuNumRad = 24;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 25;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -329,6 +330,7 @@ ST[0].sRAD_K3[0].nIndx[20]=44; /**/
 ST[0].sRAD_K3[0].nIndx[21]=45; /**/
 ST[0].sRAD_K3[0].nIndx[22]=66; /**/
 ST[0].sRAD_K3[0].nIndx[23]=68; /**/
+ST[0].sRAD_K3[0].nIndx[24]=70; /**/
 
 
 
