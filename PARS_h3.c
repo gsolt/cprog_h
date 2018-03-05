@@ -154,6 +154,7 @@ sT[0].sCP[0].sCPR[67].nDCStart = 283;   sT[0].sCP[0].sCPR[67].nDCNum = 1;    sT[
 sT[0].sCP[0].sCPR[68].nDCStart = 286;   sT[0].sCP[0].sCPR[68].nDCNum = 4;    sT[0].sCP[0].sCPR[68].nSCStart = 290;   sT[0].sCP[0].sCPR[68].nAckStart =0;	  sT[0].sCP[0].sCPR[68].nAckNum =0;   sT[0].sCP[0].sCPR[68].nSPOffsetCS = 1297; sT[0].sCP[0].sCPR[68].nSPOffsetLek = 1298;
 sT[0].sCP[0].sCPR[69].nDCStart = 291;   sT[0].sCP[0].sCPR[69].nDCNum = 4;    sT[0].sCP[0].sCPR[69].nSCStart = 295;   sT[0].sCP[0].sCPR[69].nAckStart =0;	  sT[0].sCP[0].sCPR[69].nAckNum =0;   sT[0].sCP[0].sCPR[69].nSPOffsetCS = 1315; sT[0].sCP[0].sCPR[69].nSPOffsetLek = 1316;
 sT[0].sCP[0].sCPR[70].nDCStart = 296;   sT[0].sCP[0].sCPR[70].nDCNum = 4;    sT[0].sCP[0].sCPR[70].nSCStart = 300;   sT[0].sCP[0].sCPR[70].nAckStart =0;	  sT[0].sCP[0].sCPR[70].nAckNum =0;   sT[0].sCP[0].sCPR[70].nSPOffsetCS = 1337; sT[0].sCP[0].sCPR[70].nSPOffsetLek = 1338;
+sT[0].sCP[0].sCPR[71].nDCStart = 301;   sT[0].sCP[0].sCPR[71].nDCNum = 8;    sT[0].sCP[0].sCPR[71].nSCStart = 309;   sT[0].sCP[0].sCPR[71].nAckStart =0;	  sT[0].sCP[0].sCPR[71].nAckNum =0;   sT[0].sCP[0].sCPR[71].nSPOffsetCS = 1371; sT[0].sCP[0].sCPR[71].nSPOffsetLek = 1372;
 
 
 
@@ -758,6 +759,16 @@ sT[0].sTI[70].nType = TYP_MOT;
 	sT[0].sMOT[70].nIEC_NM				= 300;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[70].nNMNum				= 9;		/* Analóg mérések száma*/
 
+
+/* Sopron,  Petõfi tér  -----------------------------------------------*/
+sT[0].sTI[71].nType = TYP_MOT;
+
+	sT[0].sMOT[71].nIEC_SP				= 1339;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[71].nIEC_SP_NUM			= 32;		/* Egybites értékek száma*/
+	sT[0].sMOT[71].nIEC_DP				= 286;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[71].nIEC_DP_NUM			= 16;   		/* Két bites értékek száma*/
+	sT[0].sMOT[71].nIEC_NM				= 309;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[71].nNMNum				= 24;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
