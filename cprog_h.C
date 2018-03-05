@@ -722,7 +722,7 @@ nMoscadHours = mdt.hours;
  		    	
  			}
 			
-			else if (nType == TYP_MOT &&  buff_len == 42 * 2)
+			else if ( (nType == TYP_MOT &&  buff_len == 42 * 2)  || (nType == TYP_MOT &&  buff_len == 48 * 2) )
  			{
 
  				MOT_DATA(&sMOT[site_inx],rx_buffer);
@@ -1036,7 +1036,7 @@ if (pMOT->nNMNum > 0)
 {
 	nNMStart = pMOT->nIEC_NM;
 	
-	for (nI=0; nI < pMOT->nNMNum && nI<16; nI++)
+	for (nI=0; nI < pMOT->nNMNum && nI<24; nI++)
 	{
 		fnWriteNM( nNMStart+nI,p_col_RxBuf[20+nI]);			
 	
@@ -1577,7 +1577,7 @@ if (pTAL->nIEC_DP > 0)
 			}
 			if (strTE[nI].nTalusAddr >= 936 && strTE[nI].nTalusAddr <= 939)
 			{			
-				nIEC_Offset = strTE[nI].nTalusAddr - 936  + pTAL->nIEC_DP_FSZ1;			
+				nIEC_Offset = strTE[nI].nTalusAddr - 936  + pTAL->nIEC_DP_FSZ1 + 4;			
 			}
 		
 		/* DP tabla indexe, es offsete */
