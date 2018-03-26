@@ -155,6 +155,8 @@ sT[0].sCP[0].sCPR[68].nDCStart = 286;   sT[0].sCP[0].sCPR[68].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[69].nDCStart = 291;   sT[0].sCP[0].sCPR[69].nDCNum = 4;    sT[0].sCP[0].sCPR[69].nSCStart = 295;   sT[0].sCP[0].sCPR[69].nAckStart =0;	  sT[0].sCP[0].sCPR[69].nAckNum =0;   sT[0].sCP[0].sCPR[69].nSPOffsetCS = 1315; sT[0].sCP[0].sCPR[69].nSPOffsetLek = 1316;
 sT[0].sCP[0].sCPR[70].nDCStart = 296;   sT[0].sCP[0].sCPR[70].nDCNum = 4;    sT[0].sCP[0].sCPR[70].nSCStart = 300;   sT[0].sCP[0].sCPR[70].nAckStart =0;	  sT[0].sCP[0].sCPR[70].nAckNum =0;   sT[0].sCP[0].sCPR[70].nSPOffsetCS = 1337; sT[0].sCP[0].sCPR[70].nSPOffsetLek = 1338;
 sT[0].sCP[0].sCPR[71].nDCStart = 301;   sT[0].sCP[0].sCPR[71].nDCNum = 8;    sT[0].sCP[0].sCPR[71].nSCStart = 309;   sT[0].sCP[0].sCPR[71].nAckStart =0;	  sT[0].sCP[0].sCPR[71].nAckNum =0;   sT[0].sCP[0].sCPR[71].nSPOffsetCS = 1371; sT[0].sCP[0].sCPR[71].nSPOffsetLek = 1372;
+sT[0].sCP[0].sCPR[72].nDCStart = 310;   sT[0].sCP[0].sCPR[72].nDCNum = 4;    sT[0].sCP[0].sCPR[72].nSCStart = 314;   sT[0].sCP[0].sCPR[72].nAckStart =0;	  sT[0].sCP[0].sCPR[72].nAckNum =0;   sT[0].sCP[0].sCPR[72].nSPOffsetCS = 1408; sT[0].sCP[0].sCPR[72].nSPOffsetLek = 1409;
+sT[0].sCP[0].sCPR[73].nDCStart = 315;   sT[0].sCP[0].sCPR[73].nDCNum = 4;    sT[0].sCP[0].sCPR[73].nSCStart = 319;   sT[0].sCP[0].sCPR[73].nAckStart =0;	  sT[0].sCP[0].sCPR[73].nAckNum =0;   sT[0].sCP[0].sCPR[73].nSPOffsetCS = 1445; sT[0].sCP[0].sCPR[73].nSPOffsetLek = 1446;
 
 
 
@@ -769,6 +771,31 @@ sT[0].sTI[71].nType = TYP_MOT;
 	sT[0].sMOT[71].nIEC_DP_NUM			= 16;   		/* Két bites értékek száma*/
 	sT[0].sMOT[71].nIEC_NM				= 309;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[71].nNMNum				= 24;		/* Analóg mérések száma*/
+
+/* Kesztölc , napelempark 032-18 -----------------------------------------------------------*/
+sT[0].sTI[72].nType = TYP_TAL;
+
+		sT[0].sTAL[72].nIEC_SP       		= 1373;
+		sT[0].sTAL[72].nIEC_OsszevontHiba	= 1405;
+		sT[0].sTAL[72].nIEC_MT_KommHiba		= 1406;
+		sT[0].sTAL[72].nIEC_DP       		= 302;
+		sT[0].sTAL[72].nIEC_DP_FSZ1  		= 306;
+		sT[0].sTAL[72].nIEC_NM				= 333;
+		sT[0].sTAL[72].nNMNum		  		= 11;
+		sT[0].sTAL[72].nKommStatusNum		= 2;
+
+/* Kesztölc , napelempark 032-21 -----------------------------------------------------------*/
+sT[0].sTI[73].nType = TYP_TAL;
+
+		sT[0].sTAL[73].nIEC_SP       		= 1410;
+		sT[0].sTAL[73].nIEC_OsszevontHiba	= 1442;
+		sT[0].sTAL[73].nIEC_MT_KommHiba		= 1443;
+		sT[0].sTAL[73].nIEC_DP       		= 310;
+		sT[0].sTAL[73].nIEC_DP_FSZ1  		= 314;
+		sT[0].sTAL[73].nIEC_NM				= 344;
+		sT[0].sTAL[73].nNMNum		  		= 11;
+		sT[0].sTAL[73].nKommStatusNum		= 2;
+
 
 } /* end fnSetDataPar()*/
 

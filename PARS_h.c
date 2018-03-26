@@ -189,6 +189,9 @@ ST[0].nSiteList[68]	=10017;	ST[0].nLinkList[68]	=RADIO3_1; 	/* RADIO3_1 Fertõd, 
 ST[0].nSiteList[69]	=10018;	ST[0].nLinkList[69]	=RADIO1_4; 	/* RADIO1_4 Gyõr, Pásztor u.			GYOR */
 ST[0].nSiteList[70]	=10019;	ST[0].nLinkList[70]	=RADIO3_1; 	/* RADIO3_1 Sopron, Bútoripar			SOP */
 ST[0].nSiteList[71]	=10020;	ST[0].nLinkList[71]	=RADIO3_3; 	/* RADIO3_3 Sopron, Petõfi tér			SOP */
+ST[0].nSiteList[72]	=10021;	ST[0].nLinkList[72]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-18		DOR */
+ST[0].nSiteList[73]	=10022;	ST[0].nLinkList[73]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-21		DOR */
+
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -306,7 +309,7 @@ ST[0].sRAD_K2[0].nIndx[18]=60;
 ST[0].sRAD_K2[0].nIndx[19]=61;
 
 /* K3 : DOR, SOP, KOR, BI */
-ST[0].sRAD_K3[0].nRtuNumRad = 26;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 28;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -333,6 +336,8 @@ ST[0].sRAD_K3[0].nIndx[22]=66; /**/
 ST[0].sRAD_K3[0].nIndx[23]=68; /**/
 ST[0].sRAD_K3[0].nIndx[24]=70; /**/
 ST[0].sRAD_K3[0].nIndx[25]=71; /**/
+ST[0].sRAD_K3[0].nIndx[26]=72; /**/
+ST[0].sRAD_K3[0].nIndx[27]=73; /**/
 
 
 
