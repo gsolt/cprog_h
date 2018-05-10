@@ -192,7 +192,7 @@ ST[0].nSiteList[71]	=10020;	ST[0].nLinkList[71]	=RADIO3_3; 	/* RADIO3_3 Sopron, 
 ST[0].nSiteList[72]	=10021;	ST[0].nLinkList[72]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-18		DOR */
 ST[0].nSiteList[73]	=10022;	ST[0].nLinkList[73]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-21		DOR */
 
-
+ST[0].nSiteList[74]	=2580;	ST[0].nLinkList[74]	=LINE10;    /* LINE1    Répceleak DAC					REP */
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
@@ -342,8 +342,9 @@ ST[0].sRAD_K3[0].nIndx[27]=73; /**/
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 1;
+ST[0].sLIN[0].nRtuNumLin = 2;
 ST[0].sLIN[0].nIndx[0] =32;
+ST[0].sLIN[0].nIndx[1] =74;
 
 
 

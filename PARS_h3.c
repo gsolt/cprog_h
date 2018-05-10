@@ -157,6 +157,7 @@ sT[0].sCP[0].sCPR[70].nDCStart = 296;   sT[0].sCP[0].sCPR[70].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[71].nDCStart = 301;   sT[0].sCP[0].sCPR[71].nDCNum = 8;    sT[0].sCP[0].sCPR[71].nSCStart = 309;   sT[0].sCP[0].sCPR[71].nAckStart =0;	  sT[0].sCP[0].sCPR[71].nAckNum =0;   sT[0].sCP[0].sCPR[71].nSPOffsetCS = 1371; sT[0].sCP[0].sCPR[71].nSPOffsetLek = 1372;
 sT[0].sCP[0].sCPR[72].nDCStart = 310;   sT[0].sCP[0].sCPR[72].nDCNum = 4;    sT[0].sCP[0].sCPR[72].nSCStart = 314;   sT[0].sCP[0].sCPR[72].nAckStart =0;	  sT[0].sCP[0].sCPR[72].nAckNum =0;   sT[0].sCP[0].sCPR[72].nSPOffsetCS = 1408; sT[0].sCP[0].sCPR[72].nSPOffsetLek = 1409;
 sT[0].sCP[0].sCPR[73].nDCStart = 315;   sT[0].sCP[0].sCPR[73].nDCNum = 4;    sT[0].sCP[0].sCPR[73].nSCStart = 319;   sT[0].sCP[0].sCPR[73].nAckStart =0;	  sT[0].sCP[0].sCPR[73].nAckNum =0;   sT[0].sCP[0].sCPR[73].nSPOffsetCS = 1445; sT[0].sCP[0].sCPR[73].nSPOffsetLek = 1446;
+sT[0].sCP[0].sCPR[74].nDCStart = 0;     sT[0].sCP[0].sCPR[74].nDCNum = 0;    sT[0].sCP[0].sCPR[74].nSCStart = 335;   sT[0].sCP[0].sCPR[74].nAckStart =0;     sT[0].sCP[0].sCPR[74].nAckNum =0;   sT[0].sCP[0].sCPR[74].nSPOffsetCS =1506;  sT[0].sCP[0].sCPR[74].nSPOffsetLek =1507;
 
 
 
@@ -795,6 +796,16 @@ sT[0].sTI[73].nType = TYP_TAL;
 		sT[0].sTAL[73].nIEC_NM				= 344;
 		sT[0].sTAL[73].nNMNum		  		= 11;
 		sT[0].sTAL[73].nKommStatusNum		= 2;
+
+/* Répcelak DAC -----------------------------------------------------------*/
+sT[0].sTI[74].nType = TYP_MOT;
+
+	sT[0].sMOT[74].nIEC_SP				= 1501;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[74].nIEC_SP_NUM			= 5;		/* Egybites értékek száma*/
+	sT[0].sMOT[74].nIEC_DP_NUM			= 0;
+	sT[0].sMOT[74].nNMNum      			= 0;
+
+
 
 
 } /* end fnSetDataPar()*/

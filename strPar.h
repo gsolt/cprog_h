@@ -19,6 +19,7 @@
 
 #define	LINE1			21
 #define	LINE2			22
+#define	LINE10			80
 #define	LINE11			81
 #define	LINE12			82
 
