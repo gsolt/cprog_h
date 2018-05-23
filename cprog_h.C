@@ -590,8 +590,8 @@ nMoscadHours = mdt.hours;
    /*---------------------*/
    if(MOSCAD_RcvFrm(&site_inx, rx_buffer, &buff_len, &type) == 0)
    {
-   			/*	MOSCAD_sprintf(message,"Frame received, index: %d",site_inx);
-   			 	MOSCAD_error(message );*/ 				
+   				MOSCAD_sprintf(message,"Frame received, index: %d",site_inx);
+   			 	MOSCAD_error(message ); 
 
    	if(site_inx<=MAX_RTU)
    	{
@@ -687,8 +687,8 @@ nMoscadHours = mdt.hours;
 			/* Elvégzi az adatfeldolgozást */
  			nType = sTI[site_inx].nType;
  			
- 			/*	MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[2]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[2],buff_len);
-   			 	MOSCAD_error(message ); 				*/
+ 				MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[2]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[2],buff_len);
+   			 	MOSCAD_error(message ); 				
  
 			/*Szinkronizalasi igeny erkezett*/
 			
@@ -4820,7 +4820,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 5;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 8;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -4853,6 +4853,26 @@ ReteszesRTUIndex[4][0] = 72;			/* Nagyszentjános boigáz */															/**/
 ReteszesRTUIndex[4][1] = 73;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
                                                           
+/* 5. TMOK: 13-30 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[5] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[5] =1254;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][0] = 78;			/* Nagyszentjános boigáz */															/**/
+ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 6. TMOK: 11-34 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[6] =1255;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][0] = 78;			/* Nagyszentjános boigáz */															/**/
+ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/* 7. TMOK: 11-35 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[7] = 1256; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[7] =1256;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[7][0] = 78;			/* Nagyszentjános boigáz */															/**/
+ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+
+
                                                           
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/

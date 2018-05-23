@@ -178,7 +178,7 @@ ST[0].nSiteList[58]	=10013;	ST[0].nLinkList[58]	=RADIO6_1; 	/* RADIO6_1 51-31			
 ST[0].nSiteList[59]	=10014;	ST[0].nLinkList[59]	=RADIO3_5; 	/* RADIO3_5 Várpalota, napelempark		ASZ */
 ST[0].nSiteList[60]	=10015;	ST[0].nLinkList[60]	=RADIO6_1; 	/* RADIO6_1 Balatonudvari napelempark	ASZ */
 ST[0].nSiteList[61]	=10016;	ST[0].nLinkList[61]	=RADIO5_1; 	/* RADIO5_1 Szil napelempark			CSOR */
-ST[0].nSiteList[62]=2000; 	ST[0].nLinkList[63]=RSLINK11;	/* Front end B							*/
+ST[0].nSiteList[62]=2000; 	ST[0].nLinkList[62]=RSLINK11;	/* Front end B							*/
 ST[0].nSiteList[63]=6000; 	ST[0].nLinkList[63]=RSLINK11;	/* Front end D							*/
 ST[0].nSiteList[64]=8000;	ST[0].nLinkList[64]=RSLINK11;	/* Front end F							*/
 ST[0].nSiteList[65]=8999; 	ST[0].nLinkList[65]=RSLINK11;	/* B redundancia						*/
@@ -193,6 +193,16 @@ ST[0].nSiteList[72]	=10021;	ST[0].nLinkList[72]	=RADIO8_4; 	/* RADIO8_4 Kesztölc
 ST[0].nSiteList[73]	=10022;	ST[0].nLinkList[73]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-21		DOR */
 
 ST[0].nSiteList[74]	=2580;	ST[0].nLinkList[74]	=LINE10;    /* LINE1    Répceleak DAC					REP */
+
+
+ST[0].nSiteList[75]	=10023;	ST[0].nLinkList[75]	=RADIO2_1; 	/* RADIO2_1 Veszprém, Vörösmarty tér			VESZ */
+ST[0].nSiteList[76]	=10024;	ST[0].nLinkList[76]	=RADIO9_1; 	/* RADIO9_1 Tapolca, Y 7-8			 TAP */
+ST[0].nSiteList[77]	=10025;	ST[0].nLinkList[77]	=RADIO4_5; 	/* RADIO4_5 Pápa, jégpálya			 PAP */
+ST[0].nSiteList[78]	=10026;	ST[0].nLinkList[78]	=RADIO1_5; 	/* RADIO1_5 Tét, 055-39 PV erõmû			 GYOR */
+ST[0].nSiteList[79]	=1002;	ST[0].nLinkList[79]	=RADIO1_5; 	/* RADIO1_5 12-18			 GYOR */
+
+
+
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
@@ -259,7 +269,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 21; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 23; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -281,12 +291,14 @@ ST[0].sRAD_K1[0].nIndx[17]=53;
 ST[0].sRAD_K1[0].nIndx[18]=59; 
 ST[0].sRAD_K1[0].nIndx[19]=67; 
 ST[0].sRAD_K1[0].nIndx[20]=69; 
+ST[0].sRAD_K1[0].nIndx[21]=78; 
+ST[0].sRAD_K1[0].nIndx[22]=79; 
 
-
+      
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
-ST[0].sRAD_K2[0].nRtuNumRad = 20; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 23; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -307,6 +319,11 @@ ST[0].sRAD_K2[0].nIndx[16]=57;
 ST[0].sRAD_K2[0].nIndx[17]=58;
 ST[0].sRAD_K2[0].nIndx[18]=60;
 ST[0].sRAD_K2[0].nIndx[19]=61;
+ST[0].sRAD_K2[0].nIndx[20]=75;
+ST[0].sRAD_K2[0].nIndx[21]=76;
+ST[0].sRAD_K2[0].nIndx[22]=77;
+
+
 
 /* K3 : DOR, SOP, KOR, BI */
 ST[0].sRAD_K3[0].nRtuNumRad = 28;  /**/
