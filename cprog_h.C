@@ -4867,7 +4867,7 @@ ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
 
 /* 7. TMOK: 11-35 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[7] = 1256; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[7] =1256;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+TMOK_ID[7] =1256;						/*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[7][0] = 78;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 
@@ -4900,7 +4900,7 @@ ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
    			
    			
    		} /* end if */
-   		
+   		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
    		/* Ha jött egy bénítás parancs */
    		if (p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]==2)
    		{

@@ -163,6 +163,8 @@ sT[0].sCP[0].sCPR[76].nDCStart = 325;   sT[0].sCP[0].sCPR[76].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[77].nDCStart = 330;   sT[0].sCP[0].sCPR[77].nDCNum = 4;    sT[0].sCP[0].sCPR[77].nSCStart = 334;   sT[0].sCP[0].sCPR[77].nAckStart =0;	  sT[0].sCP[0].sCPR[77].nAckNum =0;   sT[0].sCP[0].sCPR[77].nSPOffsetCS = 1499; sT[0].sCP[0].sCPR[77].nSPOffsetLek = 1500;
 sT[0].sCP[0].sCPR[78].nDCStart = 336;   sT[0].sCP[0].sCPR[78].nDCNum = 4;    sT[0].sCP[0].sCPR[78].nSCStart = 340;   sT[0].sCP[0].sCPR[78].nAckStart =0;	  sT[0].sCP[0].sCPR[78].nAckNum =0;   sT[0].sCP[0].sCPR[78].nSPOffsetCS = 1524; sT[0].sCP[0].sCPR[78].nSPOffsetLek = 1525;
 sT[0].sCP[0].sCPR[79].nDCStart = 341;   sT[0].sCP[0].sCPR[79].nDCNum = 1;    sT[0].sCP[0].sCPR[79].nSCStart = 342;   sT[0].sCP[0].sCPR[79].nAckStart =0;	  sT[0].sCP[0].sCPR[79].nAckNum =0;   sT[0].sCP[0].sCPR[79].nSPOffsetCS = 1540; sT[0].sCP[0].sCPR[79].nSPOffsetLek = 1541;
+sT[0].sCP[0].sCPR[80].nDCStart = 344;   sT[0].sCP[0].sCPR[80].nDCNum = 4;    sT[0].sCP[0].sCPR[80].nSCStart = 348;   sT[0].sCP[0].sCPR[80].nAckStart =0;	  sT[0].sCP[0].sCPR[80].nAckNum =0;   sT[0].sCP[0].sCPR[80].nSPOffsetCS = 1558; sT[0].sCP[0].sCPR[80].nSPOffsetLek = 1559;
+sT[0].sCP[0].sCPR[81].nDCStart = 349;   sT[0].sCP[0].sCPR[81].nDCNum = 4;    sT[0].sCP[0].sCPR[81].nSCStart = 353;   sT[0].sCP[0].sCPR[81].nAckStart =0;	  sT[0].sCP[0].sCPR[81].nAckNum =0;   sT[0].sCP[0].sCPR[81].nSPOffsetCS = 1595; sT[0].sCP[0].sCPR[81].nSPOffsetLek = 1596;
 
 
 
@@ -857,6 +859,28 @@ sT[0].sTI[79].nType = TYP_TMOK;
 	sT[0].sMOT[79].nIEC_DP				= 350;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[79].nIEC_NM				= 384;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[79].nNMNum				  = 4;		/* Analóg mérések száma*/
+
+/* Gyõr,  Fehérvári út  -----------------------------------------------*/
+sT[0].sTI[80].nType = TYP_MOT;
+
+	sT[0].sMOT[80].nIEC_SP				= 1542;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[80].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[80].nIEC_DP				= 351;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[80].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[80].nIEC_NM				= 388;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[80].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Gyömöre , 011-4 PV erõmû -----------------------------------------------------------*/
+sT[0].sTI[81].nType = TYP_TAL;
+
+		sT[0].sTAL[81].nIEC_SP       		= 1560;
+		sT[0].sTAL[81].nIEC_OsszevontHiba	= 1592;
+		sT[0].sTAL[81].nIEC_MT_KommHiba		= 1593;
+		sT[0].sTAL[81].nIEC_DP       		= 359;
+		sT[0].sTAL[81].nIEC_DP_FSZ1  		= 363;
+		sT[0].sTAL[81].nIEC_NM				= 394;
+		sT[0].sTAL[81].nNMNum		  		= 11;
+		sT[0].sTAL[81].nKommStatusNum		= 2;
 
 
 } /* end fnSetDataPar()*/
