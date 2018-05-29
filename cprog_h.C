@@ -4813,6 +4813,10 @@ unsigned short		nTxBuf[80];
 
 short				*p_col_DCAct; 
 
+static int    nReteszPar[RETESZ_TMOK_NUM];			/* 1, ha tartozik hozzá retesz parancs */
+static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állappot offsete, ha tartozik hozzá retesz parancs */
+
+
 
 /**********************************************************************************************************************/
 /* Kezdõértékek megadása - minden frontendnél más!!! 																  */
@@ -4820,31 +4824,37 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 8;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 11;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[0] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[0][0] = 61;			/* Szil, maperõmû */															/**/
 ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
 
 /* 1. TMOK: 64-26; RTU: B redundancia  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[1] = 261; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[1] =  2;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[1][0] = 65;			/* B redundancia */															/**/
 ReteszesTMOK_RTUNum[1] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[1] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[1] = 1;             /* DC parancs offsete, ha tartozik hozzá DC parancs*/
 
 /* 2. TMOK: Front end D -> 62-78; RTU: Fertõd, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[2] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[2] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[2][0] = 68;			/* Fertõd, maperõmû */															/**/
 ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[2] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													/**/
 /* 3. TMOK: Front end D -> 62-78; RTU: Fertõd, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[3] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[3] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[3][0] = 68;			/* Fertõd, maperõmû */															/**/
 ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[3] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													/**/
 /* 4. TMOK: 21074 RTU:  Kesztölc, naperõmû I. II. -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[4] = 1253; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -4852,26 +4862,49 @@ TMOK_ID[4] =1253;						/* TMOK azonosítója a kmenõ táviratban = DP offset */				
 ReteszesRTUIndex[4][0] = 72;			/* Nagyszentjános boigáz */															/**/
 ReteszesRTUIndex[4][1] = 73;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                                                           
 /* 5. TMOK: 13-30 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[5] =1254;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][0] = 78;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[5] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 6. TMOK: 11-34 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[6] =1255;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[6][0] = 78;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 7. TMOK: 11-35 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[7] = 1256; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[7] =1256;						/*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[7][0] = 78;			/* Nagyszentjános boigáz */															/**/
 ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[7] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 8. TMOK: 70-60 RTU:  Gyömöre, 011-4 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[8] = 1257; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[8] =1257;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[8][0] = 81;			   /* Gyömöre 011-4 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[8] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[8] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 9. TMOK: 70-69 RTU:  Gyömöre, 011-4 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[9] = 1258; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[9] =1258;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[9][0] = 81;			   /* Gyömöre 011-4 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[9] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[9] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 10. TMOK: 13-27 RTU:  Gyömöre, 011-4 PV erõmû               -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[10] = 1259; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[10] =1259;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[10][0] = 81;			   /* Gyömöre 011-4 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[10] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[10] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
                                                           
 /**********************************************************************************************************************/
@@ -4936,7 +4969,14 @@ for (i=0;i<ReteszesTMOKNum;i++)
 /* Elõállítja a retesz állapotok tömbjét ********************************************************************************************/
 for (i=0;i<ReteszesTMOKNum;i++)
 {
-		ReteszAllapotok[i] = fnReadDPData(ReteszAllapotokKezdoCim+i, 0, 0, 0, 0);	
+    if (nReteszPar[i] == 1)
+    {
+		ReteszAllapotok[i] = fnReadDPData(ReteszAllapotokKezdoCim+nReteszOffset[i], 0, 0, 0, 0);
+    }
+    else if (nReteszPar[i] == 0)
+    {
+    ReteszAllapotok[i] = 0;
+    }	
 } /* end for */
 
 
