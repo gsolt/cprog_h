@@ -200,7 +200,7 @@ ST[0].nSiteList[76]	=10024;	ST[0].nLinkList[76]	=RADIO9_1; 	/* RADIO9_1 Tapolca,
 ST[0].nSiteList[77]	=10025;	ST[0].nLinkList[77]	=RADIO4_5; 	/* RADIO4_5 Pápa, jégpálya			 PAP */
 ST[0].nSiteList[78]	=10026;	ST[0].nLinkList[78]	=RADIO1_5; 	/* RADIO1_5 Tét, 055-39 PV erõmû			 GYOR */
 ST[0].nSiteList[79]	=10027;	ST[0].nLinkList[79]	=LINE11;    /* LINE11   12-18			             KIM */
-ST[0].nSiteList[80]	=10029;	ST[0].nLinkList[80]	=RADIO1_4;  /* RADIO1_4 Gyõr, Fehérvári út         GYOR */
+ST[0].nSiteList[80]	=10029;	ST[0].nLinkList[80]	=RADIO1_1;  /* RADIO1_1 Gyõr, Fehérvári út         GYOR */
 ST[0].nSiteList[81]	=10028;	ST[0].nLinkList[81]	=RADIO1_5;  /* RADIO1_5 Gyömöre, 011-4 PV erõmû          GYOR */
 
 
