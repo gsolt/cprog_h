@@ -165,6 +165,7 @@ sT[0].sCP[0].sCPR[78].nDCStart = 336;   sT[0].sCP[0].sCPR[78].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[79].nDCStart = 341;   sT[0].sCP[0].sCPR[79].nDCNum = 1;    sT[0].sCP[0].sCPR[79].nSCStart = 342;   sT[0].sCP[0].sCPR[79].nAckStart =0;	  sT[0].sCP[0].sCPR[79].nAckNum =0;   sT[0].sCP[0].sCPR[79].nSPOffsetCS = 1540; sT[0].sCP[0].sCPR[79].nSPOffsetLek = 1541;
 sT[0].sCP[0].sCPR[80].nDCStart = 344;   sT[0].sCP[0].sCPR[80].nDCNum = 4;    sT[0].sCP[0].sCPR[80].nSCStart = 348;   sT[0].sCP[0].sCPR[80].nAckStart =0;	  sT[0].sCP[0].sCPR[80].nAckNum =0;   sT[0].sCP[0].sCPR[80].nSPOffsetCS = 1558; sT[0].sCP[0].sCPR[80].nSPOffsetLek = 1559;
 sT[0].sCP[0].sCPR[81].nDCStart = 349;   sT[0].sCP[0].sCPR[81].nDCNum = 4;    sT[0].sCP[0].sCPR[81].nSCStart = 353;   sT[0].sCP[0].sCPR[81].nAckStart =0;	  sT[0].sCP[0].sCPR[81].nAckNum =0;   sT[0].sCP[0].sCPR[81].nSPOffsetCS = 1595; sT[0].sCP[0].sCPR[81].nSPOffsetLek = 1596;
+sT[0].sCP[0].sCPR[82].nDCStart = 354;   sT[0].sCP[0].sCPR[82].nDCNum = 8;    sT[0].sCP[0].sCPR[82].nSCStart = 362;   sT[0].sCP[0].sCPR[82].nAckStart =0;	  sT[0].sCP[0].sCPR[82].nAckNum =0;   sT[0].sCP[0].sCPR[82].nSPOffsetCS = 1648; sT[0].sCP[0].sCPR[82].nSPOffsetLek = 1649;
 
 
 
@@ -881,6 +882,24 @@ sT[0].sTI[81].nType = TYP_TAL;
 		sT[0].sTAL[81].nIEC_NM				= 394;
 		sT[0].sTAL[81].nNMNum		  		= 11;
 		sT[0].sTAL[81].nKommStatusNum		= 2;
+
+
+/* Kimle , 1058,1059,1060 PV erõmû -----------------------------------------------------------*/
+sT[0].sTI[82].nType = TYP_TAL2;
+
+		sT[0].sTAL[82].nIEC_SP       		= 1597;
+		sT[0].sTAL[82].nIEC_OsszevontHiba	= 1629;
+		sT[0].sTAL[82].nIEC_MT_KommHiba		= 1630;
+		sT[0].sTAL[82].nIEC_DP       		= 367;
+		sT[0].sTAL[82].nIEC_DP_FSZ1  		= 371;
+		sT[0].sTAL[82].nIEC_NM				= 405;
+		sT[0].sTAL[82].nNMNum		  		= 19;
+		sT[0].sTAL[82].nKommStatusNum		= 2;
+  	sT[0].sTAL[82].nSP_EXTRA_OFFSET		= 1632;
+	  sT[0].sTAL[82].nSP_EXTRA_NUM		= 16;
+  	sT[0].sTAL[82].nDP_EXTRA_OFFSET		= 375;
+	  sT[0].sTAL[82].nDP_EXTRA_NUM		= 8;
+
 
 
 } /* end fnSetDataPar()*/

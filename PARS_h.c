@@ -186,23 +186,24 @@ ST[0].nSiteList[65]=8999; 	ST[0].nLinkList[65]=RSLINK11;	/* B redundancia						*
 ST[0].nSiteList[66]	=273;	  ST[0].nLinkList[66]	=RADIO5_4; 	/* RADIO5_4 42-68						KOR */
 ST[0].nSiteList[67]	=3045;	ST[0].nLinkList[67]	=RADIO1_8; 	/* RADIO1_8 64-26						KAP */
 ST[0].nSiteList[68]	=10017;	ST[0].nLinkList[68]	=RADIO3_1; 	/* RADIO3_1 Fertõd, napelempark			SOP */
-ST[0].nSiteList[69]	=10018;	ST[0].nLinkList[69]	=RADIO1_4; 	/* RADIO1_4 Gyõr, Pásztor u.			GYOR */
-ST[0].nSiteList[70]	=10019;	ST[0].nLinkList[70]	=RADIO3_1; 	/* RADIO3_1 Sopron, Bútoripar			SOP */
-ST[0].nSiteList[71]	=10020;	ST[0].nLinkList[71]	=RADIO3_3; 	/* RADIO3_3 Sopron, Petõfi tér			SOP */
+ST[0].nSiteList[69]	=10018;	ST[0].nLinkList[69]	=RADIO1_4; 	/* RADIO1_4 Gyõr, Pásztor u.			GYOR */   /* Nincs tartalék */
+ST[0].nSiteList[70]	=10019;	ST[0].nLinkList[70]	=RADIO3_1; 	/* RADIO3_1 Sopron, Bútoripar			SOP */    /* OK */
+ST[0].nSiteList[71]	=10020;	ST[0].nLinkList[71]	=RADIO3_3; 	/* RADIO3_3 Sopron, Petõfi tér			SOP */  /* OK */
 ST[0].nSiteList[72]	=10021;	ST[0].nLinkList[72]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-18		DOR */
 ST[0].nSiteList[73]	=10022;	ST[0].nLinkList[73]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-21		DOR */
 
 ST[0].nSiteList[74]	=2580;	ST[0].nLinkList[74]	=LINE10;    /* LINE1    Répceleak DAC					REP */
 
 
-ST[0].nSiteList[75]	=10023;	ST[0].nLinkList[75]	=RADIO2_1; 	/* RADIO2_1 Veszprém, Vörösmarty tér			VESZ */
-ST[0].nSiteList[76]	=10024;	ST[0].nLinkList[76]	=RADIO9_1; 	/* RADIO9_1 Tapolca, Y 7-8			 TAP */
-ST[0].nSiteList[77]	=10025;	ST[0].nLinkList[77]	=RADIO4_5; 	/* RADIO4_5 Pápa, jégpálya			 PAP */
+ST[0].nSiteList[75]	=10023;	ST[0].nLinkList[75]	=RADIO2_1; 	/* RADIO2_1 Veszprém, Vörösmarty tér			VESZ */  /* OK */
+ST[0].nSiteList[76]	=10024;	ST[0].nLinkList[76]	=RADIO9_1; 	/* RADIO9_1 Tapolca, Y 7-8			 TAP */      /* OK */                  
+ST[0].nSiteList[77]	=10025;	ST[0].nLinkList[77]	=RADIO4_5; 	/* RADIO4_5 Pápa, jégpálya			 PAP */    /* OK */
 ST[0].nSiteList[78]	=10026;	ST[0].nLinkList[78]	=RADIO1_5; 	/* RADIO1_5 Tét, 055-39 PV erõmû			 GYOR */
 ST[0].nSiteList[79]	=10027;	ST[0].nLinkList[79]	=LINE11;    /* LINE11   12-18			             KIM */
-ST[0].nSiteList[80]	=10029;	ST[0].nLinkList[80]	=RADIO1_1;  /* RADIO1_1 Gyõr, Fehérvári út         GYOR */
+ST[0].nSiteList[80]	=10029;	ST[0].nLinkList[80]	=RADIO1_1;  /* RADIO1_1 Gyõr, Fehérvári út         GYOR */     /* OK */
 ST[0].nSiteList[81]	=10028;	ST[0].nLinkList[81]	=RADIO1_5;  /* RADIO1_5 Gyömöre, 011-4 PV erõmû          GYOR */
 
+ST[0].nSiteList[82]	=10030;	ST[0].nLinkList[82]	=LINE11;  /* LINE11 Kimle, 1058,1059,1060 PV erõmû          GYOR */
 
 
 
@@ -272,7 +273,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 25; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 26; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -298,6 +299,7 @@ ST[0].sRAD_K1[0].nIndx[21]=78;
 ST[0].sRAD_K1[0].nIndx[22]=79; 
 ST[0].sRAD_K1[0].nIndx[23]=80; 
 ST[0].sRAD_K1[0].nIndx[24]=81; 
+ST[0].sRAD_K1[0].nIndx[25]=82; 
 
       
 
