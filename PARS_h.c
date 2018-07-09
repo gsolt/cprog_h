@@ -204,6 +204,8 @@ ST[0].nSiteList[80]	=10029;	ST[0].nLinkList[80]	=RADIO1_1;  /* RADIO1_1 Gyõr, Fe
 ST[0].nSiteList[81]	=10028;	ST[0].nLinkList[81]	=RADIO1_5;  /* RADIO1_5 Gyömöre, 011-4 PV erõmû          GYOR */
 
 ST[0].nSiteList[82]	=10030;	ST[0].nLinkList[82]	=LINE11;  /* LINE11 Kimle, 1058,1059,1060 PV erõmû          GYOR */
+ST[0].nSiteList[83]	=10031;	ST[0].nLinkList[83]	=RADIO2_1;  /* RADIO2_1 Vezprém Kis Tesco - tesztelve          VESZ */
+ST[0].nSiteList[84]	=10032;	ST[0].nLinkList[84]	=RADIO3_5;  /* RADIO3_5 Várpalota Esso   - tesztelve          VAR */
 
 
 
@@ -273,7 +275,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 26; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 27; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -300,12 +302,13 @@ ST[0].sRAD_K1[0].nIndx[22]=79;
 ST[0].sRAD_K1[0].nIndx[23]=80; 
 ST[0].sRAD_K1[0].nIndx[24]=81; 
 ST[0].sRAD_K1[0].nIndx[25]=82; 
+ST[0].sRAD_K1[0].nIndx[26]=84; 
 
       
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV */
-ST[0].sRAD_K2[0].nRtuNumRad = 23; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 24; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -329,6 +332,7 @@ ST[0].sRAD_K2[0].nIndx[19]=61;
 ST[0].sRAD_K2[0].nIndx[20]=75;
 ST[0].sRAD_K2[0].nIndx[21]=76;
 ST[0].sRAD_K2[0].nIndx[22]=77;
+ST[0].sRAD_K2[0].nIndx[23]=83;
 
 
 

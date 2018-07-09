@@ -166,6 +166,8 @@ sT[0].sCP[0].sCPR[79].nDCStart = 341;   sT[0].sCP[0].sCPR[79].nDCNum = 1;    sT[
 sT[0].sCP[0].sCPR[80].nDCStart = 344;   sT[0].sCP[0].sCPR[80].nDCNum = 4;    sT[0].sCP[0].sCPR[80].nSCStart = 348;   sT[0].sCP[0].sCPR[80].nAckStart =0;	  sT[0].sCP[0].sCPR[80].nAckNum =0;   sT[0].sCP[0].sCPR[80].nSPOffsetCS = 1558; sT[0].sCP[0].sCPR[80].nSPOffsetLek = 1559;
 sT[0].sCP[0].sCPR[81].nDCStart = 349;   sT[0].sCP[0].sCPR[81].nDCNum = 4;    sT[0].sCP[0].sCPR[81].nSCStart = 353;   sT[0].sCP[0].sCPR[81].nAckStart =0;	  sT[0].sCP[0].sCPR[81].nAckNum =0;   sT[0].sCP[0].sCPR[81].nSPOffsetCS = 1595; sT[0].sCP[0].sCPR[81].nSPOffsetLek = 1596;
 sT[0].sCP[0].sCPR[82].nDCStart = 354;   sT[0].sCP[0].sCPR[82].nDCNum = 8;    sT[0].sCP[0].sCPR[82].nSCStart = 362;   sT[0].sCP[0].sCPR[82].nAckStart =0;	  sT[0].sCP[0].sCPR[82].nAckNum =0;   sT[0].sCP[0].sCPR[82].nSPOffsetCS = 1648; sT[0].sCP[0].sCPR[82].nSPOffsetLek = 1649;
+sT[0].sCP[0].sCPR[83].nDCStart = 363;   sT[0].sCP[0].sCPR[83].nDCNum = 4;    sT[0].sCP[0].sCPR[83].nSCStart = 367;   sT[0].sCP[0].sCPR[83].nAckStart =0;	  sT[0].sCP[0].sCPR[83].nAckNum =0;   sT[0].sCP[0].sCPR[83].nSPOffsetCS = 1666; sT[0].sCP[0].sCPR[83].nSPOffsetLek = 1667;
+sT[0].sCP[0].sCPR[84].nDCStart = 368;   sT[0].sCP[0].sCPR[84].nDCNum = 4;    sT[0].sCP[0].sCPR[84].nSCStart = 372;   sT[0].sCP[0].sCPR[84].nAckStart =0;	  sT[0].sCP[0].sCPR[84].nAckNum =0;   sT[0].sCP[0].sCPR[84].nSPOffsetCS = 1688; sT[0].sCP[0].sCPR[84].nSPOffsetLek = 1689;
 
 
 
@@ -900,7 +902,25 @@ sT[0].sTI[82].nType = TYP_TAL2;
   	sT[0].sTAL[82].nDP_EXTRA_OFFSET		= 375;
 	  sT[0].sTAL[82].nDP_EXTRA_NUM		= 8;
 
+/* Veszprém,  Kis Tesco  -----------------------------------------------*/
+sT[0].sTI[83].nType = TYP_MOT;
 
+	sT[0].sMOT[83].nIEC_SP				= 1650;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[83].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[83].nIEC_DP				= 383;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[83].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[83].nIEC_NM				= 424;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[83].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Veszprém,  Kis Tesco  -----------------------------------------------*/
+sT[0].sTI[84].nType = TYP_MOT;
+
+	sT[0].sMOT[84].nIEC_SP				= 1668;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[84].nIEC_SP_NUM			= 20;		/* Egybites értékek száma*/
+	sT[0].sMOT[84].nIEC_DP				= 391;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[84].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[84].nIEC_NM				= 430;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[84].nNMNum				= 9;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
