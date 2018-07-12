@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 12;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 13;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5535,6 +5535,12 @@ ReteszesTMOK_RTUNum[11] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[11] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[11] = 8;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
+/* 12. TMOK: 70-75 RTU:  Ganna, 044-2 PV erõmû  - Tesztelve             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[12] = 1260; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[12][0] =350;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[12][0] = 85;			   /* Ganna 044-2 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[12] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[12] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                                                           
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
