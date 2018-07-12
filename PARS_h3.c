@@ -168,6 +168,7 @@ sT[0].sCP[0].sCPR[81].nDCStart = 349;   sT[0].sCP[0].sCPR[81].nDCNum = 4;    sT[
 sT[0].sCP[0].sCPR[82].nDCStart = 354;   sT[0].sCP[0].sCPR[82].nDCNum = 8;    sT[0].sCP[0].sCPR[82].nSCStart = 362;   sT[0].sCP[0].sCPR[82].nAckStart =0;	  sT[0].sCP[0].sCPR[82].nAckNum =0;   sT[0].sCP[0].sCPR[82].nSPOffsetCS = 1648; sT[0].sCP[0].sCPR[82].nSPOffsetLek = 1649;
 sT[0].sCP[0].sCPR[83].nDCStart = 363;   sT[0].sCP[0].sCPR[83].nDCNum = 4;    sT[0].sCP[0].sCPR[83].nSCStart = 367;   sT[0].sCP[0].sCPR[83].nAckStart =0;	  sT[0].sCP[0].sCPR[83].nAckNum =0;   sT[0].sCP[0].sCPR[83].nSPOffsetCS = 1666; sT[0].sCP[0].sCPR[83].nSPOffsetLek = 1667;
 sT[0].sCP[0].sCPR[84].nDCStart = 368;   sT[0].sCP[0].sCPR[84].nDCNum = 4;    sT[0].sCP[0].sCPR[84].nSCStart = 372;   sT[0].sCP[0].sCPR[84].nAckStart =0;	  sT[0].sCP[0].sCPR[84].nAckNum =0;   sT[0].sCP[0].sCPR[84].nSPOffsetCS = 1688; sT[0].sCP[0].sCPR[84].nSPOffsetLek = 1689;
+sT[0].sCP[0].sCPR[85].nDCStart = 373;   sT[0].sCP[0].sCPR[85].nDCNum = 8;    sT[0].sCP[0].sCPR[85].nSCStart = 381;   sT[0].sCP[0].sCPR[85].nAckStart =0;	  sT[0].sCP[0].sCPR[85].nAckNum =0;   sT[0].sCP[0].sCPR[85].nSPOffsetCS = 1741; sT[0].sCP[0].sCPR[85].nSPOffsetLek = 1742;
 
 
 
@@ -921,6 +922,22 @@ sT[0].sTI[84].nType = TYP_MOT;
 	sT[0].sMOT[84].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[84].nIEC_NM				= 430;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[84].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Ganna , 044-2 PV erõmû -----------------------------------------------------------*/
+sT[0].sTI[85].nType = TYP_TAL2;
+
+		sT[0].sTAL[85].nIEC_SP       		= 1690;
+		sT[0].sTAL[85].nIEC_OsszevontHiba	= 1722;
+		sT[0].sTAL[85].nIEC_MT_KommHiba		= 1723;
+		sT[0].sTAL[85].nIEC_DP       		= 399;
+		sT[0].sTAL[85].nIEC_DP_FSZ1  		= 403;
+		sT[0].sTAL[85].nIEC_NM				= 439;
+		sT[0].sTAL[85].nNMNum		  		= 19;
+		sT[0].sTAL[85].nKommStatusNum		= 2;
+  	sT[0].sTAL[85].nSP_EXTRA_OFFSET		= 1725;
+	  sT[0].sTAL[85].nSP_EXTRA_NUM		= 16;
+  	sT[0].sTAL[85].nDP_EXTRA_OFFSET		= 407;
+	  sT[0].sTAL[85].nDP_EXTRA_NUM		= 8;
 
 } /* end fnSetDataPar()*/
 
