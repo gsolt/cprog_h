@@ -886,6 +886,14 @@ sT[0].sTI[81].nType = TYP_TAL;
 		sT[0].sTAL[81].nNMNum		  		= 11;
 		sT[0].sTAL[81].nKommStatusNum		= 2;
 
+ 	sT[0].sTAL[81].nIEC_DP_2BIT1 		= 415;
+	sT[0].sTAL[81].nIEC_DP_2BIT_KINT1	= 913;
+	sT[0].sTAL[81].nIEC_DP_2BIT_BENT1	= 912;
+
+  
+  sT[0].sTAL[81].nIEC_DP_12BIT2		= 416;
+	sT[0].sTAL[81].nIEC_DP_2BIT_BK2	= 920;
+
 
 /* Kimle , 1058,1059,1060 PV erõmû -----------------------------------------------------------*/
 sT[0].sTI[82].nType = TYP_TAL2;
