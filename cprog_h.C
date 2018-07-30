@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 16;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 20;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5563,7 +5563,38 @@ TMOK_ID[15][0] =1263;						         /*  TMOK azonosítója a kmenõ táviratban = DP
 ReteszesRTUIndex[15][0] = 85;			   /* Ganna 044-2 PV erõmû */															/**/
 ReteszesTMOK_RTUNum[15] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[15] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 16. TMOK: 32-34 RTU: Alcsút 071-11 PV erõmû  - tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[16] = 1264; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[16][0] =1264;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[16][0] = 86;			   /* Alcsút 071-11 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[16] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[16] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 17. TMOK: 87-35 RTU: Alcsút 071-11 PV erõmû  -  tesztelve           -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[17] = 1265; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[17][0] =1265;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[17][0] = 86;			   /* Alcsút 071-11 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[17] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[17] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                                                           
+/* 18. TMOK: 71-11 RTU: Pusztamiske 0133-6 PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[18] = 1266; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[18][0] =1266;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[18][0] = 87;			   /* Pusztamiske 0133-6  PV erõmû */															/**/
+ReteszesTMOK_RTUNum[18] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[18] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 19. TMOK: 87-24 RTU: Mány 001706-200-B PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[19] = 1267; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[19][0] =1267;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[19][0] = 88;			   /* Mány 001706-200-B  PV erõmû */															/**/
+ReteszesTMOK_RTUNum[19] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[19] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+
+
+
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
