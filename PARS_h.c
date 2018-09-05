@@ -207,9 +207,10 @@ ST[0].nSiteList[82]	=10030;	ST[0].nLinkList[82]	=LINE11;  /* LINE11 Kimle, 1058,
 ST[0].nSiteList[83]	=10031;	ST[0].nLinkList[83]	=RADIO2_1;  /* RADIO2_1 Vezprém Kis Tesco - tesztelve          VESZ */
 ST[0].nSiteList[84]	=10032;	ST[0].nLinkList[84]	=RADIO3_5;  /* RADIO3_5 Várpalota Esso   - tesztelve          VAR */
 ST[0].nSiteList[85]	=10033;	ST[0].nLinkList[85]	=RADIO4_5;  /* RADIO4_5 Ganna 044-2 PV erõmû   -  Tesztelve         PAP */
-ST[0].nSiteList[86]	=10034;	ST[0].nLinkList[86]	=RADIO7_6;  /* RADIO7_6 Alcsútdoboz 071-11 PV erõmû   -           BICS  Tesztelve */
-ST[0].nSiteList[87]	=10035;	ST[0].nLinkList[87]	=RADIO2_3;  /* RADIO2_3 Pusztamiske 0133-6 PV erõmû   -           AJK */
-ST[0].nSiteList[88]	=10036;	ST[0].nLinkList[88]	=RADIO7_5;  /* RADIO7_5 Mány 001706-200-B PV erõmû   -           BICS */
+ST[0].nSiteList[86]	=10034;	ST[0].nLinkList[86]	=RADIO7_6;  /* RADIO7_6 Alcsútdoboz 071-11 PV erõmû   -  Tesztelve         BICS   */
+ST[0].nSiteList[87]	=10035;	ST[0].nLinkList[87]	=RADIO2_3;  /* RADIO2_3 Pusztamiske 0133-6 PV erõmû   -  Tesztelve         AJK   */
+ST[0].nSiteList[88]	=10036;	ST[0].nLinkList[88]	=RADIO7_5;  /* RADIO7_5 Mány 001706-200-B PV erõmû   -  Tesztelve          BICS */
+ST[0].nSiteList[89]	=10037;	ST[0].nLinkList[89]	=RADIO1_1;  /* RADIO1_1 Gyõr, DNV24                   - Tesztelve          GYORV */
 
 
 
@@ -312,7 +313,7 @@ ST[0].sRAD_K1[0].nIndx[26]=84;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK */
-ST[0].sRAD_K2[0].nRtuNumRad = 26; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 27; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -339,6 +340,7 @@ ST[0].sRAD_K2[0].nIndx[22]=77;
 ST[0].sRAD_K2[0].nIndx[23]=83;
 ST[0].sRAD_K2[0].nIndx[24]=85;
 ST[0].sRAD_K2[0].nIndx[25]=87;
+ST[0].sRAD_K2[0].nIndx[26]=89;
 
 
 
