@@ -211,6 +211,9 @@ ST[0].nSiteList[86]	=10034;	ST[0].nLinkList[86]	=RADIO7_6;  /* RADIO7_6 Alcsútdo
 ST[0].nSiteList[87]	=10035;	ST[0].nLinkList[87]	=RADIO2_3;  /* RADIO2_3 Pusztamiske 0133-6 PV erõmû   -  Tesztelve         AJK   */
 ST[0].nSiteList[88]	=10036;	ST[0].nLinkList[88]	=RADIO7_5;  /* RADIO7_5 Mány 001706-200-B PV erõmû   -  Tesztelve          BICS */
 ST[0].nSiteList[89]	=10037;	ST[0].nLinkList[89]	=RADIO1_1;  /* RADIO1_1 Gyõr, DNV24                   - Tesztelve          GYORV */
+ST[0].nSiteList[90]	=10038;	ST[0].nLinkList[90]	=RADIO3_5;  /* RADIO3_5 Csór 65/1 PV erõmû            -  Tesztelve          VARP */
+ST[0].nSiteList[91]	=10039;	ST[0].nLinkList[91]	=RADIO3_5;  /* RADIO3_5 Csór 65/2 PV erõmû            -  Tesztelve          VARP */
+ST[0].nSiteList[92]	=10040;	ST[0].nLinkList[92]	=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal10                -  Tesztelve          GYORV */
 
 
 
@@ -312,8 +315,8 @@ ST[0].sRAD_K1[0].nIndx[26]=84;
       
 
 
-/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK */
-ST[0].sRAD_K2[0].nRtuNumRad = 27; /*76*/
+/* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
+ST[0].sRAD_K2[0].nRtuNumRad = 30; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -341,6 +344,9 @@ ST[0].sRAD_K2[0].nIndx[23]=83;
 ST[0].sRAD_K2[0].nIndx[24]=85;
 ST[0].sRAD_K2[0].nIndx[25]=87;
 ST[0].sRAD_K2[0].nIndx[26]=89;
+ST[0].sRAD_K2[0].nIndx[27]=90; /**/
+ST[0].sRAD_K2[0].nIndx[28]=91; /**/
+ST[0].sRAD_K2[0].nIndx[29]=92; /**/
 
 
 
