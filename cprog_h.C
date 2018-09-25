@@ -5403,7 +5403,7 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 /****************************************************************************/
 void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		25	
+#define  			RETESZ_TMOK_NUM		50	
 #define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			3	
 
@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 23;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 28;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5625,6 +5625,40 @@ ReteszesRTUIndex[22][1] = 91;			   /* Csór 65/2   PV erõmû */															/**/
 ReteszesTMOK_RTUNum[22] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[22] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 23. TMOK: 66-92 RTU: Jánossomorja, Depónia  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[23] = 1271; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[23][0] =1271;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[23][0] = 33;			   /* Jánossomorja Depónia */															/**/
+ReteszesTMOK_RTUNum[23] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[23] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 24. TMOK: 71-39 RTU: Magyargencs 184 hrsz. PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[24] = 1272; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[24][0] =1272;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[24][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[24] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[24] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 25. TMOK: 60-71 RTU: Magyargencs 184 hrsz. PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[25] = 1273; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[25][0] =1273;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[25][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[25] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[25] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 26. TMOK: 72-44 RTU: Magyargencs 184 hrsz. PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[26] = 1274; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[26][0] =1274;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[26][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[26] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[26] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 27. TMOK: 72-29 RTU: Magyargencs 184 hrsz. PV erõmû  -             -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[27] = 1275; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[27][0] =1275;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[27][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[27] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[27] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
@@ -5902,7 +5936,14 @@ void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
         
         
  if (nOffset <1500)
+ {                  
+ 
+ /* Ganna 044-2 */
+ if  (nSite_ID==85 && p_col_RxBuf[1]==350)
  {
+    nOffset=1260;
+ }
+ 
 	nDP=fnReadDPData(nOffset, 0, 0, 0, 0);
 	
    	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
