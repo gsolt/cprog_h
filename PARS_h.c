@@ -215,6 +215,12 @@ ST[0].nSiteList[90]	=10038;	ST[0].nLinkList[90]	=RADIO3_5;  /* RADIO3_5 Csór 65/
 ST[0].nSiteList[91]	=10039;	ST[0].nLinkList[91]	=RADIO3_5;  /* RADIO3_5 Csór 65/2 PV erõmû            -  Tesztelve          VARP */
 ST[0].nSiteList[92]	=10040;	ST[0].nLinkList[92]	=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal10                -  Tesztelve         GYORV */
 ST[0].nSiteList[93]	=10041;	ST[0].nLinkList[93]	=RADIO4_5;  /* RADIO4_5 Magyargencs, 184hrsz.                -           PAP */
+ST[0].nSiteList[94]	=10045;	ST[0].nLinkList[94]	=RADIO3_5;  /* RADIO3_5 50-63                                 -           VAR */
+ST[0].nSiteList[95]	=10042;	ST[0].nLinkList[95]	=RADIO1_5;  /* RADIO1_5 Tét I. 12/2 PV erõmû          -   Tesztelve        GYOR */
+ST[0].nSiteList[96]	=10043;	ST[0].nLinkList[96]	=RADIO2_3;  /* RADIO2_3 Devecser 09/2 PV erõmû                  -         AJK */
+ST[0].nSiteList[97]	=10044;	ST[0].nLinkList[97]	=RADIO3_5;  /* RADIO3_5 Királyszentistván PV erõmû                  -      VARP */
+ST[0].nSiteList[98]	=10046;	ST[0].nLinkList[98]	=RADIO3_3;  /* RADIO3_3 Sopron Kossuth u.                  -               SOPNY */
+
 
 
 
@@ -284,7 +290,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VAR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 27; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 30; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -312,12 +318,16 @@ ST[0].sRAD_K1[0].nIndx[23]=80;
 ST[0].sRAD_K1[0].nIndx[24]=81; 
 ST[0].sRAD_K1[0].nIndx[25]=82; 
 ST[0].sRAD_K1[0].nIndx[26]=84; 
+ST[0].sRAD_K1[0].nIndx[27]=94; 
+ST[0].sRAD_K1[0].nIndx[28]=95; 
+ST[0].sRAD_K1[0].nIndx[29]=97; 
+
 
       
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 31; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 32; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -349,11 +359,12 @@ ST[0].sRAD_K2[0].nIndx[27]=90; /**/
 ST[0].sRAD_K2[0].nIndx[28]=91; /**/
 ST[0].sRAD_K2[0].nIndx[29]=92; /**/
 ST[0].sRAD_K2[0].nIndx[30]=93; /**/
+ST[0].sRAD_K2[0].nIndx[31]=96; /**/
 
 
 
 /* K3 : DOR, SOP, KOR, BI */
-ST[0].sRAD_K3[0].nRtuNumRad = 30;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 31;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -384,6 +395,7 @@ ST[0].sRAD_K3[0].nIndx[26]=72; /**/
 ST[0].sRAD_K3[0].nIndx[27]=73; /**/
 ST[0].sRAD_K3[0].nIndx[28]=86; /**/
 ST[0].sRAD_K3[0].nIndx[29]=88; /**/
+ST[0].sRAD_K3[0].nIndx[30]=98; /**/
 
 
 
