@@ -5660,11 +5660,12 @@ ReteszesTMOK_RTUNum[26] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[26] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 27. TMOK: 72-29 RTU: Magyargencs 184 hrsz. PV erõmû  -  Tesztelve           -----------------------*/								/**/
-TMOKAllasjelzesOffsetek[27] = 1275; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[27][0] =1275;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+TMOKAllasjelzesOffsetek[27] = 592; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[27][0] = 592;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[27][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[27] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
-nReteszPar[27] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszPar[27] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[27] = 10;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /* 28. TMOK: 19604 RTU: Tét I. 02/2 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[28] = 1276; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
