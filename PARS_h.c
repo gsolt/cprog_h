@@ -220,16 +220,17 @@ ST[0].nSiteList[95]	=10042;	ST[0].nLinkList[95]	=RADIO1_5;  /* RADIO1_5 Tét I. 1
 ST[0].nSiteList[96]	=10043;	ST[0].nLinkList[96]	=RADIO2_3;  /* RADIO2_3 Devecser 09/2 PV erõmû        -   Tesztelve      AJK */
 ST[0].nSiteList[97]	=10044;	ST[0].nLinkList[97]	=RADIO3_5;  /* RADIO3_5 Királyszentistván PV erõmû    -   Tesztelve      VARP */
 ST[0].nSiteList[98]	=10046;	ST[0].nLinkList[98]	=RADIO3_3;  /* RADIO3_3 Sopron Kossuth u.                  Tesztelve -               SOPNY */
-ST[0].nSiteList[99]	=10047;	ST[0].nLinkList[99]	=RADIO4_6;  /* RADIO4_6 Kajárpéc 0241/11 PV erõmû          Tesztelve        -       VARS */
-ST[0].nSiteList[100]=10048;	ST[0].nLinkList[100]=RADIO4_6;  /* RADIO4_6 Kajárpéc 0251/74 PV erõmû          Tesztelve        -       VARS */
+ST[0].nSiteList[99]	=10047;	ST[0].nLinkList[99]	=RADIO4_6;  /* RADIO4_6 Kajárpéc 0251/11 PV erõmû          Tesztelve        -       VARS */
+ST[0].nSiteList[100]=10048;	ST[0].nLinkList[100]=RADIO4_6;  /* RADIO4_6 Kajárpéc 0241/74 PV erõmû          Tesztelve        -       VARS */
 ST[0].nSiteList[101]=10049;	ST[0].nLinkList[101]=RADIO2_2;  /* RADIO2_2 Nagyvázsony 099/2 PV erõmû         Tesztelve         -       VESZ */
 ST[0].nSiteList[102]=10050;	ST[0].nLinkList[102]=RADIO2_1;  /* RADIO2_1 Veszprém 071/8 PV erõmû            Tesztelve      -       VESZ */
 ST[0].nSiteList[103]=10051;	ST[0].nLinkList[103]=RADIO3_1;  /* RADIO3_1 Fertõszéplak 424/2 PV erõmû        Tesztelve          -       SOP */
 ST[0].nSiteList[104]=10052;	ST[0].nLinkList[104]=RADIO3_3;  /* RADIO3_3 Sopron, Sport u.                   Tesztelve                  -       SOP */
 ST[0].nSiteList[105]=10053;	ST[0].nLinkList[105]=RADIO9_5;  /* RADIO9_5 Zalameggyes 62                     Tesztelve                -       SUM */
-ST[0].nSiteList[106]=10054;	ST[0].nLinkList[106]=RADIO3_3;  /* RADIO3_3 Sopron Zárgyár                                     -       SUM */
+ST[0].nSiteList[106]=10054;	ST[0].nLinkList[106]=RADIO3_3;  /* RADIO3_3 Sopron Zárgyár                     Tesztelve                -       SUM */
 
-
+/* Letöltve 2018.11.22 */
+ST[0].nSiteList[107]=10055;	ST[0].nLinkList[107]=RADIO9_9;  /* RADIO9_9 Kõvágóörs 0193/2                                     -       SUM */
 
 
 
@@ -239,7 +240,7 @@ ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
 
 
 
-
+                                                                    
 
 /*for (nI=0;nI<MAX_RTU;nI++)
 {
@@ -337,7 +338,7 @@ ST[0].sRAD_K1[0].nIndx[31]=100;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 35; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 36; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -373,6 +374,7 @@ ST[0].sRAD_K2[0].nIndx[31]=96; /**/
 ST[0].sRAD_K2[0].nIndx[32]=101; /**/
 ST[0].sRAD_K2[0].nIndx[33]=102; /**/
 ST[0].sRAD_K2[0].nIndx[34]=105; /**/
+ST[0].sRAD_K2[0].nIndx[35]=107; /**/
 
 
 
