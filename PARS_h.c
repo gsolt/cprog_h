@@ -229,10 +229,17 @@ ST[0].nSiteList[104]=10052;	ST[0].nLinkList[104]=RADIO3_3;  /* RADIO3_3 Sopron, 
 ST[0].nSiteList[105]=10053;	ST[0].nLinkList[105]=RADIO9_5;  /* RADIO9_5 Zalameggyes 62                     Tesztelve                -       SUM */
 ST[0].nSiteList[106]=10054;	ST[0].nLinkList[106]=RADIO3_3;  /* RADIO3_3 Sopron Zárgyár                     Tesztelve                -       SUM */
 
-/* Letöltve 2018.11.22 */
+
 ST[0].nSiteList[107]=10055;	ST[0].nLinkList[107]=RADIO9_9;  /* RADIO9_9 Kõvágóörs 0193/2                                     -       SUM */
 ST[0].nSiteList[108]=10056;	ST[0].nLinkList[108]=RADIO4_5;  /* RADIO4_5 72-29                                    -       PAP */
 ST[0].nSiteList[109]=10057;	ST[0].nLinkList[109]=RADIO2_1;  /* RADIO2_1 54-90                                    -       VESZ */
+
+ST[0].nSiteList[110]=10058;	ST[0].nLinkList[110]=RADIO3_5;  /* RADIO3_5 Várpalota 4237/17                        -       VAR */
+ST[0].nSiteList[111]=10059;	ST[0].nLinkList[111]=RADIO3_5;  /* RADIO3_5 Várpalota 4237/3                        -       VAR */
+ST[0].nSiteList[112]=10060;	ST[0].nLinkList[112]=RADIO3_5;  /* RADIO3_5 37-63                        -       VAR */
+ST[0].nSiteList[113]=10061;	ST[0].nLinkList[113]=RADIO3_5;  /* RADIO3_5 37-65                        -       VAR */
+ST[0].nSiteList[114]=10062;	ST[0].nLinkList[114]=RADIO3_5;  /* RADIO3_5 37-66                        -       VAR */
+
 
 
 
@@ -340,7 +347,7 @@ ST[0].sRAD_K1[0].nIndx[31]=100;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 38; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 43; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -379,6 +386,11 @@ ST[0].sRAD_K2[0].nIndx[34]=105; /**/
 ST[0].sRAD_K2[0].nIndx[35]=107; /**/
 ST[0].sRAD_K2[0].nIndx[36]=108; /**/
 ST[0].sRAD_K2[0].nIndx[37]=109; /**/
+ST[0].sRAD_K2[0].nIndx[38]=110; /**/
+ST[0].sRAD_K2[0].nIndx[39]=111; /**/
+ST[0].sRAD_K2[0].nIndx[40]=112; /**/
+ST[0].sRAD_K2[0].nIndx[41]=113; /**/
+ST[0].sRAD_K2[0].nIndx[42]=114; /**/
 
 
 
