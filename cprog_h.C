@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 44;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 45;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5790,6 +5790,20 @@ TMOK_ID[43][0] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[43][0] = 111;			   /* Várpalota 4134/3 PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[43] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[43] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 44. TMOK: 52-51 RTU: Vigánpetend 012/1_1,2  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[44] = 613; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[44][0] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][0] = 116;			   /* Vigándpetend 012/1_1 PV erõmû   */															/**/
+
+TMOK_ID[44][1] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][1] = 117;			   /* Vigándpetend 012/1_2 PV erõmû   */															/**/
+
+
+ReteszesTMOK_RTUNum[44] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[44] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[44] = 14;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
