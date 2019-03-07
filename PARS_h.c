@@ -240,6 +240,9 @@ ST[0].nSiteList[112]=10060;	ST[0].nLinkList[112]=RADIO3_5;  /* RADIO3_5 37-63   
 ST[0].nSiteList[113]=10061;	ST[0].nLinkList[113]=RADIO3_5;  /* RADIO3_5 37-65                        -       VAR */
 ST[0].nSiteList[114]=10062;	ST[0].nLinkList[114]=RADIO3_5;  /* RADIO3_5 37-66                        -       VAR */
 
+ST[0].nSiteList[115]=10063;	ST[0].nLinkList[115]=RADIO9_1;  /* RADIO9_1 52-51                        -       TAP */
+ST[0].nSiteList[116]=10064;	ST[0].nLinkList[116]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_1          -      VESZ */
+ST[0].nSiteList[117]=10065;	ST[0].nLinkList[117]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_2          -      VESZ */
 
 
 
@@ -347,7 +350,7 @@ ST[0].sRAD_K1[0].nIndx[31]=100;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 43; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 45; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -391,6 +394,8 @@ ST[0].sRAD_K2[0].nIndx[39]=111; /**/
 ST[0].sRAD_K2[0].nIndx[40]=112; /**/
 ST[0].sRAD_K2[0].nIndx[41]=113; /**/
 ST[0].sRAD_K2[0].nIndx[42]=114; /**/
+ST[0].sRAD_K2[0].nIndx[43]=115; /**/
+ST[0].sRAD_K2[0].nIndx[44]=116; /**/
 
 
 
