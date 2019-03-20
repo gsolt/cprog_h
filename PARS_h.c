@@ -243,6 +243,7 @@ ST[0].nSiteList[114]=10062;	ST[0].nLinkList[114]=RADIO3_5;  /* RADIO3_5 37-66   
 ST[0].nSiteList[115]=10063;	ST[0].nLinkList[115]=RADIO9_1;  /* RADIO9_1 52-51                        -       TAP */
 ST[0].nSiteList[116]=10064;	ST[0].nLinkList[116]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_1          -      VESZ */
 ST[0].nSiteList[117]=10065;	ST[0].nLinkList[117]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_2          -      VESZ */
+ST[0].nSiteList[118]=10066;	ST[0].nLinkList[118]=RADIO7_5;  /* RADIO7_5 Bicske, 041/8                 -      BICS */
 
 
 
@@ -400,7 +401,7 @@ ST[0].sRAD_K2[0].nIndx[44]=116; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI */
-ST[0].sRAD_K3[0].nRtuNumRad = 34;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 35;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -435,6 +436,7 @@ ST[0].sRAD_K3[0].nIndx[30]=98; /**/
 ST[0].sRAD_K3[0].nIndx[31]=103; /**/
 ST[0].sRAD_K3[0].nIndx[32]=104; /**/
 ST[0].sRAD_K3[0].nIndx[33]=106; /**/
+ST[0].sRAD_K3[0].nIndx[34]=118; /**/
 
 
 
