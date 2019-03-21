@@ -244,6 +244,7 @@ ST[0].nSiteList[115]=10063;	ST[0].nLinkList[115]=RADIO9_1;  /* RADIO9_1 52-51   
 ST[0].nSiteList[116]=10064;	ST[0].nLinkList[116]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_1          -      VESZ */
 ST[0].nSiteList[117]=10065;	ST[0].nLinkList[117]=RADIO2_2;  /* RADIO2_2 Vigándpetend 012/1_2          -      VESZ */
 ST[0].nSiteList[118]=10066;	ST[0].nLinkList[118]=RADIO7_5;  /* RADIO7_5 Bicske, 041/8                 -      BICS */
+ST[0].nSiteList[119]=10067;	ST[0].nLinkList[119]=RADIO2_1;  /* RADIO2_1 Veszprém 071/39                 -     VESZ */
 
 
 
@@ -351,7 +352,7 @@ ST[0].sRAD_K1[0].nIndx[31]=100;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 45; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 46; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -397,6 +398,7 @@ ST[0].sRAD_K2[0].nIndx[41]=113; /**/
 ST[0].sRAD_K2[0].nIndx[42]=114; /**/
 ST[0].sRAD_K2[0].nIndx[43]=115; /**/
 ST[0].sRAD_K2[0].nIndx[44]=116; /**/
+ST[0].sRAD_K2[0].nIndx[45]=119; /**/
 
 
 
