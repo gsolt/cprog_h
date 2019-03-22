@@ -5796,11 +5796,16 @@ ReteszesTMOK_RTUNum[42] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[42] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[42] = 13;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 43. TMOK: 37199 RTU: Várpalota 4134/3  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 43. TMOK: 37199 RTU: Várpalota 4134/3, Várpalota 4134/17  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[43] = 1288; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[43][0] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[43][0] = 111;			   /* Várpalota 4134/3 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[43] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[43][1] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[43][1] = 110;			   /* Várpalota 4134/3 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[43] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[43] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 44. TMOK: 52-51 RTU: Vigánpetend 012/1_1,2  PV erõmû  - Tesztelve            -----------------------*/								/**/
