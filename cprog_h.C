@@ -5486,25 +5486,40 @@ ReteszesRTUIndex[4][1] = 73;			/* Kesztölc 032-21 */															/**/
 ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                                                           
-/* 5. TMOK: 13-30 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+/* 5. TMOK: 13-30 RTU:  Tét, 055/36, 055/39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[5] = 1254; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[5][0] =1254;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[5][0] = 78;			/* Tét 055-39 */															/**/
+ReteszesRTUIndex[5][0] = 78;			/* Tét 055-36 */															/**/
+
+TMOK_ID[5][1] =1254;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[5][1] = 122;			/* Tét 055-39 */															/**/
+
 ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 6. TMOK: 11-34 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+/* 6. TMOK: 11-34 RTU:  Tét, 055/36, 055/39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[6] = 1255; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[6][0] =1255;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[6][0] = 78;			/* Tét 055-39 */															/**/
-ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesRTUIndex[6][0] = 78;			/* Tét 055-36 */															/**/
+
+TMOK_ID[6][1] =1255;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][1] = 122;			/* Tét 055-39 */															/**/
+
+ReteszesTMOK_RTUNum[6] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[6] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 7. TMOK: 11-35 RTU:  Tét, 055-39 PV erõmû               -----------------------*/								/**/
+/* 7. TMOK: 11-35 RTU:  Tét, 055/36, 055/39 PV erõmû               -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[7] = 1256; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[7][0] =1256;						/*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[7][0] = 78;			/* Tét 055-39 */															/**/
-ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesRTUIndex[7][0] = 78;			/* Tét 055-36 */															/**/
+
+TMOK_ID[7][1] =1256;						/*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[7][1] = 122;			/* Tét 055-39 */															/**/
+
+ReteszesTMOK_RTUNum[7] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[7] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 8. TMOK: 70-60 RTU:  Gyömöre, 011-4 PV erõmû               -----------------------*/								/**/
