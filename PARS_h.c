@@ -248,6 +248,7 @@ ST[0].nSiteList[119]=10067;	ST[0].nLinkList[119]=RADIO2_1;  /* RADIO2_1 Veszprém
 
 ST[0].nSiteList[120]=10068;	ST[0].nLinkList[120]=RADIO1_4;  /* RADIO1_4 Gyõr, Selyem u.                 -     GYOR */
 ST[0].nSiteList[121]=10069;	ST[0].nLinkList[121]=RADIO1_4;  /* RADIO1_4 Gyõr, 0747/9 PV erõmû                 -     GYOR */
+ST[0].nSiteList[122]=10070;	ST[0].nLinkList[122]=RADIO1_5;  /* RADIO1_5 Tét, 055/39 PV erõmû                 -     GYOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -315,7 +316,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 34; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 35; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -350,6 +351,7 @@ ST[0].sRAD_K1[0].nIndx[30]=99;
 ST[0].sRAD_K1[0].nIndx[31]=100; 
 ST[0].sRAD_K1[0].nIndx[32]=120; 
 ST[0].sRAD_K1[0].nIndx[33]=121; 
+ST[0].sRAD_K1[0].nIndx[34]=122; 
 
 
       
