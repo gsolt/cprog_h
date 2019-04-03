@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 48;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 50;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5842,6 +5842,20 @@ TMOK_ID[47][0] = 1291;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[47][0] = 118;			   /* Bicske 041/8 PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[47] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[47] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 48. TMOK: 13-07 RTU: Gyõr 0747/9  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[48] = 1292; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[48][0] = 1292;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[48][0] = 121;			   /* Gyõr 0747/9 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[48] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[48] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 49. TMOK: 13-20 RTU: Gyõr 0747/9  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[49] = 1293; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[49][0] = 1293;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[49][0] = 121;			   /* Gyõr 0747/9 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[49] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[49] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
