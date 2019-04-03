@@ -249,6 +249,7 @@ ST[0].nSiteList[119]=10067;	ST[0].nLinkList[119]=RADIO2_1;  /* RADIO2_1 Veszprém
 ST[0].nSiteList[120]=10068;	ST[0].nLinkList[120]=RADIO1_4;  /* RADIO1_4 Gyõr, Selyem u.                 -     GYOR */
 ST[0].nSiteList[121]=10069;	ST[0].nLinkList[121]=RADIO1_4;  /* RADIO1_4 Gyõr, 0747/9 PV erõmû                 -     GYOR */
 ST[0].nSiteList[122]=10070;	ST[0].nLinkList[122]=RADIO1_5;  /* RADIO1_5 Tét, 055/39 PV erõmû                 -     GYOR */
+ST[0].nSiteList[123]=10071;	ST[0].nLinkList[123]=RADIO1_1;  /* RADIO1_1 Gyõr, Rába gázmotor                -     GYORV */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -358,7 +359,7 @@ ST[0].sRAD_K1[0].nIndx[34]=122;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 46; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 47; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -405,6 +406,7 @@ ST[0].sRAD_K2[0].nIndx[42]=114; /**/
 ST[0].sRAD_K2[0].nIndx[43]=115; /**/
 ST[0].sRAD_K2[0].nIndx[44]=116; /**/
 ST[0].sRAD_K2[0].nIndx[45]=119; /**/
+ST[0].sRAD_K2[0].nIndx[46]=123; /**/
 
 
 

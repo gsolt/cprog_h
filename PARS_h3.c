@@ -206,6 +206,7 @@ sT[0].sCP[0].sCPR[119].nDCStart= 535;   sT[0].sCP[0].sCPR[119].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[120].nDCStart= 540;   sT[0].sCP[0].sCPR[120].nDCNum= 4;    sT[0].sCP[0].sCPR[120].nSCStart= 544;   sT[0].sCP[0].sCPR[120].nAckStart=0;	  sT[0].sCP[0].sCPR[120].nAckNum=0;   sT[0].sCP[0].sCPR[120].nSPOffsetCS= 2566; sT[0].sCP[0].sCPR[120].nSPOffsetLek= 2567;
 sT[0].sCP[0].sCPR[121].nDCStart= 545;   sT[0].sCP[0].sCPR[121].nDCNum= 4;    sT[0].sCP[0].sCPR[121].nSCStart= 549;   sT[0].sCP[0].sCPR[121].nAckStart=0;	  sT[0].sCP[0].sCPR[121].nAckNum=0;   sT[0].sCP[0].sCPR[121].nSPOffsetCS= 2584; sT[0].sCP[0].sCPR[121].nSPOffsetLek= 2585;
 sT[0].sCP[0].sCPR[122].nDCStart= 550;   sT[0].sCP[0].sCPR[122].nDCNum= 4;    sT[0].sCP[0].sCPR[122].nSCStart= 554;   sT[0].sCP[0].sCPR[122].nAckStart=0;	  sT[0].sCP[0].sCPR[122].nAckNum=0;   sT[0].sCP[0].sCPR[122].nSPOffsetCS= 2602; sT[0].sCP[0].sCPR[122].nSPOffsetLek= 2603;
+sT[0].sCP[0].sCPR[123].nDCStart= 555;   sT[0].sCP[0].sCPR[123].nDCNum= 4;    sT[0].sCP[0].sCPR[123].nSCStart= 559;   sT[0].sCP[0].sCPR[123].nAckStart=0;	  sT[0].sCP[0].sCPR[123].nAckNum=0;   sT[0].sCP[0].sCPR[123].nSPOffsetCS= 2639; sT[0].sCP[0].sCPR[123].nSPOffsetLek= 2640;
 
 
 
@@ -1390,6 +1391,19 @@ sT[0].sTI[122].nType = TYP_MOT;
 	sT[0].sMOT[122].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[122].nIEC_NM				= 749;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[122].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Gyõr, Rába gázmotor -----------------------------------------------------------*/
+sT[0].sTI[123].nType = TYP_TAL;
+
+		sT[0].sTAL[123].nIEC_SP       		= 2604;
+		sT[0].sTAL[123].nIEC_OsszevontHiba	= 2636;
+		sT[0].sTAL[123].nIEC_MT_KommHiba		= 2637;
+		sT[0].sTAL[123].nIEC_DP       		= 672;
+		sT[0].sTAL[123].nIEC_DP_FSZ1  		= 676;
+		sT[0].sTAL[123].nIEC_NM				= 758;
+		sT[0].sTAL[123].nNMNum		  		= 9;
+		sT[0].sTAL[123].nKommStatusNum		= 2;
+		
 
 } /* end fnSetDataPar()*/
 
