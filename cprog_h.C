@@ -5495,7 +5495,7 @@ ReteszesRTUIndex[5][0] = 78;			/* Tét 055-36 */															/**/
 TMOK_ID[5][1] =1254;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[5][1] = 122;			/* Tét 055-39 */															/**/
 
-ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesTMOK_RTUNum[5] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[5] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 6. TMOK: 11-34 RTU:  Tét, 055/36, 055/39 PV erõmû               -----------------------*/								/**/
