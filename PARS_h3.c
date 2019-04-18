@@ -208,6 +208,7 @@ sT[0].sCP[0].sCPR[121].nDCStart= 545;   sT[0].sCP[0].sCPR[121].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[122].nDCStart= 550;   sT[0].sCP[0].sCPR[122].nDCNum= 4;    sT[0].sCP[0].sCPR[122].nSCStart= 554;   sT[0].sCP[0].sCPR[122].nAckStart=0;	  sT[0].sCP[0].sCPR[122].nAckNum=0;   sT[0].sCP[0].sCPR[122].nSPOffsetCS= 2602; sT[0].sCP[0].sCPR[122].nSPOffsetLek= 2603;
 sT[0].sCP[0].sCPR[123].nDCStart= 555;   sT[0].sCP[0].sCPR[123].nDCNum= 4;    sT[0].sCP[0].sCPR[123].nSCStart= 559;   sT[0].sCP[0].sCPR[123].nAckStart=0;	  sT[0].sCP[0].sCPR[123].nAckNum=0;   sT[0].sCP[0].sCPR[123].nSPOffsetCS= 2639; sT[0].sCP[0].sCPR[123].nSPOffsetLek= 2640;
 sT[0].sCP[0].sCPR[124].nDCStart= 560;   sT[0].sCP[0].sCPR[124].nDCNum= 5;    sT[0].sCP[0].sCPR[124].nSCStart= 565;   sT[0].sCP[0].sCPR[124].nAckStart =0;	  sT[0].sCP[0].sCPR[124].nAckNum=0;   sT[0].sCP[0].sCPR[124].nSPOffsetCS= 2684; sT[0].sCP[0].sCPR[124].nSPOffsetLek= 2685;
+sT[0].sCP[0].sCPR[125].nDCStart= 566;   sT[0].sCP[0].sCPR[125].nDCNum= 4;    sT[0].sCP[0].sCPR[125].nSCStart= 570;   sT[0].sCP[0].sCPR[125].nAckStart =0;	  sT[0].sCP[0].sCPR[125].nAckNum=0;   sT[0].sCP[0].sCPR[125].nSPOffsetCS= 2723; sT[0].sCP[0].sCPR[125].nSPOffsetLek= 2724;
 
 
 
@@ -1420,6 +1421,28 @@ sT[0].sTI[124].nType = TYP_TAL2;
 	  sT[0].sTAL[124].nSP_EXTRA_NUM		= 8;
   	sT[0].sTAL[124].nDP_EXTRA_OFFSET		= 688;
 	  sT[0].sTAL[124].nDP_EXTRA_NUM		= 2;
+
+/* Fertõrákos 030/5 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[125].nType = TYP_TAL;
+  
+	sT[0].sTAL[125].nIEC_SP       		= 2686;
+	sT[0].sTAL[125].nIEC_OsszevontHiba	= 2718;
+	sT[0].sTAL[125].nIEC_MT_KommHiba	= 2719;
+	sT[0].sTAL[125].nKommStatusNum		= 2;	
+	sT[0].sTAL[125].nIEC_DP       		= 690;
+	sT[0].sTAL[125].nIEC_DP_FSZ1  		= 694;
+	sT[0].sTAL[125].nIEC_NM				= 776;
+	sT[0].sTAL[125].nNMNum		  		= 9;
+    
+ 	sT[0].sTAL[125].nIEC_DP_2BIT1 		= 698;
+	sT[0].sTAL[125].nIEC_DP_2BIT_KINT1	= 913;
+	sT[0].sTAL[125].nIEC_DP_2BIT_BENT1	= 912;
+
+  
+  sT[0].sTAL[125].nIEC_DP_12BIT2		= 699;
+	sT[0].sTAL[125].nIEC_DP_2BIT_BK2	= 920;
+
+
 
 } /* end fnSetDataPar()*/
 
