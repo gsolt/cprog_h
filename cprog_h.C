@@ -5905,6 +5905,21 @@ ReteszesRTUIndex[53][0] = 125;			   /* Fertõrákos 030/5 PV erõmû   */											
 ReteszesTMOK_RTUNum[53] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[53] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 54. TMOK: 37-24 RTU: Berhida, Peremarton I, II  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[54] = 1287; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[54][0] = 1287;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[54][0] = 38;			   /* Fertõrákos 030/5 PV erõmû   */															/**/
+
+TMOK_ID[54][1] = 1287;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[54][1] = 39;			   /* Fertõrákos 030/5 PV erõmû   */															/**/
+
+TMOK_ID[54][2] = 1287;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[54][2] = 40;			   /* Fertõrákos 030/5 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[54] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[54] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
