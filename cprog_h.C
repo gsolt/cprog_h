@@ -5891,11 +5891,16 @@ ReteszesRTUIndex[51][0] = 124;			   /* Gönyû 1182 PV erõmû   */															/*
 ReteszesTMOK_RTUNum[51] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[51] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 52. TMOK: 10-24 RTU: Gönyû 1182  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 52. TMOK: 10-24 RTU: Gönyû 1182, Ács 0421/17  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[52] = 1296; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[52][0] = 1296;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[52][0] = 124;			   /* Gönyû 1182 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[52] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[52][1] = 1296;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[52][1] = 127;			   /* Ács 0421/17 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[52] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[52] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 53. TMOK: 60-39 RTU: Fertõrákos 03/5  PV erõmû  - Tesztelve            -----------------------*/								/**/
