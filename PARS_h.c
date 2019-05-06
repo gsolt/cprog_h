@@ -252,6 +252,7 @@ ST[0].nSiteList[122]=10070;	ST[0].nLinkList[122]=RADIO1_5;  /* RADIO1_5 Tét, 055
 ST[0].nSiteList[123]=10071;	ST[0].nLinkList[123]=RADIO1_1;  /* RADIO1_1 Gyõr, Rába gázmotor                -     GYORV */
 ST[0].nSiteList[124]=10072;	ST[0].nLinkList[124]=RADIO1_5;  /* RADIO1_5 Gyõr, Gönyû 1182               -     GYOR */
 ST[0].nSiteList[125]=10073;	ST[0].nLinkList[125]=RADIO3_1;  /* RADIO3_1 Fertõrákos, 030/5 PV erõmû               -     SOP */
+ST[0].nSiteList[126]=10074;	ST[0].nLinkList[126]=RADIO9_5;  /* RADIO9_5 Zalavég 044/3 PV erõmû               -     SUM */
 
 
 
@@ -363,7 +364,7 @@ ST[0].sRAD_K1[0].nIndx[35]=124;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 47; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 48; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -411,6 +412,7 @@ ST[0].sRAD_K2[0].nIndx[43]=115; /**/
 ST[0].sRAD_K2[0].nIndx[44]=116; /**/
 ST[0].sRAD_K2[0].nIndx[45]=119; /**/
 ST[0].sRAD_K2[0].nIndx[46]=123; /**/
+ST[0].sRAD_K2[0].nIndx[47]=126; /**/
 
 
 
