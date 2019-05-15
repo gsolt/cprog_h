@@ -255,6 +255,9 @@ ST[0].nSiteList[125]=10073;	ST[0].nLinkList[125]=RADIO3_1;  /* RADIO3_1 Fertõrák
 ST[0].nSiteList[126]=10074;	ST[0].nLinkList[126]=RADIO9_5;  /* RADIO9_5 Zalavég 044/3 PV erõmû               -     SUM */
 ST[0].nSiteList[127]=10076;	ST[0].nLinkList[127]=RADIO5_1;  /* RADIO5_1 Csorna 0123/3              -            CSOR */
 ST[0].nSiteList[128]=10077;	ST[0].nLinkList[128]=RADIO3_1;  /* RADIO3_1 Fertõszéplak 424/5              -            SOP */
+ST[0].nSiteList[129]=10078;	ST[0].nLinkList[129]=RADIO3_5;  /* RADIO3_5 Öskû 077/15               -            VARP */
+ST[0].nSiteList[130]=10079;	ST[0].nLinkList[130]=RADIO3_5;  /* RADIO3_5 Öskû 077/17               -            VARP */
+ST[0].nSiteList[131]=10080;	ST[0].nLinkList[131]=RADIO3_5;  /* RADIO3_5 37-81                     -            VARP */
 
 
 
@@ -366,7 +369,7 @@ ST[0].sRAD_K1[0].nIndx[35]=124;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 49; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 52; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -416,6 +419,10 @@ ST[0].sRAD_K2[0].nIndx[45]=119; /**/
 ST[0].sRAD_K2[0].nIndx[46]=123; /**/
 ST[0].sRAD_K2[0].nIndx[47]=126; /**/
 ST[0].sRAD_K2[0].nIndx[48]=127; /**/
+ST[0].sRAD_K2[0].nIndx[49]=129; /**/
+ST[0].sRAD_K2[0].nIndx[50]=130; /**/
+ST[0].sRAD_K2[0].nIndx[51]=131; /**/
+
 
 
 
