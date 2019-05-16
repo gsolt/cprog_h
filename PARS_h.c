@@ -258,6 +258,7 @@ ST[0].nSiteList[128]=10077;	ST[0].nLinkList[128]=RADIO3_1;  /* RADIO3_1 Fertõszé
 ST[0].nSiteList[129]=10078;	ST[0].nLinkList[129]=RADIO3_5;  /* RADIO3_5 Öskû 077/15               -            VARP */
 ST[0].nSiteList[130]=10079;	ST[0].nLinkList[130]=RADIO3_5;  /* RADIO3_5 Öskû 077/17               -            VARP */
 ST[0].nSiteList[131]=10080;	ST[0].nLinkList[131]=RADIO3_5;  /* RADIO3_5 37-81                     -            VARP */
+ST[0].nSiteList[132]=10081;	ST[0].nLinkList[132]=RADIO3_1;  /* RADIO3_1 61-67                     -            SOP */
 
 
 
@@ -427,7 +428,7 @@ ST[0].sRAD_K2[0].nIndx[51]=131; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR */
-ST[0].sRAD_K3[0].nRtuNumRad = 37;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 38;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -465,6 +466,7 @@ ST[0].sRAD_K3[0].nIndx[33]=106; /**/
 ST[0].sRAD_K3[0].nIndx[34]=118; /**/
 ST[0].sRAD_K3[0].nIndx[35]=125; /**/
 ST[0].sRAD_K3[0].nIndx[36]=128; /**/
+ST[0].sRAD_K3[0].nIndx[37]=132; /**/
 
 
 
