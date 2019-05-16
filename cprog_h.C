@@ -5470,11 +5470,16 @@ ReteszesRTUIndex[2][0] = 68;			/* Fertõd, maperõmû */															/**/
 ReteszesTMOK_RTUNum[2] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[2] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													/**/
-/* 3. TMOK: Front end D -> 62-78; RTU: Fertõd, naperõmû  -----------------------*/								/**/
+/* 3. TMOK: Front end D -> 61-70; RTU: Fertõd, naperõmû, Fertõszéplak 424/5  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[3] = 1252; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[3][0] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[3][0] = 68;			/* Fertõd, maperõmû */															/**/
-ReteszesTMOK_RTUNum[3] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[3][1] =1252;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[3][1] = 128;			/* Fertõd, maperõmû */															/**/
+
+ReteszesTMOK_RTUNum[3] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[3] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													/**/
 /* 4. TMOK: 21074 RTU:  Kesztölc, naperõmû I. II. -----------------------*/								/**/
@@ -5951,11 +5956,11 @@ ReteszesRTUIndex[57][1] = 130;			   /* Csorna 077/17 PV erõmû  */															
 ReteszesTMOK_RTUNum[57] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[57] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 58. TMOK: 61-70 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
-TMOKAllasjelzesOffsetek[58] = 1301; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[58][0] = 1301;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[58][0] = 128;			   /* Fertõszéplak PV erõmû  */															/**/
-ReteszesTMOK_RTUNum[58] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+/* 58. TMOK: 61-70 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve - tartalék!!!           -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[58] = 0; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[58][0] = 0;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[58][0] = 0;			   /* Fertõszéplak PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[58] = 0;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[58] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 59. TMOK: 61-71 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
