@@ -5445,7 +5445,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 56;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 63;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -5931,6 +5931,67 @@ TMOK_ID[55][0] = 1298;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[55][0] = 126;			   /* Zalavég 044/3 PV erõmû  */															/**/
 ReteszesTMOK_RTUNum[55] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[55] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 56. TMOK: 61-15 RTU: Csorna 0123/3 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[56] = 1299; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[56][0] = 1299;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[56][0] = 127;			   /* Csorna 0123/3 PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[56] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[56] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 57. TMOK: 37-21 RTU: Öskü 077/15 Öskü 077/17 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[57] = 1300; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[57][0] = 1300;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[57][0] = 129;			   /* Öskû 077/15 PV erõmû  */															/**/
+
+TMOK_ID[57][1] = 1300;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[57][1] = 130;			   /* Csorna 077/17 PV erõmû  */															/**/
+
+ReteszesTMOK_RTUNum[57] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[57] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 58. TMOK: 61-70 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[58] = 1301; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[58][0] = 1301;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[58][0] = 128;			   /* Fertõszéplak PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[58] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[58] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 59. TMOK: 61-71 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[59] = 1302; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[59][0] = 1302;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[59][0] = 128;			   /* Fertõszéplak PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[59] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[59] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 60. TMOK: 61-79 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[60] = 1303; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[60][0] = 1303;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[60][0] = 128;			   /* Fertõszéplak PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[60] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[60] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 61. TMOK: 37-81 RTU: Öskú 077/15 Öskü 077/17  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[61] = 764; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[61][0] = 764;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[61][0] = 129;			   /* Öskü 077/15 PV erõmû   */															/**/
+
+TMOK_ID[61][1] = 764;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[61][1] = 130;			   /* Öskü 077/17 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[61] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[61] = 2;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[61] = 15;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 62. TMOK: 61-67 RTU: Fertõszéplak 424/5  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[62] = 765; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[62][0] = 765;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[62][0] = 128;			   /* Fertõszéplak 424/5 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[62] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[62] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[62] = 16;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
