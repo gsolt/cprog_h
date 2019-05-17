@@ -370,7 +370,7 @@ ST[0].sRAD_K1[0].nIndx[35]=124;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 52; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 53; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -423,6 +423,7 @@ ST[0].sRAD_K2[0].nIndx[48]=127; /**/
 ST[0].sRAD_K2[0].nIndx[49]=129; /**/
 ST[0].sRAD_K2[0].nIndx[50]=130; /**/
 ST[0].sRAD_K2[0].nIndx[51]=131; /**/
+ST[0].sRAD_K2[0].nIndx[52]=117; /**/
 
 
 
