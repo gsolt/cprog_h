@@ -1124,7 +1124,16 @@ if (pMOT->nIEC_SP_NUM > 0)
 
 	/*Terhelés szakaszolók állásjelzései*/
 	
-	nDPStart = 	pMOT->nIEC_DP;
+
+	nDPStart = 	pMOT->nIEC_DP;						
+	nData = p_col_RxBuf[8];	
+  
+if (	nDPStart > 0)
+{
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
+	{	
+  
+
 	/* DP tabla indexe, es offsete */
 	fnDPTblIndx(nDPStart,&nDPTblIndx,&nMoscadOffset);
 
@@ -1142,15 +1151,9 @@ if (pMOT->nIEC_SP_NUM > 0)
 	p_col_DP_MS1  = (short *)(table_DP.ColDataPtr[2]);
 	p_col_DP_MS2  = (short *)(table_DP.ColDataPtr[3]);
 	p_col_DP_MIN  = (short *)(table_DP.ColDataPtr[4]);
-
-					
-		
-	nDPStart = 	pMOT->nIEC_DP;
-	nData = p_col_RxBuf[8];	
-if (	nDPStart > 0)
-{
-	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
-	{	
+  
+  
+  
 		if ( nI < 8 )
 		{
 			nData = p_col_RxBuf[8];	
