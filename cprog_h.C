@@ -846,6 +846,13 @@ void tx_command(void)
    		   	nTxBuf[11] = 0;    		   	
    		   	nTxBuf[12] = 0;    		   	
    		   	nTxBuf[13] = 0;    		   	
+   		   	nTxBuf[14] = 0;    		   	
+   		   	nTxBuf[15] = 0;    		   	
+   		   	nTxBuf[16] = 0;    		   	
+   		   	nTxBuf[17] = 0;    		   	
+   		   	nTxBuf[18] = 0;    		   	
+   		   	nTxBuf[19] = 0;    		   	
+   		   	nTxBuf[20] = 0;    		   	
     		   	
     		
    		   	
@@ -854,8 +861,8 @@ void tx_command(void)
  
    		   	
 			/* Tavirat elkuldese */
-			
-			
+			if ( nI!=133 )
+			{						
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
 	 		  	if (MOSCAD_TxFrm(nI, tx_buffer, COMMAND_LENGTH*2) !=0 )
@@ -863,20 +870,27 @@ void tx_command(void)
 					MOSCAD_sprintf(message,"Could not send parancs ,nI: %d",nI);
    				 	MOSCAD_error(message ); 				
    				}
-     		    
- 
- 
- 
-    			
+ 		   		/* Mindenkeppen visszanullaz */
+   				p_col_DCAct[nJ-nOffset] = 0;
+	     } /* end if   */			
+			else if ( nI==133 ) /* Csabrendek 0469 PV erõmû */
+			{			
+				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
+   		  nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
+	 		  	if (MOSCAD_TxFrm(nI, tx_buffer, 21*2) !=0 )
+ 			  	{
+					MOSCAD_sprintf(message,"Could not send parancs ,nI: %d",nI);
+   				 	MOSCAD_error(message ); 				
+   				}     			
 		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
-			
+			}  /* end else */
 			
 			nTemp = value_CComX(nI);
 			setvalue_CComX(nI,nTemp+1);
 			
   			   	
-   		} /* end if   */
+   	  } /* end if   */	
    	} /* end for nJ */   	
    } /* end for nI */
    
