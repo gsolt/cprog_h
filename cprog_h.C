@@ -1078,7 +1078,7 @@ if (pMOT->nNMNum > 0)
 /* Egybites jelzések feldolgozása ----------------------------------------------------------------------------------------*/
 if (pMOT->nIEC_SP_NUM > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<32; nI++)
+	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<64; nI++)
 	{
 		if (nI<16)
 		{
@@ -1090,6 +1090,17 @@ if (pMOT->nIEC_SP_NUM > 0)
 			nData = p_col_RxBuf[1];
 			nVal = (nData << (nI-16)) & 0x8000;
 		}
+		else if (nI>=32 && nI<48)
+		{
+			nData = p_col_RxBuf[2];
+			nVal = (nData << (nI-32)) & 0x8000;
+		}
+		else if (nI>=48 && nI<64)
+		{
+			nData = p_col_RxBuf[3];
+			nVal = (nData << (nI-48)) & 0x8000;
+		}
+
 		
 		nIEC_Offset = pMOT->nIEC_SP + nI;
 				
