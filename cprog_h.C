@@ -1066,7 +1066,7 @@ if (pMOT->nNMNum > 0)
 {
 	nNMStart = pMOT->nIEC_NM;
 	
-	for (nI=0; nI < pMOT->nNMNum && nI<24; nI++)
+	for (nI=0; nI < pMOT->nNMNum && nI<43; nI++)
 	{
 		fnWriteNM( nNMStart+nI,p_col_RxBuf[20+nI]);			
 	
@@ -1141,7 +1141,7 @@ if (pMOT->nIEC_SP_NUM > 0)
   
 if (	nDPStart > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 16; nI++)
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 40; nI++)
 	{	
   
 
@@ -1176,6 +1176,24 @@ if (	nDPStart > 0)
 			nData = p_col_RxBuf[9];	
 			nValH = (nData << (nI-8)*2 ) & 0x8000;	
 			nValL = (nData << ((nI-8)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 16 && nI <24)
+		{
+			nData = p_col_RxBuf[10];	
+			nValH = (nData << (nI-16)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-16)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 24 && nI <32)
+		{
+			nData = p_col_RxBuf[11];	
+			nValH = (nData << (nI-24)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-24)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 32 && nI <40)
+		{
+			nData = p_col_RxBuf[12];	
+			nValH = (nData << (nI-32)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-32)*2+1)) & 0x8000;								
 		}
 		
  				if (nValH > 0)
