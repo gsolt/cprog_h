@@ -752,7 +752,7 @@ nMoscadHours = mdt.hours;
  		    	
  			}
 			
-			else if ( (nType == TYP_MOT &&  buff_len == 42 * 2)  || (nType == TYP_MOT &&  buff_len == 48 * 2) )
+			else if ( (nType == TYP_MOT &&  buff_len == 42 * 2)  || (nType == TYP_MOT &&  buff_len == 48 * 2) || (nType == TYP_MOT &&  buff_len == 64 * 2) )
  			{
 
  				MOT_DATA(&sMOT[site_inx],rx_buffer);
@@ -6010,11 +6010,11 @@ ReteszesRTUIndex[57][1] = 130;			   /* Csorna 077/17 PV erõmû  */															
 ReteszesTMOK_RTUNum[57] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[57] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 58. TMOK: 61-70 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve - tartalék!!!           -----------------------*/								/**/
-TMOKAllasjelzesOffsetek[58] = 0; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[58][0] = 0;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[58][0] = 0;			   /* Fertõszéplak PV erõmû  */															/**/
-ReteszesTMOK_RTUNum[58] = 0;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+/* 58. TMOK: 90-34 RTU: Csabrendek 0469  - Tesztelve -                -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[58] = 1301; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[58][0] = 1301;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[58][0] = 133;			   /* Csabrendek 0469 PV erõmû  */															/**/
+ReteszesTMOK_RTUNum[58] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[58] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 59. TMOK: 61-71 RTU: Fertõszéplak 424/5 PV erõmû  - Tesztelve            -----------------------*/								/**/
