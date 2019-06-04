@@ -5484,6 +5484,7 @@ unsigned short		nTxBuf[80];
 
 
 short				*p_col_DCAct; 
+int     DP1,DP2;          /*  */
 
 
 
@@ -5494,7 +5495,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 63;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 64;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -6051,6 +6052,26 @@ ReteszesRTUIndex[62][0] = 128;			   /* Fertõszéplak 424/5 PV erõmû   */									
 ReteszesTMOK_RTUNum[62] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[62] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[62] = 16;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 63. TMOK:Kisbér Iskola u. H front end ->   RTU: G: Kisbér 0129 PV 									/**/
+DP1 = fnReadDPData(798, 0, 0, 0, 0);   /* Ha mindkét leégazás BENT van */
+DP2 = fnReadDPData(799, 0, 0, 0, 0);
+
+if (DP1==2 && DP2==2)
+  {
+  fnWriteDPData(1304, 2, 0, 0, 0, 0);  
+  }
+else
+  {
+  fnWriteDPData(1304, 1, 0, 0, 0, 0);  
+  }  
+
+TMOKAllasjelzesOffsetek[63] = 1304; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[63][0] =  5;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[63][0] = 65;			/* B redundancia */															/**/
+ReteszesTMOK_RTUNum[63] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[63] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[63] = 17;             /* DC parancs offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
