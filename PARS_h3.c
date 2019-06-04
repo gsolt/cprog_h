@@ -217,6 +217,7 @@ sT[0].sCP[0].sCPR[130].nDCStart= 604;   sT[0].sCP[0].sCPR[130].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[131].nDCStart= 609;   sT[0].sCP[0].sCPR[131].nDCNum= 1;    sT[0].sCP[0].sCPR[131].nSCStart= 610;   sT[0].sCP[0].sCPR[131].nAckStart =0;	  sT[0].sCP[0].sCPR[131].nAckNum=0;   sT[0].sCP[0].sCPR[131].nSPOffsetCS= 2867; sT[0].sCP[0].sCPR[131].nSPOffsetLek= 2868;
 sT[0].sCP[0].sCPR[132].nDCStart= 612;   sT[0].sCP[0].sCPR[132].nDCNum= 1;    sT[0].sCP[0].sCPR[132].nSCStart= 613;   sT[0].sCP[0].sCPR[132].nAckStart =0;	  sT[0].sCP[0].sCPR[132].nAckNum=0;   sT[0].sCP[0].sCPR[132].nSPOffsetCS= 2883; sT[0].sCP[0].sCPR[132].nSPOffsetLek= 2884;
 sT[0].sCP[0].sCPR[133].nDCStart= 615;   sT[0].sCP[0].sCPR[133].nDCNum=15;    sT[0].sCP[0].sCPR[133].nSCStart= 630;   sT[0].sCP[0].sCPR[133].nAckStart =0;	  sT[0].sCP[0].sCPR[133].nAckNum=0;   sT[0].sCP[0].sCPR[133].nSPOffsetCS= 2949; sT[0].sCP[0].sCPR[133].nSPOffsetLek= 2950;
+sT[0].sCP[0].sCPR[134].nDCStart= 631;   sT[0].sCP[0].sCPR[134].nDCNum=15;    sT[0].sCP[0].sCPR[134].nSCStart= 635;   sT[0].sCP[0].sCPR[134].nAckStart =0;	  sT[0].sCP[0].sCPR[134].nAckNum=0;   sT[0].sCP[0].sCPR[134].nSPOffsetCS= 2967; sT[0].sCP[0].sCPR[134].nSPOffsetLek= 2968;
 
 
 
@@ -1525,6 +1526,17 @@ sT[0].sTI[133].nType = TYP_MOT;
 	sT[0].sMOT[133].nIEC_DP_NUM			= 32;   		/* Két bites értékek száma*/
 	sT[0].sMOT[133].nIEC_NM				= 865;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[133].nNMNum				= 38;		/* Analóg mérések száma*/
+
+/* Kisbér Iskola u.  ----------------------------------------------------------------*/
+sT[0].sTI[134].nType = TYP_MOT;
+
+	sT[0].sMOT[134].nIEC_SP				= 2951;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[134].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[134].nIEC_DP				= 798;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[134].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[134].nIEC_NM				= 903;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[134].nNMNum				= 6;		/* Analóg mérések száma*/
+
 
 
 } /* end fnSetDataPar()*/

@@ -260,6 +260,7 @@ ST[0].nSiteList[130]=10079;	ST[0].nLinkList[130]=RADIO3_5;  /* RADIO3_5 Öskû 077
 ST[0].nSiteList[131]=10080;	ST[0].nLinkList[131]=RADIO3_5;  /* RADIO3_5 37-81                     -            VARP */
 ST[0].nSiteList[132]=10081;	ST[0].nLinkList[132]=RADIO3_1;  /* RADIO3_1 61-67                     -            SOP */
 ST[0].nSiteList[133]=10082;	ST[0].nLinkList[133]=RADIO9_5;  /* RADIO9_5 Csabrendek 0469                     -  SUM */
+ST[0].nSiteList[134]= 9077;	ST[0].nLinkList[134]=RADIO4_3;  /* RADIO4_3 Kisbér, Iskola u.                     -VAR  */
 
 
 
@@ -328,7 +329,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 36; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 37; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -365,6 +366,7 @@ ST[0].sRAD_K1[0].nIndx[32]=120;
 ST[0].sRAD_K1[0].nIndx[33]=121; 
 ST[0].sRAD_K1[0].nIndx[34]=122; 
 ST[0].sRAD_K1[0].nIndx[35]=124; 
+ST[0].sRAD_K1[0].nIndx[36]=134; 
 
 
       
