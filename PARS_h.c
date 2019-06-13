@@ -250,7 +250,7 @@ ST[0].nSiteList[120]=10068;	ST[0].nLinkList[120]=RADIO1_4;  /* RADIO1_4 Gyõr, Se
 ST[0].nSiteList[121]=10069;	ST[0].nLinkList[121]=RADIO1_4;  /* RADIO1_4 Gyõr, 0747/9 PV erõmû                 -     GYOR */
 ST[0].nSiteList[122]=10070;	ST[0].nLinkList[122]=RADIO1_5;  /* RADIO1_5 Tét, 055/39 PV erõmû                 -     GYOR */
 ST[0].nSiteList[123]=10071;	ST[0].nLinkList[123]=RADIO1_1;  /* RADIO1_1 Gyõr, Rába gázmotor                -     GYORV */
-ST[0].nSiteList[124]=10072;	ST[0].nLinkList[124]=RADIO1_5;  /* RADIO1_5 Gyõr, Gönyû 1182               -     GYOR */
+ST[0].nSiteList[124]=10072;	ST[0].nLinkList[124]=RADIO1_4;  /* RADIO1_4 Gyõr, Gönyû 1182               -     GYOR */
 ST[0].nSiteList[125]=10073;	ST[0].nLinkList[125]=RADIO3_1;  /* RADIO3_1 Fertõrákos, 030/5 PV erõmû               -     SOP */
 ST[0].nSiteList[126]=10074;	ST[0].nLinkList[126]=RADIO9_6;  /* RADIO9_5 Zalavég 044/3 PV erõmû               -     SUM */
 ST[0].nSiteList[127]=10076;	ST[0].nLinkList[127]=RADIO5_1;  /* RADIO5_1 Csorna 0123/3              -            CSOR */
