@@ -261,6 +261,7 @@ ST[0].nSiteList[131]=10080;	ST[0].nLinkList[131]=RADIO3_5;  /* RADIO3_5 37-81   
 ST[0].nSiteList[132]=10081;	ST[0].nLinkList[132]=RADIO3_1;  /* RADIO3_1 61-67                     -            SOP */
 ST[0].nSiteList[133]=10082;	ST[0].nLinkList[133]=RADIO9_5;  /* RADIO9_5 Csabrendek 0469                     -  SUM */
 ST[0].nSiteList[134]= 9077;	ST[0].nLinkList[134]=RADIO4_3;  /* RADIO4_3 Kisbér, Iskola u.                     -VAR  */
+ST[0].nSiteList[135]=10083;	ST[0].nLinkList[135]=RADIO1_1;  /* RADIO1_1 Gyõr 0452/6 Árki                     -GYORV  */
 
 
 
@@ -472,6 +473,7 @@ ST[0].sRAD_K3[0].nIndx[34]=118; /**/
 ST[0].sRAD_K3[0].nIndx[35]=125; /**/
 ST[0].sRAD_K3[0].nIndx[36]=128; /**/
 ST[0].sRAD_K3[0].nIndx[37]=132; /**/
+ST[0].sRAD_K3[0].nIndx[38]=135; /**/
 
 
 

@@ -217,7 +217,8 @@ sT[0].sCP[0].sCPR[130].nDCStart= 604;   sT[0].sCP[0].sCPR[130].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[131].nDCStart= 609;   sT[0].sCP[0].sCPR[131].nDCNum= 1;    sT[0].sCP[0].sCPR[131].nSCStart= 610;   sT[0].sCP[0].sCPR[131].nAckStart =0;	  sT[0].sCP[0].sCPR[131].nAckNum=0;   sT[0].sCP[0].sCPR[131].nSPOffsetCS= 2867; sT[0].sCP[0].sCPR[131].nSPOffsetLek= 2868;
 sT[0].sCP[0].sCPR[132].nDCStart= 612;   sT[0].sCP[0].sCPR[132].nDCNum= 1;    sT[0].sCP[0].sCPR[132].nSCStart= 613;   sT[0].sCP[0].sCPR[132].nAckStart =0;	  sT[0].sCP[0].sCPR[132].nAckNum=0;   sT[0].sCP[0].sCPR[132].nSPOffsetCS= 2883; sT[0].sCP[0].sCPR[132].nSPOffsetLek= 2884;
 sT[0].sCP[0].sCPR[133].nDCStart= 615;   sT[0].sCP[0].sCPR[133].nDCNum=15;    sT[0].sCP[0].sCPR[133].nSCStart= 630;   sT[0].sCP[0].sCPR[133].nAckStart =0;	  sT[0].sCP[0].sCPR[133].nAckNum=0;   sT[0].sCP[0].sCPR[133].nSPOffsetCS= 2949; sT[0].sCP[0].sCPR[133].nSPOffsetLek= 2950;
-sT[0].sCP[0].sCPR[134].nDCStart= 631;   sT[0].sCP[0].sCPR[134].nDCNum=15;    sT[0].sCP[0].sCPR[134].nSCStart= 635;   sT[0].sCP[0].sCPR[134].nAckStart =0;	  sT[0].sCP[0].sCPR[134].nAckNum=0;   sT[0].sCP[0].sCPR[134].nSPOffsetCS= 2967; sT[0].sCP[0].sCPR[134].nSPOffsetLek= 2968;
+sT[0].sCP[0].sCPR[134].nDCStart= 631;   sT[0].sCP[0].sCPR[134].nDCNum= 4;    sT[0].sCP[0].sCPR[134].nSCStart= 635;   sT[0].sCP[0].sCPR[134].nAckStart =0;	  sT[0].sCP[0].sCPR[134].nAckNum=0;   sT[0].sCP[0].sCPR[134].nSPOffsetCS= 2967; sT[0].sCP[0].sCPR[134].nSPOffsetLek= 2968;
+sT[0].sCP[0].sCPR[135].nDCStart= 636;   sT[0].sCP[0].sCPR[135].nDCNum= 4;    sT[0].sCP[0].sCPR[135].nSCStart= 640;   sT[0].sCP[0].sCPR[135].nAckStart =0;	  sT[0].sCP[0].sCPR[135].nAckNum=0;   sT[0].sCP[0].sCPR[135].nSPOffsetCS= 3006; sT[0].sCP[0].sCPR[135].nSPOffsetLek= 3007;
 
 
 
@@ -1537,6 +1538,18 @@ sT[0].sTI[134].nType = TYP_MOT;
 	sT[0].sMOT[134].nIEC_NM				= 903;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[134].nNMNum				= 6;		/* Analóg mérések száma*/
 
+/* Gyõr 0452/6 Árki PV erõmû ----------------------------------------------*/
+  sT[0].sTI[135].nType = TYP_TAL;
+  
+	sT[0].sTAL[135].nIEC_SP       		= 2969;
+	sT[0].sTAL[135].nIEC_OsszevontHiba	= 3001;
+	sT[0].sTAL[135].nIEC_MT_KommHiba	= 3002;
+	sT[0].sTAL[135].nKommStatusNum		= 2;	
+	sT[0].sTAL[135].nIEC_DP       		= 806;
+	sT[0].sTAL[135].nIEC_DP_FSZ1  		= 810;
+	sT[0].sTAL[135].nIEC_NM				= 909;
+	sT[0].sTAL[135].nNMNum		  		= 9;
+    
 
 
 } /* end fnSetDataPar()*/
