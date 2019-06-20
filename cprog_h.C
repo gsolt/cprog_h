@@ -5674,7 +5674,7 @@ ReteszesRTUIndex[19][0] = 88;			   /* Mány 001706-200-B  PV erõmû */												
 ReteszesTMOK_RTUNum[19] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[19] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 20. TMOK: 30-43 RTU: Csór 65/1, Csór 65/2 PV erõmû  -   Tesztelve          -----------------------*/								/**/
+/* 20. TMOK: 30-43 RTU: Csór 65/1, Csór 65/2, Várpalota 4156/29 PV erõmû  -   Tesztelve          -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[20] = 1268; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[20][0] =1268;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -5682,10 +5682,13 @@ ReteszesRTUIndex[20][0] = 90;			   /* Csór 65/1   PV erõmû */															/**/
 TMOK_ID[20][1] =1268;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[20][1] = 91;			   /* Csór 65/2   PV erõmû */															/**/
 
-ReteszesTMOK_RTUNum[20] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[20][2] =1268;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[20][2] = 138;			   /* Várpalota 4156/29   PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[20] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[20] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 21. TMOK: 30-55 RTU: Csór 65/1, Csór 65/2 PV erõmû  -   Tesztelve          -----------------------*/								/**/
+/* 21. TMOK: 30-55 RTU: Csór 65/1, Csór 65/2, Várpalota 4156/29 PV erõmû  -   Tesztelve          -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[21] = 1269; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[21][0] =1269;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -5693,10 +5696,13 @@ ReteszesRTUIndex[21][0] = 90;			   /* Csór 65/1   PV erõmû */															/**/
 TMOK_ID[21][1] =1269;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[21][1] = 91;			   /* Csór 65/2   PV erõmû */															/**/
 
-ReteszesTMOK_RTUNum[21] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[21][2] =1269;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[21][2] = 138;			   /* Várpalota 4156/29   PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[21] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[21] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 22. TMOK: 31-48 RTU: Csór 65/1, Csór 65/2 PV erõmû  -   Tesztelve          -----------------------*/								/**/
+/* 22. TMOK: 31-48 RTU: Csór 65/1, Csór 65/2, Várpalota 4156/29 PV erõmû  -   Tesztelve          -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[22] = 1270; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[22][0] =1270;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -5704,7 +5710,10 @@ ReteszesRTUIndex[22][0] = 90;			   /* Csór 65/1   PV erõmû */															/**/
 TMOK_ID[22][1] =1270;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[22][1] = 91;			   /* Csór 65/2   PV erõmû */															/**/
 
-ReteszesTMOK_RTUNum[22] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[22][2] =1270;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[22][2] = 138;			   /* Várpalota 4156/29  PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[22] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[22] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 23. TMOK: 66-92 RTU: Jánossomorja, Depónia  -             -----------------------*/								/**/
@@ -5871,7 +5880,7 @@ ReteszesTMOK_RTUNum[42] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[42] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[42] = 13;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 43. TMOK: 37199 RTU: Várpalota 4134/3, Várpalota 4134/17  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 43. TMOK: 37199 RTU: Várpalota 4134/3, Várpalota 4134/17, Várpalota 4156/9  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[43] = 1288; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[43][0] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -5880,7 +5889,10 @@ ReteszesRTUIndex[43][0] = 111;			   /* Várpalota 4134/3 PV erõmû   */											
 TMOK_ID[43][1] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[43][1] = 110;			   /* Várpalota 4134/3 PV erõmû   */															/**/
 
-ReteszesTMOK_RTUNum[43] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[43][2] = 1288;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[43][2] = 138;			   /* Várpalota 4156/9 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[43] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[43] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 44. TMOK: 52-51 RTU: Vigánpetend 012/1_1,2  PV erõmû  - Tesztelve            -----------------------*/								/**/
