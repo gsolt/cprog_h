@@ -266,6 +266,7 @@ ST[0].nSiteList[136]=10084;	ST[0].nLinkList[136]=RADIO2_1;  /* RADIO2_1 Szentkir
 ST[0].nSiteList[137]=10085;	ST[0].nLinkList[137]=RADIO2_1;  /* RADIO2_1 Felsõörs 03/41                        -VESZ  */
 ST[0].nSiteList[138]=10086;	ST[0].nLinkList[138]=RADIO3_5;  /* RADIO3_5 Várpalota 4156/29                        -VARP  */
 ST[0].nSiteList[139]=10087;	ST[0].nLinkList[139]=RADIO2_1;  /* RADIO2_1 54-91                                  -VESZ  */
+ST[0].nSiteList[140]=10088;	ST[0].nLinkList[140]=RADIO2_3;  /* RADIO2_3 Kolontár 324                            -AJK  */
 
 
 
@@ -378,7 +379,7 @@ ST[0].sRAD_K1[0].nIndx[36]=134;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 54; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 58; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -436,12 +437,13 @@ ST[0].sRAD_K2[0].nIndx[53]=133; /**/
 ST[0].sRAD_K2[0].nIndx[54]=136; /**/
 ST[0].sRAD_K2[0].nIndx[55]=137; /**/
 ST[0].sRAD_K2[0].nIndx[56]=138; /**/
+ST[0].sRAD_K2[0].nIndx[57]=140; /**/
 
 
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR */
-ST[0].sRAD_K3[0].nRtuNumRad = 38;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 39;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
