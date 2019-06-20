@@ -6094,6 +6094,27 @@ ReteszesRTUIndex[66][0] = 135;			   /* Gyõr 452/6 Árki  PV erõmû   */											
 ReteszesTMOK_RTUNum[66] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[66] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 67. TMOK: 51-02 RTU: Szentkirályszabadja 067/6  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[67] = 1308; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[67][0] = 1308;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[67][0] = 136;			   /* Szentkirályszabadja 067/6 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[67] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[67] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 68. TMOK: 51-09 RTU: Szentkirályszabadja 067/6  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[68] = 1309; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[68][0] = 1309;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[68][0] = 136;			   /* Szentkirályszabadja 067/6  PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[68] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[68] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 69. TMOK: 50-49 RTU: Szentkirályszabadja 067/6  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[69] = 1310; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[69][0] = 1310;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[69][0] = 136;			   /* Szentkirályszabadja 067/6  PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[69] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[69] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
