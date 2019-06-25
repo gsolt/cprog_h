@@ -1456,6 +1456,10 @@ sT[0].sTI[124].nType = TYP_TAL2;
   
   sT[0].sTAL[125].nIEC_DP_12BIT2		= 699;
 	sT[0].sTAL[125].nIEC_DP_2BIT_BK2	= 920;
+  
+	sT[0].sTAL[125].nSP_EXTRA_OFFSET		= 2721;
+  sT[0].sTAL[125].nSP_EXTRA_NUM		= 2;
+
                                                 
 /* Zalavég 044/3, PV erõmû  ----------------------------------------------------------------*/
 sT[0].sTI[126].nType = TYP_MOT;
