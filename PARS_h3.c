@@ -1456,7 +1456,7 @@ sT[0].sTI[124].nType = TYP_TAL2;
   
   sT[0].sTAL[125].nIEC_DP_12BIT2		= 699;
 	sT[0].sTAL[125].nIEC_DP_2BIT_BK2	= 920;
-
+                                                
 /* Zalavég 044/3, PV erõmû  ----------------------------------------------------------------*/
 sT[0].sTI[126].nType = TYP_MOT;
 
@@ -1554,6 +1554,10 @@ sT[0].sTI[134].nType = TYP_MOT;
 	sT[0].sTAL[135].nIEC_DP_FSZ1  		= 810;
 	sT[0].sTAL[135].nIEC_NM				= 909;
 	sT[0].sTAL[135].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[135].nSP_EXTRA_OFFSET		= 3004;
+  sT[0].sTAL[135].nSP_EXTRA_NUM		= 2;
+
     
 /* Szentkirályszabadja 067/6  ----------------------------------------------------------------*/
 sT[0].sTI[136].nType = TYP_MOT;
