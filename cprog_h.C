@@ -1160,7 +1160,7 @@ if (	nDPStart > 0)
   
 
 	/* DP tabla indexe, es offsete */
-	fnDPTblIndx(nDPStart,&nDPTblIndx,&nMoscadOffset);
+	fnDPTblIndx(nDPStart+nI,&nDPTblIndx,&nMoscadOffset);
 
 	/* 2 bites */
    	if (MOSCAD_get_table_info (nDPTblIndx,&table_DP)!=0 )
