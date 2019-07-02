@@ -267,6 +267,7 @@ ST[0].nSiteList[137]=10085;	ST[0].nLinkList[137]=RADIO2_1;  /* RADIO2_1 Felsõörs
 ST[0].nSiteList[138]=10086;	ST[0].nLinkList[138]=RADIO3_5;  /* RADIO3_5 Várpalota 4156/29                        -VARP  */
 ST[0].nSiteList[139]=10087;	ST[0].nLinkList[139]=RADIO2_1;  /* RADIO2_1 54-91                                  -VESZ  */
 ST[0].nSiteList[140]=10088;	ST[0].nLinkList[140]=RADIO2_3;  /* RADIO2_3 Kolontár 324                            -AJK  */
+ST[0].nSiteList[141]=10089;	ST[0].nLinkList[141]=RADIO1_5;  /* RADIO1_5 10-13                                  -GYOR  */
 
 
 
@@ -335,7 +336,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 37; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 38; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -373,6 +374,7 @@ ST[0].sRAD_K1[0].nIndx[33]=121;
 ST[0].sRAD_K1[0].nIndx[34]=122; 
 ST[0].sRAD_K1[0].nIndx[35]=124; 
 ST[0].sRAD_K1[0].nIndx[36]=134; 
+ST[0].sRAD_K1[0].nIndx[37]=141; 
 
 
       
