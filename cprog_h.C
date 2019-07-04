@@ -6512,6 +6512,19 @@ if (nOffset <1500)
 	} /* end if */
   else
   {
+  	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
+   	nTxBuf[1] = 0; /*  Mert tiltva van */ 
+   	nTxBuf[2] = p_col_RxBuf[1];    	
+   	
+   				/* Tavirat elkuldese */
+			
+	 		  	if (MOSCAD_TxFrm(nSite_ID, nTxBuf, TX_LENGTH*2) !=0 )
+ 			  	{
+					MOSCAD_sprintf(message,"Could not send parancs ,index: %d",nSite_ID);
+   				 	MOSCAD_error(message ); 				
+   				}   
+
+
 	MOSCAD_sprintf(message,"Reteszfunkció tiltva ,offset: %d",nOffset);
  	MOSCAD_message(message ); 				
   } /* end else */
