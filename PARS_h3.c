@@ -543,6 +543,8 @@ sT[0].sTI[38].nType = TYP_TAL;
 		sT[0].sTAL[38].nIEC_NM				= 123;
 		sT[0].sTAL[38].nNMNum		  		= 9;
 		sT[0].sTAL[38].nKommStatusNum		= 2;
+   	sT[0].sTAL[38].nSP_EXTRA_OFFSET		= 3114;
+    sT[0].sTAL[38].nSP_EXTRA_NUM		= 2;
 
 /* Peremarton I., naperõmû -----------------------------------------------------------*/
 sT[0].sTI[39].nType = TYP_TAL;
@@ -555,6 +557,8 @@ sT[0].sTI[39].nType = TYP_TAL;
 		sT[0].sTAL[39].nIEC_NM				= 134;
 		sT[0].sTAL[39].nNMNum		  		= 9;
 		sT[0].sTAL[39].nKommStatusNum		= 2;
+   	sT[0].sTAL[39].nSP_EXTRA_OFFSET		= 3116;
+    sT[0].sTAL[39].nSP_EXTRA_NUM		= 2;
 
 /* Peremarton II., naperõmû -----------------------------------------------------------*/
 sT[0].sTI[40].nType = TYP_TAL;
@@ -567,6 +571,8 @@ sT[0].sTI[40].nType = TYP_TAL;
 		sT[0].sTAL[40].nIEC_NM				= 145;
 		sT[0].sTAL[40].nNMNum		  		= 9;
 		sT[0].sTAL[40].nKommStatusNum		= 2;
+   	sT[0].sTAL[40].nSP_EXTRA_OFFSET		= 3118;
+    sT[0].sTAL[40].nSP_EXTRA_NUM		= 2;
 
 /* 40-55 -----------------------------------------------------------*/	
 sT[0].sTI[41].nType = TYP_TMOK;
