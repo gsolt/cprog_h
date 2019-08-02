@@ -268,6 +268,7 @@ ST[0].nSiteList[138]=10086;	ST[0].nLinkList[138]=RADIO3_5;  /* RADIO3_5 Várpalot
 ST[0].nSiteList[139]=10087;	ST[0].nLinkList[139]=RADIO2_1;  /* RADIO2_1 54-91                                  -VESZ  */
 ST[0].nSiteList[140]=10088;	ST[0].nLinkList[140]=RADIO2_3;  /* RADIO2_3 Kolontár 324                            -AJK  */
 ST[0].nSiteList[141]=10089;	ST[0].nLinkList[141]=RADIO1_4;  /* RADIO1_4 10-13                                  -GYOR  */
+ST[0].nSiteList[142]=2590;	ST[0].nLinkList[142]=LINE1;     /* LINE1    Fertõszentmiklós DAC                   -FSZM  */
 
 
 
@@ -489,9 +490,10 @@ ST[0].sRAD_K3[0].nIndx[38]=135; /**/
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 2;
+ST[0].sLIN[0].nRtuNumLin = 3;
 ST[0].sLIN[0].nIndx[0] =32;
 ST[0].sLIN[0].nIndx[1] =74;
+ST[0].sLIN[0].nIndx[2] =142;
 
 
 
