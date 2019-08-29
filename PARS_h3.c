@@ -226,6 +226,7 @@ sT[0].sCP[0].sCPR[139].nDCStart= 656;   sT[0].sCP[0].sCPR[139].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[140].nDCStart= 659;   sT[0].sCP[0].sCPR[140].nDCNum= 4;    sT[0].sCP[0].sCPR[140].nSCStart= 663;   sT[0].sCP[0].sCPR[140].nAckStart =0;	  sT[0].sCP[0].sCPR[140].nAckNum=0;   sT[0].sCP[0].sCPR[140].nSPOffsetCS= 3094; sT[0].sCP[0].sCPR[140].nSPOffsetLek= 3095;
 sT[0].sCP[0].sCPR[141].nDCStart= 664;   sT[0].sCP[0].sCPR[141].nDCNum= 1;    sT[0].sCP[0].sCPR[141].nSCStart= 665;   sT[0].sCP[0].sCPR[141].nAckStart =0;	  sT[0].sCP[0].sCPR[141].nAckNum=0;   sT[0].sCP[0].sCPR[141].nSPOffsetCS= 3112; sT[0].sCP[0].sCPR[141].nSPOffsetLek= 3113;
 sT[0].sCP[0].sCPR[142].nDCStart= 0;     sT[0].sCP[0].sCPR[142].nDCNum= 0;    sT[0].sCP[0].sCPR[142].nSCStart= 667;   sT[0].sCP[0].sCPR[142].nAckStart =0;	  sT[0].sCP[0].sCPR[142].nAckNum=0;   sT[0].sCP[0].sCPR[142].nSPOffsetCS= 3125; sT[0].sCP[0].sCPR[142].nSPOffsetLek= 3126;
+sT[0].sCP[0].sCPR[143].nDCStart= 668;   sT[0].sCP[0].sCPR[143].nDCNum= 4;    sT[0].sCP[0].sCPR[143].nSCStart= 672;   sT[0].sCP[0].sCPR[143].nAckStart =0;	  sT[0].sCP[0].sCPR[143].nAckNum=0;   sT[0].sCP[0].sCPR[143].nSPOffsetCS= 3164; sT[0].sCP[0].sCPR[143].nSPOffsetLek= 3165;
 
 
 
@@ -1637,6 +1638,23 @@ sT[0].sTI[142].nType = TYP_MOT;
 	sT[0].sMOT[142].nIEC_SP_NUM			= 5;		/* Egybites értékek száma*/
 	sT[0].sMOT[142].nIEC_DP_NUM			= 0;
 	sT[0].sMOT[142].nNMNum      			= 0;
+
+/* Várpalota 0192/4 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[143].nType = TYP_TAL;
+  
+	sT[0].sTAL[143].nIEC_SP       		= 3127;
+	sT[0].sTAL[143].nIEC_OsszevontHiba	= 3159;
+	sT[0].sTAL[143].nIEC_MT_KommHiba	= 3160;
+	sT[0].sTAL[143].nKommStatusNum		= 2;	
+	sT[0].sTAL[143].nIEC_DP       		= 848;
+	sT[0].sTAL[143].nIEC_DP_FSZ1  		= 852;
+	sT[0].sTAL[143].nIEC_NM				= 962;
+	sT[0].sTAL[143].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[143].nSP_EXTRA_OFFSET		= 3162;
+  sT[0].sTAL[143].nSP_EXTRA_NUM		= 2;
+
+
 
 
 } /* end fnSetDataPar()*/

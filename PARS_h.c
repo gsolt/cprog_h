@@ -269,6 +269,7 @@ ST[0].nSiteList[139]=10087;	ST[0].nLinkList[139]=RADIO2_1;  /* RADIO2_1 54-91   
 ST[0].nSiteList[140]=10088;	ST[0].nLinkList[140]=RADIO2_3;  /* RADIO2_3 Kolontár 324                            -AJK  */
 ST[0].nSiteList[141]=10089;	ST[0].nLinkList[141]=RADIO1_4;  /* RADIO1_4 10-13                                  -GYOR  */
 ST[0].nSiteList[142]=2590;	ST[0].nLinkList[142]=LINE1;     /* LINE1    Fertõszentmiklós DAC                   -FSZM  */
+ST[0].nSiteList[143]=10090;	ST[0].nLinkList[143]=RADIO3_5;  /* RADIO3_5 Várpalota 0192/4                        -VARP  */
 
 
 
@@ -382,7 +383,7 @@ ST[0].sRAD_K1[0].nIndx[37]=141;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 58; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 59; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -441,6 +442,7 @@ ST[0].sRAD_K2[0].nIndx[54]=136; /**/
 ST[0].sRAD_K2[0].nIndx[55]=137; /**/
 ST[0].sRAD_K2[0].nIndx[56]=138; /**/
 ST[0].sRAD_K2[0].nIndx[57]=140; /**/
+ST[0].sRAD_K2[0].nIndx[58]=143; /**/
 
 
 
