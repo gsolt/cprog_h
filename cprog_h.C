@@ -5879,19 +5879,29 @@ ReteszesTMOK_RTUNum[40] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[40] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[40] = 11;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 41. TMOK: 37-65 RTU: Várpalota 4134/3  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 41. TMOK: 37-65 RTU: Várpalota 4134/3  PV erõmû, Várpalota 0192/4  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[41] = 611; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[41][0] = 611;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[41][0] = 111;			   /* Várpalota 4134/3 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[41] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[41][1] = 611;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[41][1] = 143;			   /* Várpalota 0192/4 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[41] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[41] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[41] = 12;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 42. TMOK: 37-66 RTU: Várpalota 4134/3  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 42. TMOK: 37-66 RTU: Várpalota 4134/3  PV erõmû, Várpalota 0192/4 - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[42] = 612; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[42][0] = 612;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[42][0] = 111;			   /* Várpalota 4134/3 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[42] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[42][1] = 612;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[42][1] = 143;			   /* Várpalota 0192/4 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[42] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[42] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[42] = 13;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
