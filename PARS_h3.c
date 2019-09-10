@@ -227,6 +227,8 @@ sT[0].sCP[0].sCPR[140].nDCStart= 659;   sT[0].sCP[0].sCPR[140].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[141].nDCStart= 664;   sT[0].sCP[0].sCPR[141].nDCNum= 1;    sT[0].sCP[0].sCPR[141].nSCStart= 665;   sT[0].sCP[0].sCPR[141].nAckStart =0;	  sT[0].sCP[0].sCPR[141].nAckNum=0;   sT[0].sCP[0].sCPR[141].nSPOffsetCS= 3112; sT[0].sCP[0].sCPR[141].nSPOffsetLek= 3113;
 sT[0].sCP[0].sCPR[142].nDCStart= 0;     sT[0].sCP[0].sCPR[142].nDCNum= 0;    sT[0].sCP[0].sCPR[142].nSCStart= 667;   sT[0].sCP[0].sCPR[142].nAckStart =0;	  sT[0].sCP[0].sCPR[142].nAckNum=0;   sT[0].sCP[0].sCPR[142].nSPOffsetCS= 3125; sT[0].sCP[0].sCPR[142].nSPOffsetLek= 3126;
 sT[0].sCP[0].sCPR[143].nDCStart= 668;   sT[0].sCP[0].sCPR[143].nDCNum= 4;    sT[0].sCP[0].sCPR[143].nSCStart= 672;   sT[0].sCP[0].sCPR[143].nAckStart =0;	  sT[0].sCP[0].sCPR[143].nAckNum=0;   sT[0].sCP[0].sCPR[143].nSPOffsetCS= 3164; sT[0].sCP[0].sCPR[143].nSPOffsetLek= 3165;
+sT[0].sCP[0].sCPR[144].nDCStart= 673;   sT[0].sCP[0].sCPR[144].nDCNum= 4;    sT[0].sCP[0].sCPR[144].nSCStart= 677;   sT[0].sCP[0].sCPR[144].nAckStart =0;	  sT[0].sCP[0].sCPR[144].nAckNum=0;   sT[0].sCP[0].sCPR[144].nSPOffsetCS= 3182; sT[0].sCP[0].sCPR[144].nSPOffsetLek= 3183;
+sT[0].sCP[0].sCPR[145].nDCStart= 678;   sT[0].sCP[0].sCPR[145].nDCNum= 4;    sT[0].sCP[0].sCPR[145].nSCStart= 682;   sT[0].sCP[0].sCPR[145].nAckStart =0;	  sT[0].sCP[0].sCPR[145].nAckNum=0;   sT[0].sCP[0].sCPR[145].nSPOffsetCS= 3200; sT[0].sCP[0].sCPR[145].nSPOffsetLek= 3201;
 
 
 
@@ -1654,6 +1656,25 @@ sT[0].sTI[142].nType = TYP_MOT;
  	sT[0].sTAL[143].nSP_EXTRA_OFFSET		= 3162;
   sT[0].sTAL[143].nSP_EXTRA_NUM		= 2;
 
+/* Révfülöp Csárda u.  ----------------------------------------------------------------*/
+sT[0].sTI[144].nType = TYP_MOT;
+
+	sT[0].sMOT[144].nIEC_SP				= 3166;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[144].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[144].nIEC_DP				= 856;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[144].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[144].nIEC_NM				= 971;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[144].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* Pécsely Bagóhegy  ----------------------------------------------------------------*/
+sT[0].sTI[145].nType = TYP_MOT;
+
+	sT[0].sMOT[145].nIEC_SP				= 3184;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[145].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[145].nIEC_DP				= 864;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[145].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[145].nIEC_NM				= 977;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[145].nNMNum				= 6;		/* Analóg mérések száma*/
 
 
 
