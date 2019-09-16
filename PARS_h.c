@@ -272,6 +272,7 @@ ST[0].nSiteList[142]=2590;	ST[0].nLinkList[142]=LINE1;     /* LINE1    Fertõszen
 ST[0].nSiteList[143]=10090;	ST[0].nLinkList[143]=RADIO3_5;  /* RADIO3_5 Várpalota 0192/4                        -VARP  */
 ST[0].nSiteList[144]=10093;	ST[0].nLinkList[144]=RADIO9_9;  /* RADIO9_9 Révfülöp Csárda u.                      -TAP  */
 ST[0].nSiteList[145]=10094;	ST[0].nLinkList[145]=RADIO6_1;  /* RADIO6_1 Pécsely Bagóhegy                      -ASZ  */
+ST[0].nSiteList[146]=10095;	ST[0].nLinkList[146]=RADIO7_6;  /* RADIO7_6 Alcsútdoboz, 071/11/2                  -BICS  */
 
 
 
@@ -452,7 +453,7 @@ ST[0].sRAD_K2[0].nIndx[60]=145; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR */
-ST[0].sRAD_K3[0].nRtuNumRad = 39;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 40;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -492,6 +493,7 @@ ST[0].sRAD_K3[0].nIndx[35]=125; /**/
 ST[0].sRAD_K3[0].nIndx[36]=128; /**/
 ST[0].sRAD_K3[0].nIndx[37]=132; /**/
 ST[0].sRAD_K3[0].nIndx[38]=135; /**/
+ST[0].sRAD_K3[0].nIndx[39]=146; /**/
 
 
 
