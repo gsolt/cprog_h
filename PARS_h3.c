@@ -230,6 +230,8 @@ sT[0].sCP[0].sCPR[143].nDCStart= 668;   sT[0].sCP[0].sCPR[143].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[144].nDCStart= 673;   sT[0].sCP[0].sCPR[144].nDCNum= 4;    sT[0].sCP[0].sCPR[144].nSCStart= 677;   sT[0].sCP[0].sCPR[144].nAckStart =0;	  sT[0].sCP[0].sCPR[144].nAckNum=0;   sT[0].sCP[0].sCPR[144].nSPOffsetCS= 3182; sT[0].sCP[0].sCPR[144].nSPOffsetLek= 3183;
 sT[0].sCP[0].sCPR[145].nDCStart= 678;   sT[0].sCP[0].sCPR[145].nDCNum= 4;    sT[0].sCP[0].sCPR[145].nSCStart= 682;   sT[0].sCP[0].sCPR[145].nAckStart =0;	  sT[0].sCP[0].sCPR[145].nAckNum=0;   sT[0].sCP[0].sCPR[145].nSPOffsetCS= 3200; sT[0].sCP[0].sCPR[145].nSPOffsetLek= 3201;
 sT[0].sCP[0].sCPR[146].nDCStart= 696;   sT[0].sCP[0].sCPR[146].nDCNum= 4;    sT[0].sCP[0].sCPR[146].nSCStart= 700;   sT[0].sCP[0].sCPR[146].nAckStart =0;	  sT[0].sCP[0].sCPR[146].nAckNum=0;   sT[0].sCP[0].sCPR[146].nSPOffsetCS= 3252; sT[0].sCP[0].sCPR[146].nSPOffsetLek= 3253;
+sT[0].sCP[0].sCPR[147].nDCStart= 701;   sT[0].sCP[0].sCPR[147].nDCNum= 4;    sT[0].sCP[0].sCPR[147].nSCStart= 705;   sT[0].sCP[0].sCPR[147].nAckStart =0;	  sT[0].sCP[0].sCPR[147].nAckNum=0;   sT[0].sCP[0].sCPR[147].nSPOffsetCS= 3270; sT[0].sCP[0].sCPR[147].nSPOffsetLek= 3271;
+sT[0].sCP[0].sCPR[148].nDCStart= 706;   sT[0].sCP[0].sCPR[148].nDCNum= 8;    sT[0].sCP[0].sCPR[148].nSCStart= 714;   sT[0].sCP[0].sCPR[148].nAckStart =0;	  sT[0].sCP[0].sCPR[148].nAckNum=0;   sT[0].sCP[0].sCPR[148].nSPOffsetCS= 3304; sT[0].sCP[0].sCPR[148].nSPOffsetLek= 3305;
 
 
 
@@ -1686,6 +1688,26 @@ sT[0].sTI[146].nType = TYP_MOT;
 	sT[0].sMOT[146].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[146].nIEC_NM				= 992;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[146].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Gyõr, Ipari park tr. állomás  ----------------------------------------------------------------*/
+sT[0].sTI[147].nType = TYP_MOT;
+
+	sT[0].sMOT[147].nIEC_SP				= 3254;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[147].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[147].nIEC_DP				= 912;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[147].nIEC_DP_NUM			= 2;   		/* Két bites értékek száma*/
+	sT[0].sMOT[147].nIEC_NM				= 0;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[147].nNMNum				= 0;		/* Analóg mérések száma*/
+
+/* Fertõd 072/14,15,16,19,20 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[148].nType = TYP_MOT;
+
+	sT[0].sMOT[148].nIEC_SP				= 3272;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[148].nIEC_SP_NUM			= 32;		/* Egybites értékek száma*/
+	sT[0].sMOT[148].nIEC_DP				= 914;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[148].nIEC_DP_NUM			= 32;   		/* Két bites értékek száma*/
+	sT[0].sMOT[148].nIEC_NM				= 1001;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[148].nNMNum				= 28;		/* Analóg mérések száma*/
 
 
 } /* end fnSetDataPar()*/

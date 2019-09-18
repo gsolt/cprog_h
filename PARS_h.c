@@ -273,6 +273,9 @@ ST[0].nSiteList[143]=10090;	ST[0].nLinkList[143]=RADIO3_5;  /* RADIO3_5 Várpalot
 ST[0].nSiteList[144]=10093;	ST[0].nLinkList[144]=RADIO9_9;  /* RADIO9_9 Révfülöp Csárda u.                      -TAP  */
 ST[0].nSiteList[145]=10094;	ST[0].nLinkList[145]=RADIO6_1;  /* RADIO6_1 Pécsely Bagóhegy                      -ASZ  */
 ST[0].nSiteList[146]=10095;	ST[0].nLinkList[146]=RADIO7_6;  /* RADIO7_6 Alcsútdoboz, 071/11/2                  -BICS  */
+ST[0].nSiteList[147]=10096;	ST[0].nLinkList[147]=LINE1;     /* LINE1  Gyõr, Ipari park tr. állomás             -GYOR  */
+ST[0].nSiteList[148]=10092;	ST[0].nLinkList[148]=RADIO6_5;  /* RADIO6_5  Fertõd 072/14,15,16,19,20 PV erõmû    -FSZM  */
+
 
 
 
@@ -341,7 +344,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 38; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 39; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -380,6 +383,7 @@ ST[0].sRAD_K1[0].nIndx[34]=122;
 ST[0].sRAD_K1[0].nIndx[35]=124; 
 ST[0].sRAD_K1[0].nIndx[36]=134; 
 ST[0].sRAD_K1[0].nIndx[37]=141; 
+ST[0].sRAD_K1[0].nIndx[38]=147; 
 
 
       
@@ -452,8 +456,8 @@ ST[0].sRAD_K2[0].nIndx[60]=145; /**/
 
 
 
-/* K3 : DOR, SOP, KOR, BI, GYVAR */
-ST[0].sRAD_K3[0].nRtuNumRad = 40;  /**/
+/* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
+ST[0].sRAD_K3[0].nRtuNumRad = 41;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -494,6 +498,7 @@ ST[0].sRAD_K3[0].nIndx[36]=128; /**/
 ST[0].sRAD_K3[0].nIndx[37]=132; /**/
 ST[0].sRAD_K3[0].nIndx[38]=135; /**/
 ST[0].sRAD_K3[0].nIndx[39]=146; /**/
+ST[0].sRAD_K3[0].nIndx[40]=148; /**/
 
 
 
