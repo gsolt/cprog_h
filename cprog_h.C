@@ -710,7 +710,7 @@ nMoscadHours = mdt.hours;
 			/* Elvégzi az adatfeldolgozást */
  			nType = sTI[site_inx].nType;
  			
- 				MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[2]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[2],buff_len);
+ 				MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[8]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[8],buff_len);
    			 	MOSCAD_error(message ); 				
  
 			/*Szinkronizalasi igeny erkezett*/
