@@ -275,6 +275,8 @@ ST[0].nSiteList[145]=10094;	ST[0].nLinkList[145]=RADIO6_1;  /* RADIO6_1 Pécsely 
 ST[0].nSiteList[146]=10095;	ST[0].nLinkList[146]=RADIO7_6;  /* RADIO7_6 Alcsútdoboz, 071/11/2                  -BICS  */
 ST[0].nSiteList[147]=10096;	ST[0].nLinkList[147]=LINE1;     /* LINE1  Gyõr, Ipari park tr. állomás             -GYOR  */
 ST[0].nSiteList[148]=10092;	ST[0].nLinkList[148]=RADIO6_5;  /* RADIO6_5  Fertõd 072/14,15,16,19,20 PV erõmû    -FSZM  */
+ST[0].nSiteList[149]=10097;	ST[0].nLinkList[149]=RADIO6_5;  /* RADIO6_5  64-29                                 -FSZM  */
+ST[0].nSiteList[150]=10091;	ST[0].nLinkList[150]=RADIO1_1;  /* RADIO1_1  Gyõr Audi 0113/642 PV erõmû           -GYORV  */
 
 
 
@@ -390,7 +392,7 @@ ST[0].sRAD_K1[0].nIndx[38]=147;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 61; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 62; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -452,12 +454,13 @@ ST[0].sRAD_K2[0].nIndx[57]=140; /**/
 ST[0].sRAD_K2[0].nIndx[58]=143; /**/
 ST[0].sRAD_K2[0].nIndx[59]=144; /**/
 ST[0].sRAD_K2[0].nIndx[60]=145; /**/
+ST[0].sRAD_K2[0].nIndx[61]=150; /**/
 
 
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 41;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 42;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -499,6 +502,7 @@ ST[0].sRAD_K3[0].nIndx[37]=132; /**/
 ST[0].sRAD_K3[0].nIndx[38]=135; /**/
 ST[0].sRAD_K3[0].nIndx[39]=146; /**/
 ST[0].sRAD_K3[0].nIndx[40]=148; /**/
+ST[0].sRAD_K3[0].nIndx[41]=149; /**/
 
 
 
