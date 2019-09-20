@@ -6224,7 +6224,7 @@ nReteszOffset[75] = 19;             /* DC parancs és DP állapot offsete, ha tart
 /* 76. TMOK: Gyõr Ipari park tr. állomás RTU: Gyõr, Audi PV erõmû - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[76] = 912; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[76][0] = 912;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[76][0] = 150;			   /* Fertõd 072/14,15,16,19,20 PV erõm  PV erõmû   */															/**/
+ReteszesRTUIndex[76][0] = 150;			   /* Gyõr, Audi PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[76] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[76] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[76] = 20;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
