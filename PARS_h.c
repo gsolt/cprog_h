@@ -275,7 +275,7 @@ ST[0].nSiteList[145]=10094;	ST[0].nLinkList[145]=RADIO6_1;  /* RADIO6_1 Pécsely 
 ST[0].nSiteList[146]=10095;	ST[0].nLinkList[146]=RADIO7_6;  /* RADIO7_6 Alcsútdoboz, 071/11/2                  -BICS  */
 ST[0].nSiteList[147]=10096;	ST[0].nLinkList[147]=LINE1;     /* LINE1  Gyõr, Ipari park tr. állomás             -GYOR  */
 ST[0].nSiteList[148]=10092;	ST[0].nLinkList[148]=RADIO6_5;  /* RADIO6_5  Fertõd 072/14,15,16,19,20 PV erõmû    -FSZM  */
-ST[0].nSiteList[149]=10097;	ST[0].nLinkList[149]=RADIO6_5;  /* RADIO6_5  64-29                                 -FSZM  */
+ST[0].nSiteList[149]=10097;	ST[0].nLinkList[149]=RADIO1_6;  /* RADIO1_6  64-29                                 -FSZM  */
 ST[0].nSiteList[150]=10091;	ST[0].nLinkList[150]=RADIO1_1;  /* RADIO1_1  Gyõr Audi 0113/642 PV erõmû           -GYORV  */
 
 
