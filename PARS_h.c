@@ -278,6 +278,7 @@ ST[0].nSiteList[148]=10092;	ST[0].nLinkList[148]=RADIO6_5;  /* RADIO6_5  Fertõd 
 ST[0].nSiteList[149]=10097;	ST[0].nLinkList[149]=RADIO1_6;  /* RADIO1_6  64-29                                 -FSZM  */
 ST[0].nSiteList[150]=10091;	ST[0].nLinkList[150]=RADIO1_1;  /* RADIO1_1  Gyõr Audi 0113/642 PV erõmû           -GYORV  */
 ST[0].nSiteList[151]=10099;	ST[0].nLinkList[151]=RADIO9_1;  /* RADIO9_1  52-32                                 -FSZM  */
+ST[0].nSiteList[152]=10098;	ST[0].nLinkList[152]=RADIO9_1;  /* RADIO9_1  Tapolca 0350/38-40                               -FSZM  */
 
 
 
@@ -393,7 +394,7 @@ ST[0].sRAD_K1[0].nIndx[38]=147;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 63; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 64; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -457,6 +458,7 @@ ST[0].sRAD_K2[0].nIndx[59]=144; /**/
 ST[0].sRAD_K2[0].nIndx[60]=145; /**/
 ST[0].sRAD_K2[0].nIndx[61]=150; /**/
 ST[0].sRAD_K2[0].nIndx[62]=151; /**/
+ST[0].sRAD_K2[0].nIndx[63]=152; /**/
 
 
 

@@ -235,6 +235,7 @@ sT[0].sCP[0].sCPR[148].nDCStart= 706;   sT[0].sCP[0].sCPR[148].nDCNum= 8;    sT[
 sT[0].sCP[0].sCPR[149].nDCStart= 715;   sT[0].sCP[0].sCPR[149].nDCNum= 1;    sT[0].sCP[0].sCPR[149].nSCStart= 716;   sT[0].sCP[0].sCPR[149].nAckStart =0;	  sT[0].sCP[0].sCPR[149].nAckNum=0;   sT[0].sCP[0].sCPR[149].nSPOffsetCS= 3320; sT[0].sCP[0].sCPR[149].nSPOffsetLek= 3321;
 sT[0].sCP[0].sCPR[150].nDCStart= 683;   sT[0].sCP[0].sCPR[150].nDCNum=12;    sT[0].sCP[0].sCPR[150].nSCStart= 695;   sT[0].sCP[0].sCPR[150].nAckStart =0;	  sT[0].sCP[0].sCPR[150].nAckNum=0;   sT[0].sCP[0].sCPR[150].nSPOffsetCS= 3234; sT[0].sCP[0].sCPR[150].nSPOffsetLek= 3235;
 sT[0].sCP[0].sCPR[151].nDCStart= 718;   sT[0].sCP[0].sCPR[151].nDCNum= 1;    sT[0].sCP[0].sCPR[151].nSCStart= 719;   sT[0].sCP[0].sCPR[151].nAckStart =0;	  sT[0].sCP[0].sCPR[151].nAckNum=0;   sT[0].sCP[0].sCPR[151].nSPOffsetCS= 3336; sT[0].sCP[0].sCPR[151].nSPOffsetLek= 3337;
+sT[0].sCP[0].sCPR[152].nDCStart= 721;   sT[0].sCP[0].sCPR[152].nDCNum=11;    sT[0].sCP[0].sCPR[152].nSCStart= 732;   sT[0].sCP[0].sCPR[152].nAckStart =0;	  sT[0].sCP[0].sCPR[152].nAckNum=0;   sT[0].sCP[0].sCPR[152].nSPOffsetCS= 3386; sT[0].sCP[0].sCPR[152].nSPOffsetLek= 3387;
 
 
 
@@ -1737,6 +1738,16 @@ sT[0].sTI[151].nType = TYP_TMOK;
 	sT[0].sMOT[151].nIEC_DP				= 947;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[151].nIEC_NM				= 1033;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[151].nNMNum				  = 4;		/* Analóg mérések száma*/
+
+  /* Tapolca 0350/11-16 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[152].nType = TYP_MOT;
+
+	sT[0].sMOT[152].nIEC_SP				= 3338;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[152].nIEC_SP_NUM			= 48;		/* Egybites értékek száma*/
+	sT[0].sMOT[152].nIEC_DP				= 948;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[152].nIEC_DP_NUM			= 24;   		/* Két bites értékek száma*/
+	sT[0].sMOT[152].nIEC_NM				= 1037;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[152].nNMNum				= 19;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
