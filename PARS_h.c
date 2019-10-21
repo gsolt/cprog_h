@@ -280,7 +280,8 @@ ST[0].nSiteList[150]=10091;	ST[0].nLinkList[150]=RADIO1_1;  /* RADIO1_1  Gyõr Au
 ST[0].nSiteList[151]=10099;	ST[0].nLinkList[151]=RADIO9_1;  /* RADIO9_1  52-32                                 -TAP  */
 ST[0].nSiteList[152]=10098;	ST[0].nLinkList[152]=RADIO9_1;  /* RADIO9_1  Tapolca 0350/38-40                    -TAP  */
 ST[0].nSiteList[153]=10100;	ST[0].nLinkList[153]=RADIO1_5;  /* RADIO1_5  12-80                                 -GYOR  */
-ST[0].nSiteList[154]=1101;	ST[0].nLinkList[154]=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal7                -     GYVAR */
+ST[0].nSiteList[154]=10101;	ST[0].nLinkList[154]=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal7                -     GYVAR */
+ST[0].nSiteList[155]=10102;	ST[0].nLinkList[155]=RADIO9_1;  /* RADIO9_1 Tapolca 0355/42-48               -     TAP */
 
 
 
@@ -397,7 +398,7 @@ ST[0].sRAD_K1[0].nIndx[39]=153;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 64; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 65; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -462,6 +463,7 @@ ST[0].sRAD_K2[0].nIndx[60]=145; /**/
 ST[0].sRAD_K2[0].nIndx[61]=150; /**/
 ST[0].sRAD_K2[0].nIndx[62]=151; /**/
 ST[0].sRAD_K2[0].nIndx[63]=152; /**/
+ST[0].sRAD_K2[0].nIndx[64]=155; /**/
 
 
 

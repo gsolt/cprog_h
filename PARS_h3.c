@@ -236,7 +236,9 @@ sT[0].sCP[0].sCPR[149].nDCStart= 715;   sT[0].sCP[0].sCPR[149].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[150].nDCStart= 683;   sT[0].sCP[0].sCPR[150].nDCNum=12;    sT[0].sCP[0].sCPR[150].nSCStart= 695;   sT[0].sCP[0].sCPR[150].nAckStart =0;	  sT[0].sCP[0].sCPR[150].nAckNum=0;   sT[0].sCP[0].sCPR[150].nSPOffsetCS= 3234; sT[0].sCP[0].sCPR[150].nSPOffsetLek= 3235;
 sT[0].sCP[0].sCPR[151].nDCStart= 718;   sT[0].sCP[0].sCPR[151].nDCNum= 1;    sT[0].sCP[0].sCPR[151].nSCStart= 719;   sT[0].sCP[0].sCPR[151].nAckStart =0;	  sT[0].sCP[0].sCPR[151].nAckNum=0;   sT[0].sCP[0].sCPR[151].nSPOffsetCS= 3336; sT[0].sCP[0].sCPR[151].nSPOffsetLek= 3337;
 sT[0].sCP[0].sCPR[152].nDCStart= 721;   sT[0].sCP[0].sCPR[152].nDCNum=11;    sT[0].sCP[0].sCPR[152].nSCStart= 732;   sT[0].sCP[0].sCPR[152].nAckStart =0;	  sT[0].sCP[0].sCPR[152].nAckNum=0;   sT[0].sCP[0].sCPR[152].nSPOffsetCS= 3386; sT[0].sCP[0].sCPR[152].nSPOffsetLek= 3387;
-sT[0].sCP[0].sCPR[153].nDCStart= 736;   sT[0].sCP[0].sCPR[153].nDCNum= 1;    sT[0].sCP[0].sCPR[153].nSCStart= 734;   sT[0].sCP[0].sCPR[153].nAckStart =0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS= 3402; sT[0].sCP[0].sCPR[153].nSPOffsetLek= 3403;
+sT[0].sCP[0].sCPR[153].nDCStart= 733;   sT[0].sCP[0].sCPR[153].nDCNum= 1;    sT[0].sCP[0].sCPR[153].nSCStart= 734;   sT[0].sCP[0].sCPR[153].nAckStart =0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS= 3402; sT[0].sCP[0].sCPR[153].nSPOffsetLek= 3403;
+sT[0].sCP[0].sCPR[154].nDCStart= 736;   sT[0].sCP[0].sCPR[154].nDCNum= 4;    sT[0].sCP[0].sCPR[154].nSCStart= 740;   sT[0].sCP[0].sCPR[154].nAckStart =0;	  sT[0].sCP[0].sCPR[154].nAckNum=0;   sT[0].sCP[0].sCPR[154].nSPOffsetCS= 3439; sT[0].sCP[0].sCPR[154].nSPOffsetLek= 3440;
+sT[0].sCP[0].sCPR[155].nDCStart= 741;   sT[0].sCP[0].sCPR[155].nDCNum=15;    sT[0].sCP[0].sCPR[155].nSCStart= 757;   sT[0].sCP[0].sCPR[155].nAckStart =0;	  sT[0].sCP[0].sCPR[155].nAckNum=0;   sT[0].sCP[0].sCPR[155].nSPOffsetCS= 3521; sT[0].sCP[0].sCPR[155].nSPOffsetLek= 3522;
 
 
 
@@ -1759,25 +1761,34 @@ sT[0].sTI[153].nType = TYP_TMOK;
 	sT[0].sMOT[153].nIEC_NM				= 1056;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[153].nNMNum				  = 4;		/* Analóg mérések száma*/
 
-/* Gyõr, Marcal7 utca -----------------------------------------------------------*/
-sT[0].sTI[153].nType = TYP_TAL;
+/* Gyõr, Marcal7  -----------------------------------------------------------*/
+sT[0].sTI[154].nType = TYP_TAL;
 
-		sT[0].sTAL[153].nIEC_SP       		= 3404;
-		sT[0].sTAL[153].nIEC_OsszevontHiba	= 3436;
-		sT[0].sTAL[153].nIEC_MT_KommHiba		= 3437;
-		sT[0].sTAL[153].nIEC_DP       		= 973;
-		sT[0].sTAL[153].nIEC_DP_FSZ1  		= 977;
-		sT[0].sTAL[153].nIEC_NM				= 736;
-		sT[0].sTAL[153].nNMNum		  		= 4;
-		sT[0].sTAL[153].nKommStatusNum		= 2;
+		sT[0].sTAL[154].nIEC_SP       		= 3404;
+		sT[0].sTAL[154].nIEC_OsszevontHiba	= 3436;
+		sT[0].sTAL[154].nIEC_MT_KommHiba		= 3437;
+		sT[0].sTAL[154].nIEC_DP       		= 973;
+		sT[0].sTAL[154].nIEC_DP_FSZ1  		= 977;
+		sT[0].sTAL[154].nIEC_NM				= 736;
+		sT[0].sTAL[154].nNMNum		  		= 4;
+		sT[0].sTAL[154].nKommStatusNum		= 2;
 		
-	sT[0].sTAL[153].nIEC_DP_12BIT1		= 981;
-	sT[0].sTAL[153].nIEC_DP_2BIT_BK1		= 925;
+	sT[0].sTAL[154].nIEC_DP_12BIT1		= 981;
+	sT[0].sTAL[154].nIEC_DP_2BIT_BK1		= 925;
 
- 	sT[0].sTAL[153].nIEC_DP_2BIT1 		= 982;
-	sT[0].sTAL[153].nIEC_DP_2BIT_KINT1	= 912;
-	sT[0].sTAL[153].nIEC_DP_2BIT_BENT1	= 913;
+ 	sT[0].sTAL[154].nIEC_DP_2BIT1 		= 982;
+	sT[0].sTAL[154].nIEC_DP_2BIT_KINT1	= 912;
+	sT[0].sTAL[154].nIEC_DP_2BIT_BENT1	= 913;
   
+  /* Tapolca 0350/42-48 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[155].nType = TYP_MOT;
+
+	sT[0].sMOT[155].nIEC_SP				= 3441;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[155].nIEC_SP_NUM			= 80;		/* Egybites értékek száma*/
+	sT[0].sMOT[155].nIEC_DP				= 983;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[155].nIEC_DP_NUM			= 32;   		/* Két bites értékek száma*/
+	sT[0].sMOT[155].nIEC_NM				= 1064;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[155].nNMNum				= 35;		/* Analóg mérések száma*/
 
 } /* end fnSetDataPar()*/
 
