@@ -1092,7 +1092,7 @@ if (pMOT->nNMNum > 0)
 /* Egybites jelzések feldolgozása ----------------------------------------------------------------------------------------*/
 if (pMOT->nIEC_SP_NUM > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<64; nI++)
+	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<80; nI++)
 	{
 		if (nI<16)
 		{
@@ -1113,6 +1113,11 @@ if (pMOT->nIEC_SP_NUM > 0)
 		{
 			nData = p_col_RxBuf[3];
 			nVal = (nData << (nI-48)) & 0x8000;
+		}
+		else if (nI>=64 && nI<80)
+		{
+			nData = p_col_RxBuf[4];
+			nVal = (nData << (nI-64)) & 0x8000;
 		}
 
 		
