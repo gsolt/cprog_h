@@ -277,8 +277,10 @@ ST[0].nSiteList[147]=10096;	ST[0].nLinkList[147]=LINE1;     /* LINE1  Gyõr, Ipar
 ST[0].nSiteList[148]=10092;	ST[0].nLinkList[148]=RADIO6_5;  /* RADIO6_5  Fertõd 072/14,15,16,19,20 PV erõmû    -FSZM  */
 ST[0].nSiteList[149]=10097;	ST[0].nLinkList[149]=RADIO1_6;  /* RADIO1_6  64-29                                 -FSZM  */
 ST[0].nSiteList[150]=10091;	ST[0].nLinkList[150]=RADIO1_1;  /* RADIO1_1  Gyõr Audi 0113/642 PV erõmû           -GYORV  */
-ST[0].nSiteList[151]=10099;	ST[0].nLinkList[151]=RADIO9_1;  /* RADIO9_1  52-32                                 -FSZM  */
-ST[0].nSiteList[152]=10098;	ST[0].nLinkList[152]=RADIO9_1;  /* RADIO9_1  Tapolca 0350/38-40                               -FSZM  */
+ST[0].nSiteList[151]=10099;	ST[0].nLinkList[151]=RADIO9_1;  /* RADIO9_1  52-32                                 -TAP  */
+ST[0].nSiteList[152]=10098;	ST[0].nLinkList[152]=RADIO9_1;  /* RADIO9_1  Tapolca 0350/38-40                    -TAP  */
+ST[0].nSiteList[153]=10100;	ST[0].nLinkList[153]=RADIO1_5;  /* RADIO1_5  12-80                                 -GYOR  */
+ST[0].nSiteList[154]=1101;	ST[0].nLinkList[154]=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal7                -     GYVAR */
 
 
 
@@ -348,7 +350,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 39; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 40; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -388,6 +390,7 @@ ST[0].sRAD_K1[0].nIndx[35]=124;
 ST[0].sRAD_K1[0].nIndx[36]=134; 
 ST[0].sRAD_K1[0].nIndx[37]=141; 
 ST[0].sRAD_K1[0].nIndx[38]=147; 
+ST[0].sRAD_K1[0].nIndx[39]=153; 
 
 
       
@@ -464,7 +467,7 @@ ST[0].sRAD_K2[0].nIndx[63]=152; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 42;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 43;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -507,6 +510,8 @@ ST[0].sRAD_K3[0].nIndx[38]=135; /**/
 ST[0].sRAD_K3[0].nIndx[39]=146; /**/
 ST[0].sRAD_K3[0].nIndx[40]=148; /**/
 ST[0].sRAD_K3[0].nIndx[41]=149; /**/
+ST[0].sRAD_K3[0].nIndx[42]=154; /**/
+
 
 
 
