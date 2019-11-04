@@ -1769,14 +1769,14 @@ sT[0].sTI[154].nType = TYP_TAL;
 		sT[0].sTAL[154].nIEC_MT_KommHiba		= 3437;
 		sT[0].sTAL[154].nIEC_DP       		= 973;
 		sT[0].sTAL[154].nIEC_DP_FSZ1  		= 977;
-		sT[0].sTAL[154].nIEC_NM				= 736;
+		sT[0].sTAL[154].nIEC_NM				= 1060;
 		sT[0].sTAL[154].nNMNum		  		= 4;
 		sT[0].sTAL[154].nKommStatusNum		= 2;
 		
-	sT[0].sTAL[154].nIEC_DP_12BIT1		= 981;
+	sT[0].sTAL[154].nIEC_DP_12BIT1		= 982;
 	sT[0].sTAL[154].nIEC_DP_2BIT_BK1		= 925;
 
- 	sT[0].sTAL[154].nIEC_DP_2BIT1 		= 982;
+ 	sT[0].sTAL[154].nIEC_DP_2BIT1 		= 981;
 	sT[0].sTAL[154].nIEC_DP_2BIT_KINT1	= 912;
 	sT[0].sTAL[154].nIEC_DP_2BIT_BENT1	= 913;
   
