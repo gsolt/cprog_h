@@ -239,7 +239,10 @@ sT[0].sCP[0].sCPR[152].nDCStart= 721;   sT[0].sCP[0].sCPR[152].nDCNum=11;    sT[
 sT[0].sCP[0].sCPR[153].nDCStart= 733;   sT[0].sCP[0].sCPR[153].nDCNum= 1;    sT[0].sCP[0].sCPR[153].nSCStart= 734;   sT[0].sCP[0].sCPR[153].nAckStart =0;	  sT[0].sCP[0].sCPR[153].nAckNum=0;   sT[0].sCP[0].sCPR[153].nSPOffsetCS= 3402; sT[0].sCP[0].sCPR[153].nSPOffsetLek= 3403;
 sT[0].sCP[0].sCPR[154].nDCStart= 736;   sT[0].sCP[0].sCPR[154].nDCNum= 4;    sT[0].sCP[0].sCPR[154].nSCStart= 740;   sT[0].sCP[0].sCPR[154].nAckStart =0;	  sT[0].sCP[0].sCPR[154].nAckNum=0;   sT[0].sCP[0].sCPR[154].nSPOffsetCS= 3439; sT[0].sCP[0].sCPR[154].nSPOffsetLek= 3440;
 sT[0].sCP[0].sCPR[155].nDCStart= 741;   sT[0].sCP[0].sCPR[155].nDCNum=15;    sT[0].sCP[0].sCPR[155].nSCStart= 757;   sT[0].sCP[0].sCPR[155].nAckStart =0;	  sT[0].sCP[0].sCPR[155].nAckNum=0;   sT[0].sCP[0].sCPR[155].nSPOffsetCS= 3529; sT[0].sCP[0].sCPR[155].nSPOffsetLek= 3530;
-
+sT[0].sCP[0].sCPR[156].nDCStart= 758;   sT[0].sCP[0].sCPR[156].nDCNum= 4;    sT[0].sCP[0].sCPR[156].nSCStart= 762;   sT[0].sCP[0].sCPR[156].nAckStart =0;	  sT[0].sCP[0].sCPR[156].nAckNum=0;   sT[0].sCP[0].sCPR[156].nSPOffsetCS= 3547; sT[0].sCP[0].sCPR[156].nSPOffsetLek= 3548;
+sT[0].sCP[0].sCPR[157].nDCStart= 763;   sT[0].sCP[0].sCPR[157].nDCNum= 1;    sT[0].sCP[0].sCPR[157].nSCStart= 764;   sT[0].sCP[0].sCPR[157].nAckStart =0;	  sT[0].sCP[0].sCPR[157].nAckNum=0;   sT[0].sCP[0].sCPR[157].nSPOffsetCS= 3563; sT[0].sCP[0].sCPR[157].nSPOffsetLek= 3564;
+sT[0].sCP[0].sCPR[158].nDCStart= 766;   sT[0].sCP[0].sCPR[158].nDCNum= 4;    sT[0].sCP[0].sCPR[158].nSCStart= 770;   sT[0].sCP[0].sCPR[158].nAckStart =0;	  sT[0].sCP[0].sCPR[158].nAckNum=0;   sT[0].sCP[0].sCPR[158].nSPOffsetCS= 3602; sT[0].sCP[0].sCPR[158].nSPOffsetLek= 3603;
+sT[0].sCP[0].sCPR[159].nDCStart= 771;   sT[0].sCP[0].sCPR[159].nDCNum= 4;    sT[0].sCP[0].sCPR[159].nSCStart= 775;   sT[0].sCP[0].sCPR[159].nAckStart =0;	  sT[0].sCP[0].sCPR[159].nAckNum=0;   sT[0].sCP[0].sCPR[159].nSPOffsetCS= 3641; sT[0].sCP[0].sCPR[159].nSPOffsetLek= 3642;
 
 
 
@@ -1780,7 +1783,7 @@ sT[0].sTI[154].nType = TYP_TAL;
 	sT[0].sTAL[154].nIEC_DP_2BIT_KINT1	= 912;
 	sT[0].sTAL[154].nIEC_DP_2BIT_BENT1	= 913;
   
-  /* Tapolca 0350/42-48 PV erõmû  ----------------------------------------------------------------*/
+/* Tapolca 0350/42-48 PV erõmû  ----------------------------------------------------------------*/
 sT[0].sTI[155].nType = TYP_MOT;
 
 	sT[0].sMOT[155].nIEC_SP				= 3441;		/* Egybites értékek IEC kezdõcíme*/
@@ -1790,5 +1793,54 @@ sT[0].sTI[155].nType = TYP_MOT;
 	sT[0].sMOT[155].nIEC_NM				= 1064;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[155].nNMNum				= 35;		/* Analóg mérések száma*/
 
+/* Várpalota Alsóváros  ----------------------------------------------------------------*/
+sT[0].sTI[156].nType = TYP_MOT;
+
+	sT[0].sMOT[156].nIEC_SP				= 3531;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[156].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[156].nIEC_DP				= 1015;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[156].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[156].nIEC_NM				= 1099;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[156].nNMNum				= 6;		/* Analóg mérések száma*/
+
+/* 64-57  ----------------------------------------------------------------*/
+sT[0].sTI[157].nType = TYP_TMOK;
+
+	sT[0].sMOT[157].nIEC_SP				= 3549;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[157].nIEC_DP				= 1023;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[157].nIEC_NM				= 1105;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[157].nNMNum				  = 4;		/* Analóg mérések száma*/
+
+	
+/* Sobor 077/6 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[158].nType = TYP_TAL;
+  
+	sT[0].sTAL[158].nIEC_SP       		= 3565;
+	sT[0].sTAL[158].nIEC_OsszevontHiba	= 3597;
+	sT[0].sTAL[158].nIEC_MT_KommHiba	= 3598;
+	sT[0].sTAL[158].nKommStatusNum		= 2;	
+	sT[0].sTAL[158].nIEC_DP       		= 1024;
+	sT[0].sTAL[158].nIEC_DP_FSZ1  		= 1028;
+	sT[0].sTAL[158].nIEC_NM				= 1109;
+	sT[0].sTAL[158].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[158].nSP_EXTRA_OFFSET		= 3600;
+  sT[0].sTAL[158].nSP_EXTRA_NUM		= 2;
+  
+/* Sobor 077/7 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[159].nType = TYP_TAL;
+  
+	sT[0].sTAL[159].nIEC_SP       		= 3604;
+	sT[0].sTAL[159].nIEC_OsszevontHiba	= 3636;
+	sT[0].sTAL[159].nIEC_MT_KommHiba	= 3637;
+	sT[0].sTAL[159].nKommStatusNum		= 2;	
+	sT[0].sTAL[159].nIEC_DP       		= 1032;
+	sT[0].sTAL[159].nIEC_DP_FSZ1  		= 1036;
+	sT[0].sTAL[159].nIEC_NM				= 1118;
+	sT[0].sTAL[159].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[159].nSP_EXTRA_OFFSET		= 3639;
+  sT[0].sTAL[159].nSP_EXTRA_NUM		= 2;
+   
 } /* end fnSetDataPar()*/
 

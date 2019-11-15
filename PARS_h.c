@@ -282,8 +282,10 @@ ST[0].nSiteList[152]=10098;	ST[0].nLinkList[152]=RADIO9_1;  /* RADIO9_1  Tapolca
 ST[0].nSiteList[153]=10100;	ST[0].nLinkList[153]=RADIO1_5;  /* RADIO1_5  12-80                                 -GYOR  */
 ST[0].nSiteList[154]=10101;	ST[0].nLinkList[154]=RADIO1_1;  /* RADIO1_1 Gyõr, Marcal7                -     GYVAR */
 ST[0].nSiteList[155]=10102;	ST[0].nLinkList[155]=RADIO9_1;  /* RADIO9_1 Tapolca 0355/42-48               -     TAP */
-
-
+ST[0].nSiteList[156]=10103;	ST[0].nLinkList[156]=RADIO3_5;  /* RADIO3_5 Várpalota Alsóváros               -     VAR */
+ST[0].nSiteList[157]=10106;	ST[0].nLinkList[157]=RADIO5_1;  /* RADIO5_1 64-57               -     CSOR */
+ST[0].nSiteList[158]=10104;	ST[0].nLinkList[158]=RADIO5_1;  /* RADIO5_1 Sobor 077/6               -     CSOR */
+ST[0].nSiteList[159]=10105;	ST[0].nLinkList[159]=RADIO5_1;  /* RADIO5_1 Sobor 077/7               -     CSOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -351,7 +353,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 40; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 41; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -392,13 +394,14 @@ ST[0].sRAD_K1[0].nIndx[36]=134;
 ST[0].sRAD_K1[0].nIndx[37]=141; 
 ST[0].sRAD_K1[0].nIndx[38]=147; 
 ST[0].sRAD_K1[0].nIndx[39]=153; 
+ST[0].sRAD_K1[0].nIndx[40]=156; 
 
 
       
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 65; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 68; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -464,9 +467,9 @@ ST[0].sRAD_K2[0].nIndx[61]=150; /**/
 ST[0].sRAD_K2[0].nIndx[62]=151; /**/
 ST[0].sRAD_K2[0].nIndx[63]=152; /**/
 ST[0].sRAD_K2[0].nIndx[64]=155; /**/
-
-
-
+ST[0].sRAD_K2[0].nIndx[65]=157; /**/
+ST[0].sRAD_K2[0].nIndx[66]=158; /**/
+ST[0].sRAD_K2[0].nIndx[67]=159; /**/
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
 ST[0].sRAD_K3[0].nRtuNumRad = 43;  /**/
