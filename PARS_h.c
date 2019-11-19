@@ -286,6 +286,7 @@ ST[0].nSiteList[156]=10103;	ST[0].nLinkList[156]=RADIO3_5;  /* RADIO3_5 Várpalot
 ST[0].nSiteList[157]=10106;	ST[0].nLinkList[157]=RADIO5_1;  /* RADIO5_1 64-57               -     CSOR */
 ST[0].nSiteList[158]=10104;	ST[0].nLinkList[158]=RADIO5_1;  /* RADIO5_1 Sobor 077/6               -     CSOR */
 ST[0].nSiteList[159]=10105;	ST[0].nLinkList[159]=RADIO5_1;  /* RADIO5_1 Sobor 077/7               -     CSOR */
+ST[0].nSiteList[160]=10107;	ST[0].nLinkList[160]=RADIO5_5;  /* RADIO5_5 Vasalja 055/16            -     KOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -472,7 +473,7 @@ ST[0].sRAD_K2[0].nIndx[66]=158; /**/
 ST[0].sRAD_K2[0].nIndx[67]=159; /**/
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 43;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 44;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -516,6 +517,7 @@ ST[0].sRAD_K3[0].nIndx[39]=146; /**/
 ST[0].sRAD_K3[0].nIndx[40]=148; /**/
 ST[0].sRAD_K3[0].nIndx[41]=149; /**/
 ST[0].sRAD_K3[0].nIndx[42]=154; /**/
+ST[0].sRAD_K3[0].nIndx[43]=160; /**/
 
 
 

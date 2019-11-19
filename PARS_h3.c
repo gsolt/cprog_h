@@ -243,6 +243,7 @@ sT[0].sCP[0].sCPR[156].nDCStart= 758;   sT[0].sCP[0].sCPR[156].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[157].nDCStart= 763;   sT[0].sCP[0].sCPR[157].nDCNum= 1;    sT[0].sCP[0].sCPR[157].nSCStart= 764;   sT[0].sCP[0].sCPR[157].nAckStart =0;	  sT[0].sCP[0].sCPR[157].nAckNum=0;   sT[0].sCP[0].sCPR[157].nSPOffsetCS= 3563; sT[0].sCP[0].sCPR[157].nSPOffsetLek= 3564;
 sT[0].sCP[0].sCPR[158].nDCStart= 766;   sT[0].sCP[0].sCPR[158].nDCNum= 4;    sT[0].sCP[0].sCPR[158].nSCStart= 770;   sT[0].sCP[0].sCPR[158].nAckStart =0;	  sT[0].sCP[0].sCPR[158].nAckNum=0;   sT[0].sCP[0].sCPR[158].nSPOffsetCS= 3602; sT[0].sCP[0].sCPR[158].nSPOffsetLek= 3603;
 sT[0].sCP[0].sCPR[159].nDCStart= 771;   sT[0].sCP[0].sCPR[159].nDCNum= 4;    sT[0].sCP[0].sCPR[159].nSCStart= 775;   sT[0].sCP[0].sCPR[159].nAckStart =0;	  sT[0].sCP[0].sCPR[159].nAckNum=0;   sT[0].sCP[0].sCPR[159].nSPOffsetCS= 3641; sT[0].sCP[0].sCPR[159].nSPOffsetLek= 3642;
+sT[0].sCP[0].sCPR[160].nDCStart= 776;   sT[0].sCP[0].sCPR[160].nDCNum= 4;    sT[0].sCP[0].sCPR[160].nSCStart= 780;   sT[0].sCP[0].sCPR[160].nAckStart =0;	  sT[0].sCP[0].sCPR[160].nAckNum=0;   sT[0].sCP[0].sCPR[160].nSPOffsetCS= 3680; sT[0].sCP[0].sCPR[160].nSPOffsetLek= 3681;
 
 
 
@@ -1841,6 +1842,21 @@ sT[0].sTI[157].nType = TYP_TMOK;
  
  	sT[0].sTAL[159].nSP_EXTRA_OFFSET		= 3639;
   sT[0].sTAL[159].nSP_EXTRA_NUM		= 2;
+
+/* Vasalja 055/16 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[160].nType = TYP_TAL;
+  
+	sT[0].sTAL[160].nIEC_SP       		= 3643;
+	sT[0].sTAL[160].nIEC_OsszevontHiba	= 3675;
+	sT[0].sTAL[160].nIEC_MT_KommHiba	= 3676;
+	sT[0].sTAL[160].nKommStatusNum		= 2;	
+	sT[0].sTAL[160].nIEC_DP       		= 1040;
+	sT[0].sTAL[160].nIEC_DP_FSZ1  		= 1044;
+	sT[0].sTAL[160].nIEC_NM				= 1127;
+	sT[0].sTAL[160].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[160].nSP_EXTRA_OFFSET		= 3678;
+  sT[0].sTAL[160].nSP_EXTRA_NUM		= 2;
    
 } /* end fnSetDataPar()*/
 
