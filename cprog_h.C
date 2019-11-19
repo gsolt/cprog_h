@@ -368,7 +368,7 @@ unsigned long		lLargest;
 			setdat( (unsigned char *)&sT);
          	          	
         	 MOSCAD_largest_available_free_mem(&lLargest);
-	   		 sprintf(message,"Version 1.1.1 Largest available free memory: %ld,   sCPR[16].nDCStart: %d",lLargest,sCP.sCPR[16].nDCStart);
+	   		 sprintf(message,"Version 1.1.2 Largest available free memory: %ld,   sCPR[16].nDCStart: %d",lLargest,sCP.sCPR[16].nDCStart);
    			 MOSCAD_message(message );         	          	
          	
          	
@@ -5505,7 +5505,8 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 85;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 88;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -6332,6 +6333,27 @@ ReteszesRTUIndex[84][1] = 159;			   /* Tapolca 0366/42-48 PV erõmû    */								
 
 ReteszesTMOK_RTUNum[84] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[84] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 85. TMOK 43-25 C Front end -> RTU: H: Vasalja 055/16 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[85] = 1320; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[85][0] = 1320;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[85][0] = 160;			   /* Vasalja 055/16 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[85] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[85] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 86. TMOK 42-61 E Front end -> RTU: H: Vasalja 055/16 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[86] = 1321; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[86][0] = 1321;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[86][0] = 160;			   /* Vasalja 055/16 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[86] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[86] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 87. TMOK 42-30 D Front end -> RTU: H: Vasalja 055/16 PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[87] = 1322; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[87][0] = 1322;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[87][0] = 160;			   /* Vasalja 055/16 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[87] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[87] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
