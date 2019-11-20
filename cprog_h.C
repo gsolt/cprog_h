@@ -861,7 +861,7 @@ void tx_command(void)
  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=133 && nI!=150 && nI!=155)
+			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161)
 			{						
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -873,7 +873,7 @@ void tx_command(void)
  		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 	     } /* end if   */			
-			else if ( nI==133 || nI==150 || nI==155) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48 */
+			else if ( nI==133 || nI==150 || nI==155 || nI==161) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		  nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -6249,7 +6249,10 @@ ReteszesRTUIndex[77][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */						
 TMOK_ID[77][1] = 1315;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[77][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[77] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[77][2] = 1315;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[77][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[77] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[77] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 78. TMOK: 52-57 RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6261,7 +6264,10 @@ ReteszesRTUIndex[78][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */						
 TMOK_ID[78][1] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[78][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[78] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[78][2] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[78][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[78] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[78] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 79. TMKK: Kékkút kábelköri RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6273,7 +6279,10 @@ ReteszesRTUIndex[79][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */						
 TMOK_ID[79][1] = 1317;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[79][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[79] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[79][2] = 1317;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[79][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[79] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[79] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 80. TMOK: 52-32 RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6285,7 +6294,10 @@ ReteszesRTUIndex[80][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */						
 TMOK_ID[80][1] = 947;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[80][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[80] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[80][2] = 947;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[80][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[80] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[80] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[80] = 21;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
