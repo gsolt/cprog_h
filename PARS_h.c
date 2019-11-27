@@ -288,6 +288,7 @@ ST[0].nSiteList[158]=10104;	ST[0].nLinkList[158]=RADIO5_1;  /* RADIO5_1 Sobor 07
 ST[0].nSiteList[159]=10105;	ST[0].nLinkList[159]=RADIO5_1;  /* RADIO5_1 Sobor 077/7               -     CSOR */
 ST[0].nSiteList[160]=10107;	ST[0].nLinkList[160]=RADIO5_5;  /* RADIO5_5 Vasalja 055/16            -     KOR */
 ST[0].nSiteList[161]=10108;	ST[0].nLinkList[161]=RADIO9_1;  /* RADIO9_1 Tapolca 0355/34-37               -     TAP */
+ST[0].nSiteList[162]=10109;	ST[0].nLinkList[162]=RADIO8_4;  /* RADIO8_4 Kesztölc 3733               -     DOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -475,7 +476,7 @@ ST[0].sRAD_K2[0].nIndx[67]=159; /**/
 ST[0].sRAD_K2[0].nIndx[68]=161; /**/
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 44;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 45;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -520,6 +521,7 @@ ST[0].sRAD_K3[0].nIndx[40]=148; /**/
 ST[0].sRAD_K3[0].nIndx[41]=149; /**/
 ST[0].sRAD_K3[0].nIndx[42]=154; /**/
 ST[0].sRAD_K3[0].nIndx[43]=160; /**/
+ST[0].sRAD_K3[0].nIndx[44]=162; /**/
 
 
 
