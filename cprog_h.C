@@ -5551,13 +5551,17 @@ ReteszesRTUIndex[3][1] = 148;			/* Fertõd 072/14,15,16,19,20 PV erõmû */								
 ReteszesTMOK_RTUNum[3] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[3] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 																													/**/
-/* 4. TMOK: 21074 RTU:  Kesztölc, naperõmû I. II. -----------------------*/								/**/
+/* 4. TMOK: 21074 RTU:  Kesztölc, naperõmû I. II. Kesztölc 0773-----------------------*/								/**/
 TMOKAllasjelzesOffsetek[4] = 1253; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
 TMOK_ID[4][0] =1253;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/	
 TMOK_ID[4][1] =1253;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+TMOK_ID[4][2] =1253;						/* TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+
 ReteszesRTUIndex[4][0] = 72;			/* Kesztölc 032-18 */															/**/
 ReteszesRTUIndex[4][1] = 73;			/* Kesztölc 032-21 */															/**/
-ReteszesTMOK_RTUNum[4] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesRTUIndex[4][2] =162;			/* Kesztölc 3733 */															/**/
+
+ReteszesTMOK_RTUNum[4] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[4] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
                                                           
 /* 5. TMOK: 13-30 RTU:  Tét, 055/36, 055/39 PV erõmû               -----------------------*/								/**/
@@ -5946,7 +5950,7 @@ ReteszesRTUIndex[43][2] = 138;			   /* Várpalota 4156/9 PV erõmû   */											
 ReteszesTMOK_RTUNum[43] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[43] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 44. TMOK: 52-51 RTU: Vigánpetend 012/1_1,2  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 44. TMOK: 52-51 RTU: Vigánpetend 012/1_1,2  Tapolca 0350/34-37, Tapolca 0350/38-40, Tapolca 0350/42-48 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[44] = 613; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[44][0] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -5955,8 +5959,17 @@ ReteszesRTUIndex[44][0] = 116;			   /* Vigándpetend 012/1_1 PV erõmû   */							
 TMOK_ID[44][1] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[44][1] = 117;			   /* Vigándpetend 012/1_2 PV erõmû   */															/**/
 
+TMOK_ID[44][2] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][2] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */															/**/
 
-ReteszesTMOK_RTUNum[44] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[44][3] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][3] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
+
+TMOK_ID[44][4] = 613;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[44][4] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+
+
+ReteszesTMOK_RTUNum[44] = 5;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[44] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[44] = 14;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
@@ -6240,7 +6253,7 @@ ReteszesTMOK_RTUNum[76] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[76] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[76] = 20;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 77. TMOK: 52-62 RTU: Tapolca 0350/38,39,40, Tapolca 0366/42-48 PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 77. TMOK: 51-40 RTU: Tapolca 0350/38,39,40, Tapolca 0366/42-48 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[77] = 1315; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[77][0] = 1315;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -6255,7 +6268,7 @@ ReteszesRTUIndex[77][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */								
 ReteszesTMOK_RTUNum[77] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[77] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 78. TMOK: 52-57 RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 78. TMOK: tartalék  RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[78] = 1316; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[78][0] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -6267,7 +6280,8 @@ ReteszesRTUIndex[78][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */								
 TMOK_ID[78][2] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[78][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[78] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+ReteszesTMOK_RTUNum[78] = 0;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[78] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 79. TMKK: Kékkút kábelköri RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
