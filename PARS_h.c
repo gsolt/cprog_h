@@ -284,8 +284,8 @@ ST[0].nSiteList[154]=10101;	ST[0].nLinkList[154]=RADIO1_1;  /* RADIO1_1 Gyõr, Ma
 ST[0].nSiteList[155]=10102;	ST[0].nLinkList[155]=RADIO9_1;  /* RADIO9_1 Tapolca 0355/42-48               -     TAP */
 ST[0].nSiteList[156]=10103;	ST[0].nLinkList[156]=RADIO3_5;  /* RADIO3_5 Várpalota Alsóváros               -     VAR */
 ST[0].nSiteList[157]=10106;	ST[0].nLinkList[157]=RADIO5_1;  /* RADIO5_1 64-57               -     CSOR */
-ST[0].nSiteList[158]=10104;	ST[0].nLinkList[158]=RADIO5_1;  /* RADIO5_1 Sobor 077/6               -     CSOR */
-ST[0].nSiteList[159]=10105;	ST[0].nLinkList[159]=RADIO5_1;  /* RADIO5_1 Sobor 077/7               -     CSOR */
+ST[0].nSiteList[158]=10104;	ST[0].nLinkList[158]=RADIO1_5;  /* RADIO5_1 Sobor 077/6               -     GYOR */
+ST[0].nSiteList[159]=10105;	ST[0].nLinkList[159]=RADIO1_5;  /* RADIO5_1 Sobor 077/7               -     GYOR */
 ST[0].nSiteList[160]=10107;	ST[0].nLinkList[160]=RADIO5_5;  /* RADIO5_5 Vasalja 055/16            -     KOR */
 ST[0].nSiteList[161]=10108;	ST[0].nLinkList[161]=RADIO9_1;  /* RADIO9_1 Tapolca 0355/34-37               -     TAP */
 ST[0].nSiteList[162]=10109;	ST[0].nLinkList[162]=RADIO8_4;  /* RADIO8_4 Kesztölc 3733               -     DOR */
