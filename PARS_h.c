@@ -291,6 +291,7 @@ ST[0].nSiteList[161]=10108;	ST[0].nLinkList[161]=RADIO9_1;  /* RADIO9_1 Tapolca 
 ST[0].nSiteList[162]=10109;	ST[0].nLinkList[162]=RADIO8_4;  /* RADIO8_4 Kesztölc 3733               -     DOR */
 ST[0].nSiteList[163]=10110;	ST[0].nLinkList[163]=RADIO2_2;  /* RADIO2_2 54-27                       -     VESZ */
 ST[0].nSiteList[164]=10111;	ST[0].nLinkList[164]=RADIO7_1;  /* RADIO7_1 Nagyhideghegy ISM           -     ESZT */
+ST[0].nSiteList[165]=10112;	ST[0].nLinkList[165]=RADIO2_2;  /* RADIO2_2 Hidegkút 07/22_23                   -     VESZ */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -406,7 +407,7 @@ ST[0].sRAD_K1[0].nIndx[40]=156;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 71; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 72; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -478,6 +479,7 @@ ST[0].sRAD_K2[0].nIndx[67]=159; /**/
 ST[0].sRAD_K2[0].nIndx[68]=161; /**/
 ST[0].sRAD_K2[0].nIndx[69]=163; /**/
 ST[0].sRAD_K2[0].nIndx[70]=164; /**/
+ST[0].sRAD_K2[0].nIndx[71]=165; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */

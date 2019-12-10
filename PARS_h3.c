@@ -248,6 +248,7 @@ sT[0].sCP[0].sCPR[161].nDCStart= 781;   sT[0].sCP[0].sCPR[161].nDCNum=10;    sT[
 sT[0].sCP[0].sCPR[162].nDCStart= 792;   sT[0].sCP[0].sCPR[162].nDCNum= 4;    sT[0].sCP[0].sCPR[162].nSCStart= 796;   sT[0].sCP[0].sCPR[162].nAckStart =0;	  sT[0].sCP[0].sCPR[162].nAckNum=0;   sT[0].sCP[0].sCPR[162].nSPOffsetCS= 3756; sT[0].sCP[0].sCPR[162].nSPOffsetLek= 3757;
 sT[0].sCP[0].sCPR[163].nDCStart= 797;   sT[0].sCP[0].sCPR[163].nDCNum= 1;    sT[0].sCP[0].sCPR[163].nSCStart= 798;   sT[0].sCP[0].sCPR[163].nAckStart =0;	  sT[0].sCP[0].sCPR[163].nAckNum=0;   sT[0].sCP[0].sCPR[163].nSPOffsetCS= 3772; sT[0].sCP[0].sCPR[163].nSPOffsetLek= 3773;
 sT[0].sCP[0].sCPR[164].nDCStart =  0;   sT[0].sCP[0].sCPR[164].nDCNum= 0;    sT[0].sCP[0].sCPR[164].nSCStart= 800;   sT[0].sCP[0].sCPR[164].nAckStart =0;   sT[0].sCP[0].sCPR[164].nAckNum =0;  sT[0].sCP[0].sCPR[164].nSPOffsetCS= 3779; sT[0].sCP[0].sCPR[164].nSPOffsetLek= 3780;
+sT[0].sCP[0].sCPR[165].nDCStart= 801;   sT[0].sCP[0].sCPR[165].nDCNum= 4;    sT[0].sCP[0].sCPR[165].nSCStart= 805;   sT[0].sCP[0].sCPR[165].nAckStart =0;	  sT[0].sCP[0].sCPR[165].nAckNum=0;   sT[0].sCP[0].sCPR[165].nSPOffsetCS= 3797; sT[0].sCP[0].sCPR[165].nSPOffsetLek= 3798;
 
 
 
@@ -1897,6 +1898,16 @@ sT[0].sTI[164].nType = TYP_MOT;
 	sT[0].sMOT[164].nIEC_SP_NUM			= 5;		/* Egybites értékek száma*/
 	sT[0].sMOT[164].nIEC_DP_NUM			= 0;
 	sT[0].sMOT[164].nNMNum      		= 0;
+
+/* Hidegkút 07/22_23 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[165].nType = TYP_MOT;
+
+	sT[0].sMOT[165].nIEC_SP				= 3781;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[165].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[165].nIEC_DP				= 1075;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[165].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
+	sT[0].sMOT[165].nIEC_NM				= 1173;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[165].nNMNum				= 9;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 
