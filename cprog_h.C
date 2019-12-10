@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 88;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 89;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6380,6 +6380,14 @@ TMOK_ID[87][0] = 1322;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[87][0] = 160;			   /* Vasalja 055/16 PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[87] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[87] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 88. TMOK: 54-27 RTU: Hidegkút 07/22,23 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[88] = 1074; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[88][0] = 1074;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[88][0] = 165;			   /* Hidegkút 07/22,23 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[88] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[88] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[88] = 24;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
