@@ -292,6 +292,7 @@ ST[0].nSiteList[162]=10109;	ST[0].nLinkList[162]=RADIO8_4;  /* RADIO8_4 Kesztölc
 ST[0].nSiteList[163]=10110;	ST[0].nLinkList[163]=RADIO2_2;  /* RADIO2_2 54-27                       -     VESZ */
 ST[0].nSiteList[164]=10111;	ST[0].nLinkList[164]=RADIO7_1;  /* RADIO7_1 Nagyhideghegy ISM           -     ESZT */
 ST[0].nSiteList[165]=10112;	ST[0].nLinkList[165]=RADIO2_2;  /* RADIO2_2 Hidegkút 07/22_23                   -     VESZ */
+ST[0].nSiteList[166]=10113;	ST[0].nLinkList[166]=RADIO1_1;  /* RADIO1_1 Gyõr Édász belterület                   -  GYVAR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -483,7 +484,7 @@ ST[0].sRAD_K2[0].nIndx[71]=165; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 45;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 46;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -529,6 +530,7 @@ ST[0].sRAD_K3[0].nIndx[41]=149; /**/
 ST[0].sRAD_K3[0].nIndx[42]=154; /**/
 ST[0].sRAD_K3[0].nIndx[43]=160; /**/
 ST[0].sRAD_K3[0].nIndx[44]=162; /**/
+ST[0].sRAD_K3[0].nIndx[45]=166; /**/
 
 
 
