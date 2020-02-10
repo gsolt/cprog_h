@@ -27,7 +27,7 @@
 #define  LEKERDEZES_TIMEOUT		100
 #define  COMMAND_LENGTH			14
 
-#define  			RETESZ_TMOK_NUM		90	
+#define  			RETESZ_TMOK_NUM		100	
 #define  			RETESZ_RTU_NUM		10	
 
 
@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 89;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 91;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6388,6 +6388,20 @@ ReteszesRTUIndex[88][0] = 165;			   /* Hidegkút 07/22,23 PV erõmû   */										
 ReteszesTMOK_RTUNum[88] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[88] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[88] = 24;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 89. TMOK: 41-99 RTU: Lövõ 053/12 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[89] = 1323; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[89][0] = 1323;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[89][0] = 167;			   /* Lövõ 053/12 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[89] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[89] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 90. TMOK: 60-30 RTU: Lövõ 053/12 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[90] = 1324; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[90][0] = 1324;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[90][0] = 167;			   /* Lövõ 053/12 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[90] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[90] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
