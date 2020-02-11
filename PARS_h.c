@@ -294,6 +294,8 @@ ST[0].nSiteList[164]=10111;	ST[0].nLinkList[164]=RADIO7_1;  /* RADIO7_1 Nagyhide
 ST[0].nSiteList[165]=10112;	ST[0].nLinkList[165]=RADIO2_2;  /* RADIO2_2 Hidegkút 07/22_23                   -     VESZ */
 ST[0].nSiteList[166]=10113;	ST[0].nLinkList[166]=RADIO1_1;  /* RADIO1_1 Gyõr Édász belterület                   -  GYVAR */
 ST[0].nSiteList[167]=10114;	ST[0].nLinkList[167]=RADIO3_1;  /* RADIO3_1 Lövõ 053/12 PV                   -  SOP */
+ST[0].nSiteList[168]=10118;	ST[0].nLinkList[168]=RADIO1_5;  /* RADIO1_5 11-65                       -  GYOR */
+ST[0].nSiteList[169]=10119;	ST[0].nLinkList[169]=LINE11;    /* LINE11   12-81                       -  GYOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -361,7 +363,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 41; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 42; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -403,13 +405,14 @@ ST[0].sRAD_K1[0].nIndx[37]=141;
 ST[0].sRAD_K1[0].nIndx[38]=147; 
 ST[0].sRAD_K1[0].nIndx[39]=153; 
 ST[0].sRAD_K1[0].nIndx[40]=156; 
+ST[0].sRAD_K1[0].nIndx[41]=168; 
 
 
       
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 72; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 73; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -482,6 +485,7 @@ ST[0].sRAD_K2[0].nIndx[68]=161; /**/
 ST[0].sRAD_K2[0].nIndx[69]=163; /**/
 ST[0].sRAD_K2[0].nIndx[70]=164; /**/
 ST[0].sRAD_K2[0].nIndx[71]=165; /**/
+ST[0].sRAD_K2[0].nIndx[72]=169; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
