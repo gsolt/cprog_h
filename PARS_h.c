@@ -296,6 +296,7 @@ ST[0].nSiteList[166]=10113;	ST[0].nLinkList[166]=RADIO1_1;  /* RADIO1_1 Gyõr Édá
 ST[0].nSiteList[167]=10114;	ST[0].nLinkList[167]=RADIO3_1;  /* RADIO3_1 Lövõ 053/12 PV                   -  SOP */
 ST[0].nSiteList[168]=10118;	ST[0].nLinkList[168]=RADIO1_5;  /* RADIO1_5 11-65                       -  GYOR */
 ST[0].nSiteList[169]=10119;	ST[0].nLinkList[169]=LINE11;    /* LINE11   12-81                       -  GYOR */
+ST[0].nSiteList[170]=10120;	ST[0].nLinkList[170]=RADIO9_1;  /* RADIO9_1 Nemesgulács TMKK            -  TAP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -412,7 +413,7 @@ ST[0].sRAD_K1[0].nIndx[41]=168;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 73; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 74; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -486,6 +487,7 @@ ST[0].sRAD_K2[0].nIndx[69]=163; /**/
 ST[0].sRAD_K2[0].nIndx[70]=164; /**/
 ST[0].sRAD_K2[0].nIndx[71]=165; /**/
 ST[0].sRAD_K2[0].nIndx[72]=169; /**/
+ST[0].sRAD_K2[0].nIndx[73]=170; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
