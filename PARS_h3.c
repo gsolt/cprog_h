@@ -254,6 +254,9 @@ sT[0].sCP[0].sCPR[167].nDCStart= 811;   sT[0].sCP[0].sCPR[167].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[168].nDCStart= 816;   sT[0].sCP[0].sCPR[168].nDCNum= 1;    sT[0].sCP[0].sCPR[168].nSCStart= 817;   sT[0].sCP[0].sCPR[168].nAckStart =0;	  sT[0].sCP[0].sCPR[168].nAckNum=0;   sT[0].sCP[0].sCPR[168].nSPOffsetCS= 3889; sT[0].sCP[0].sCPR[168].nSPOffsetLek= 3890;
 sT[0].sCP[0].sCPR[169].nDCStart= 819;   sT[0].sCP[0].sCPR[169].nDCNum= 1;    sT[0].sCP[0].sCPR[169].nSCStart= 820;   sT[0].sCP[0].sCPR[169].nAckStart =0;	  sT[0].sCP[0].sCPR[169].nAckNum=0;   sT[0].sCP[0].sCPR[169].nSPOffsetCS= 3905; sT[0].sCP[0].sCPR[169].nSPOffsetLek= 3906;
 sT[0].sCP[0].sCPR[170].nDCStart= 822;   sT[0].sCP[0].sCPR[170].nDCNum= 4;    sT[0].sCP[0].sCPR[170].nSCStart= 826;   sT[0].sCP[0].sCPR[170].nAckStart =0;	  sT[0].sCP[0].sCPR[170].nAckNum=0;   sT[0].sCP[0].sCPR[170].nSPOffsetCS= 3927; sT[0].sCP[0].sCPR[170].nSPOffsetLek= 3928;
+sT[0].sCP[0].sCPR[171].nDCStart= 827;   sT[0].sCP[0].sCPR[171].nDCNum= 4;    sT[0].sCP[0].sCPR[171].nSCStart= 831;   sT[0].sCP[0].sCPR[171].nAckStart =0;	  sT[0].sCP[0].sCPR[171].nAckNum=0;   sT[0].sCP[0].sCPR[171].nSPOffsetCS= 3966; sT[0].sCP[0].sCPR[171].nSPOffsetLek= 3967;
+sT[0].sCP[0].sCPR[172].nDCStart= 832;   sT[0].sCP[0].sCPR[172].nDCNum= 4;    sT[0].sCP[0].sCPR[172].nSCStart= 836;   sT[0].sCP[0].sCPR[172].nAckStart =0;	  sT[0].sCP[0].sCPR[172].nAckNum=0;   sT[0].sCP[0].sCPR[172].nSPOffsetCS= 4005; sT[0].sCP[0].sCPR[172].nSPOffsetLek= 4006;
+sT[0].sCP[0].sCPR[173].nDCStart= 837;   sT[0].sCP[0].sCPR[173].nDCNum= 4;    sT[0].sCP[0].sCPR[173].nSCStart= 841;   sT[0].sCP[0].sCPR[173].nAckStart =0;	  sT[0].sCP[0].sCPR[173].nAckNum=0;   sT[0].sCP[0].sCPR[173].nSPOffsetCS= 4044; sT[0].sCP[0].sCPR[173].nSPOffsetLek= 4045;
 
 
 
@@ -1982,6 +1985,50 @@ sT[0].sTI[170].nType = TYP_MOT;
 	sT[0].sMOT[170].nIEC_NM				= 1203;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[170].nNMNum				= 9;		/* Analóg mérések száma*/
 
+/* Királyszentistván 017/24_1 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[171].nType = TYP_TAL;
+  
+	sT[0].sTAL[171].nIEC_SP       		= 3929;
+	sT[0].sTAL[171].nIEC_OsszevontHiba	= 3961;
+	sT[0].sTAL[171].nIEC_MT_KommHiba	= 3962;
+	sT[0].sTAL[171].nKommStatusNum		= 2;	
+	sT[0].sTAL[171].nIEC_DP       		= 1113;
+	sT[0].sTAL[171].nIEC_DP_FSZ1  		= 1117;
+	sT[0].sTAL[171].nIEC_NM				= 1212;
+	sT[0].sTAL[171].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[171].nSP_EXTRA_OFFSET		= 3964;
+  sT[0].sTAL[171].nSP_EXTRA_NUM		= 2;
+
+/* Királyszentistván 017/24_2 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[172].nType = TYP_TAL;
+  
+	sT[0].sTAL[172].nIEC_SP       		= 3968;
+	sT[0].sTAL[172].nIEC_OsszevontHiba	= 4000;
+	sT[0].sTAL[172].nIEC_MT_KommHiba	= 4001;
+	sT[0].sTAL[172].nKommStatusNum		= 2;	
+	sT[0].sTAL[172].nIEC_DP       		= 1121;
+	sT[0].sTAL[172].nIEC_DP_FSZ1  		= 1125;
+	sT[0].sTAL[172].nIEC_NM				= 1221;
+	sT[0].sTAL[172].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[172].nSP_EXTRA_OFFSET		= 4003;
+  sT[0].sTAL[172].nSP_EXTRA_NUM		= 2;
+
+/* Királyszentistván 017/24_3 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[173].nType = TYP_TAL;
+  
+	sT[0].sTAL[173].nIEC_SP       		= 4007;
+	sT[0].sTAL[173].nIEC_OsszevontHiba	= 4039;
+	sT[0].sTAL[173].nIEC_MT_KommHiba	= 4040;
+	sT[0].sTAL[173].nKommStatusNum		= 2;	
+	sT[0].sTAL[173].nIEC_DP       		= 1129;
+	sT[0].sTAL[173].nIEC_DP_FSZ1  		= 1133;
+	sT[0].sTAL[173].nIEC_NM				= 1230;
+	sT[0].sTAL[173].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[173].nSP_EXTRA_OFFSET		= 4042;
+  sT[0].sTAL[173].nSP_EXTRA_NUM		= 2;
    
 } /* end fnSetDataPar()*/
 
