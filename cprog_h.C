@@ -1,5 +1,5 @@
 /**+**************************************************************************
-* NAME           :  cprog_f.c                                                *
+* NAME           :  cprog_h.c                                                *
 * DESCRIPTION    :                                                            	*
 * PROCESS        :  															*
 *                                                                             	*
@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 91;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 93;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -5825,11 +5825,22 @@ ReteszesRTUIndex[31][1] = 140;			   /* Kolontár 324 PV erõmû   */															
 ReteszesTMOK_RTUNum[31] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[31] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 32. TMOK: 50-63 RTU:  Királyszentistván 036/4 PV erõmû    - Tesztelve           -----------------------*/								/**/
+/* 32. TMOK: 50-63 RTU:  Királyszentistván 036/4 PV erõmû, Királyszentistván 017/24_1,2,3   - Tesztelve           -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[32] = 483; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[32][0] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[32][0] = 97;			   /* Királyszentistván 036/4 PV erõmû */															/**/
-ReteszesTMOK_RTUNum[32] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[32][1] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[32][1] = 171;			   /* Királyszentistván 017/24_1 PV erõmû */															/**/
+
+TMOK_ID[32][2] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[32][2] = 172;			   /* Királyszentistván 017/24_2 PV erõmû */															/**/
+
+TMOK_ID[32][3] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[32][3] = 173;			   /* Királyszentistván 017/24_3 PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[32] = 4;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[32] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[32] = 9;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
@@ -6402,6 +6413,36 @@ TMOK_ID[90][0] = 1324;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[90][0] = 167;			   /* Lövõ 053/12 PV erõmû   */															/**/
 ReteszesTMOK_RTUNum[90] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[90] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 91. TMOK: 54-24 RTU: Királyszentistván PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[91] = 1325; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[91][0] = 1325;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[91][0] = 171;			   /* Királyszentistván 017/24_1  */															/**/
+
+TMOK_ID[91][1] = 1325;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[91][1] = 172;			   /* Királyszentistván 017/24_2  */															/**/
+
+TMOK_ID[91][2] = 1325;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[91][2] = 173;			   /* Királyszentistván 017/24_3  */															/**/
+
+ReteszesTMOK_RTUNum[91] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[91] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 92. TMOK: 54-74 RTU: Királyszentistván PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[92] = 1326; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[92][0] = 1326;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[92][0] = 171;			   /* Királyszentistván 017/24_1  */															/**/
+
+TMOK_ID[92][1] = 1326;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[92][1] = 172;			   /* Királyszentistván 017/24_2  */															/**/
+
+TMOK_ID[92][2] = 1326;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[92][2] = 173;			   /* Királyszentistván 017/24_3  */															/**/
+
+ReteszesTMOK_RTUNum[92] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[92] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
