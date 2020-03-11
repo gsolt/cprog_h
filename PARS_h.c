@@ -300,6 +300,7 @@ ST[0].nSiteList[170]=10120;	ST[0].nLinkList[170]=RADIO9_1;  /* RADIO9_1 Nemesgul
 ST[0].nSiteList[171]=10115;	ST[0].nLinkList[171]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_1             -  VARP */
 ST[0].nSiteList[172]=10116;	ST[0].nLinkList[172]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_2             -  VARP */
 ST[0].nSiteList[173]=10117;	ST[0].nLinkList[173]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_3             -  VARP */
+ST[0].nSiteList[174]=10121;	ST[0].nLinkList[174]=RADIO4_1;  /* RADIO4_1 Veszprémvarsány 67/1_2_3             -  VARS */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -367,7 +368,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 42; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 43; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -410,6 +411,7 @@ ST[0].sRAD_K1[0].nIndx[38]=147;
 ST[0].sRAD_K1[0].nIndx[39]=153; 
 ST[0].sRAD_K1[0].nIndx[40]=156; 
 ST[0].sRAD_K1[0].nIndx[41]=168; 
+ST[0].sRAD_K1[0].nIndx[42]=174; 
 
 
       
