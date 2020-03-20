@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 93;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 95;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6279,20 +6279,11 @@ ReteszesRTUIndex[77][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */								
 ReteszesTMOK_RTUNum[77] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[77] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 78. TMOK: tartalék  RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 78. TMOK 52-57: tartalék  RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[78] = 1316; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
-
 TMOK_ID[78][0] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[78][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */															/**/
-
-TMOK_ID[78][1] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[78][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
-
-TMOK_ID[78][2] = 1316;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[78][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
-
-
-ReteszesTMOK_RTUNum[78] = 0;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesRTUIndex[78][0] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
+ReteszesTMOK_RTUNum[78] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[78] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 79. TMKK: Kékkút kábelköri RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6312,19 +6303,10 @@ nReteszPar[79] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem ta
 
 /* 80. TMOK: 52-32 RTU: Tapolca 0350/38,39,40 PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[80] = 947; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
-
 TMOK_ID[80][0] = 947;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[80][0] = 152;			   /* Tapolca 0350/38,39,40 PV erõmû   */															/**/
-
-TMOK_ID[80][1] = 947;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[80][1] = 155;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
-
-TMOK_ID[80][2] = 947;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[80][2] = 161;			   /* Tapolca 0366/34-37 PV erõmû    */															/**/
-
-ReteszesTMOK_RTUNum[80] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
-nReteszPar[80] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
-nReteszOffset[80] = 21;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+ReteszesTMOK_RTUNum[80] = 0;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[80] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 81. TMOK:37-83 H front end ->   RTU: G: Polgárdi 0155/12_1,2 PV 									/**/
 TMOKAllasjelzesOffsetek[81] = 34; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
@@ -6443,6 +6425,21 @@ ReteszesRTUIndex[92][2] = 173;			   /* Királyszentistván 017/24_3  */											
 
 ReteszesTMOK_RTUNum[92] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[92] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 93. TMOK: Nemesgulács 3. leág. RTU: Tapolca 4 leág. PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[93] = 1107; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[93][0] = 1107;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[93][0] = 161;			   /* Tapolca 4 leág  0355/34-37 */															/**/
+ReteszesTMOK_RTUNum[93] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[93] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[93] = 21;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 94. TMOK: 52-62 RTU: Tapolca 4 leág. PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[94] = 1327; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[94][0] = 1327;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[94][0] = 161;			   /* Tapolca 4 leág  0355/34-37 */															/**/
+ReteszesTMOK_RTUNum[94] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[94] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
