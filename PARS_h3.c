@@ -258,6 +258,7 @@ sT[0].sCP[0].sCPR[171].nDCStart= 827;   sT[0].sCP[0].sCPR[171].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[172].nDCStart= 832;   sT[0].sCP[0].sCPR[172].nDCNum= 4;    sT[0].sCP[0].sCPR[172].nSCStart= 836;   sT[0].sCP[0].sCPR[172].nAckStart =0;	  sT[0].sCP[0].sCPR[172].nAckNum=0;   sT[0].sCP[0].sCPR[172].nSPOffsetCS= 4005; sT[0].sCP[0].sCPR[172].nSPOffsetLek= 4006;
 sT[0].sCP[0].sCPR[173].nDCStart= 837;   sT[0].sCP[0].sCPR[173].nDCNum= 4;    sT[0].sCP[0].sCPR[173].nSCStart= 841;   sT[0].sCP[0].sCPR[173].nAckStart =0;	  sT[0].sCP[0].sCPR[173].nAckNum=0;   sT[0].sCP[0].sCPR[173].nSPOffsetCS= 4044; sT[0].sCP[0].sCPR[173].nSPOffsetLek= 4045;
 sT[0].sCP[0].sCPR[174].nDCStart= 842;   sT[0].sCP[0].sCPR[174].nDCNum= 4;    sT[0].sCP[0].sCPR[174].nSCStart= 846;   sT[0].sCP[0].sCPR[174].nAckStart =0;	  sT[0].sCP[0].sCPR[174].nAckNum=0;   sT[0].sCP[0].sCPR[174].nSPOffsetCS= 4062; sT[0].sCP[0].sCPR[174].nSPOffsetLek= 4063;
+sT[0].sCP[0].sCPR[175].nDCStart= 847;   sT[0].sCP[0].sCPR[175].nDCNum= 8;    sT[0].sCP[0].sCPR[175].nSCStart= 855;   sT[0].sCP[0].sCPR[175].nAckStart =0;	  sT[0].sCP[0].sCPR[175].nAckNum=0;   sT[0].sCP[0].sCPR[175].nSPOffsetCS= 4092; sT[0].sCP[0].sCPR[175].nSPOffsetLek= 4093;
 
 
 
@@ -2040,6 +2041,16 @@ sT[0].sTI[174].nType = TYP_MOT;
 	sT[0].sMOT[174].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[174].nIEC_NM				= 1239;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[174].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Türje 0135/15 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[175].nType = TYP_MOT;
+
+	sT[0].sMOT[175].nIEC_SP				= 4064;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[175].nIEC_SP_NUM			= 28;		/* Egybites értékek száma*/
+	sT[0].sMOT[175].nIEC_DP				= 1145;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[175].nIEC_DP_NUM			= 16;   		/* Két bites értékek száma*/
+	sT[0].sMOT[175].nIEC_NM				= 1248;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[175].nNMNum				= 18;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 
