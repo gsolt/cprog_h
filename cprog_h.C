@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 96;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 98;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6468,6 +6468,20 @@ TMOK_ID[95][0] = 1328;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[95][0] = 176;			   /* Radóckölked 258 PV erõmû */															/**/
 ReteszesTMOK_RTUNum[95] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[95] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 96. TMOK: 40-68 RTU: Radóckölked 258 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[96] = 1329; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[96][0] = 1329;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[96][0] = 176;			   /* Radóckölked 258 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[96] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[96] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 97. TMOK: 52-98 RTU: Lesenceistvánd 0206/12 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[97] = 1330; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[97][0] = 1330;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[97][0] = 178;			   /* Lesenceistvánd 0206/12 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[97] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[97] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
