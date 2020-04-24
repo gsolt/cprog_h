@@ -6188,7 +6188,7 @@ ReteszesRTUIndex[67][0] = 136;			   /* Szentkirályszabadja 067/6 PV erõmû   */		
 ReteszesTMOK_RTUNum[67] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[67] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 68. TMOK: 51-09 RTU: Szentkirályszabadja 067/6, Felsõörs 03/41  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 68. TMOK: 51-09 RTU: Szentkirályszabadja 067/6, Felsõörs 03/41  PV erõmû , Szentkirályszabadja 056/1 - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[68] = 1309; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[68][0] = 1309;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -6197,10 +6197,13 @@ ReteszesRTUIndex[68][0] = 136;			   /* Szentkirályszabadja 067/6  PV erõmû   */	
 TMOK_ID[68][1] = 1309;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[68][1] = 137;			   /* Felsõörs 03/41  PV erõmû   */															/**/
 
-ReteszesTMOK_RTUNum[68] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[68][2] = 1309;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[68][2] = 177;			   /* Szentkirályszabadja 056/1  PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[68] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[68] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 69. TMOK: 50-49 RTU: Szentkirályszabadja 067/6, Felsõörs 03/41  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 69. TMOK: 50-49 RTU: Szentkirályszabadja 067/6, Felsõörs 03/41  PV erõmû ,Szentkirályszabadja 056/1  PV erõmû - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[69] = 1310; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[69][0] = 1310;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -6209,28 +6212,46 @@ ReteszesRTUIndex[69][0] = 136;			   /* Szentkirályszabadja 067/6  PV erõmû   */	
 TMOK_ID[69][1] = 1310;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[69][1] = 137;			   /* Felsõörs 03/41  PV erõmû   */															/**/
 
-ReteszesTMOK_RTUNum[69] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[69][2] = 1310;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[69][2] = 177;			   /* Szentkirályszabadja 056/1    */															/**/
+
+ReteszesTMOK_RTUNum[69] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[69] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 70. TMOK: 51-12 RTU: Felsõörs 03/41  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 70. TMOK: 51-12 RTU: Felsõörs 03/41  PV erõmû, Szentkirályszabadja 056/1  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[70] = 1311; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[70][0] = 1311;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[70][0] = 137;			   /* Felsõörs 03/41  PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[70] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[70][1] = 1311;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[70][1] = 177;			   /* Szentkirályszabadja 056/1  PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[70] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[70] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 71. TMOK: 51-28 RTU: Felsõörs 03/41  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 71. TMOK: 51-28 RTU: Felsõörs 03/41  PV erõmû, Szentkirályszabadja 056/1  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[71] = 1312; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[71][0] = 1312;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[71][0] = 137;			   /* Felsõörs 03/41  PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[71] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[71][1] = 1312;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[71][1] = 177;			   /* Szentkirályszabadja 056/1  PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[71] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[71] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 72. TMOK: 54-91 RTU: Felsõörs 03/41  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 72. TMOK: 54-91 RTU: Felsõörs 03/41  PV erõmû, Szentkirályszabadja 056/1  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[72] = 838; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[72][0] = 838;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[72][0] = 137;			   /* Felsõörs 03/41 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[72] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[72][1] = 838;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[72][1] = 177;			   /* Szentkirályszabadja 056/1  PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[72] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[72] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[72] = 18;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
