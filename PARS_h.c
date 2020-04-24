@@ -302,6 +302,7 @@ ST[0].nSiteList[172]=10116;	ST[0].nLinkList[172]=RADIO3_6;  /* RADIO3_6 Királysz
 ST[0].nSiteList[173]=10117;	ST[0].nLinkList[173]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_3             -  VARP */
 ST[0].nSiteList[174]=10121;	ST[0].nLinkList[174]=RADIO4_1;  /* RADIO4_1 Veszprémvarsány 67/1_2_3             -  VARS */
 ST[0].nSiteList[175]=10122;	ST[0].nLinkList[175]=RADIO9_5;  /* RADIO9_5 Türje 0135/05                                -  TAP */
+ST[0].nSiteList[176]=10124;	ST[0].nLinkList[176]=RADIO5_5;  /* RADIO5_5 Rádóckõlked 258                      -  KOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -501,7 +502,7 @@ ST[0].sRAD_K2[0].nIndx[77]=175; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 47;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 48;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -549,6 +550,7 @@ ST[0].sRAD_K3[0].nIndx[43]=160; /**/
 ST[0].sRAD_K3[0].nIndx[44]=162; /**/
 ST[0].sRAD_K3[0].nIndx[45]=166; /**/
 ST[0].sRAD_K3[0].nIndx[46]=167; /**/
+ST[0].sRAD_K3[0].nIndx[47]=176; /**/
 
 
 

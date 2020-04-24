@@ -27,7 +27,7 @@
 #define  LEKERDEZES_TIMEOUT		100
 #define  COMMAND_LENGTH			14
 
-#define  			RETESZ_TMOK_NUM		100	
+#define  			RETESZ_TMOK_NUM		120	
 #define  			RETESZ_RTU_NUM		10	
 
 
@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 95;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 96;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6440,6 +6440,13 @@ TMOK_ID[94][0] = 1327;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[94][0] = 161;			   /* Tapolca 4 leág  0355/34-37 */															/**/
 ReteszesTMOK_RTUNum[94] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[94] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 95. TMOK: 40-60 RTU: Radóckölked 258 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[95] = 1328; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[95][0] = 1328;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[95][0] = 176;			   /* Radóckölked 258 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[95] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[95] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
