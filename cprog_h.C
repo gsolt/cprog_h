@@ -861,7 +861,7 @@ void tx_command(void)
  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161)
+			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161 && nI!=178)
 			{						
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -873,7 +873,7 @@ void tx_command(void)
  		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 	     } /* end if   */			
-			else if ( nI==133 || nI==150 || nI==155 || nI==161) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
+			else if ( nI==133 || nI==150 || nI==155 || nI==161 || nI==178) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		  nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
