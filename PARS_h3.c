@@ -262,6 +262,8 @@ sT[0].sCP[0].sCPR[175].nDCStart= 847;   sT[0].sCP[0].sCPR[175].nDCNum= 8;    sT[
 sT[0].sCP[0].sCPR[176].nDCStart= 856;   sT[0].sCP[0].sCPR[176].nDCNum= 4;    sT[0].sCP[0].sCPR[176].nSCStart= 860;   sT[0].sCP[0].sCPR[176].nAckStart =0;	  sT[0].sCP[0].sCPR[176].nAckNum=0;   sT[0].sCP[0].sCPR[176].nSPOffsetCS= 4110; sT[0].sCP[0].sCPR[176].nSPOffsetLek= 4111;
 sT[0].sCP[0].sCPR[177].nDCStart= 861;   sT[0].sCP[0].sCPR[177].nDCNum= 4;    sT[0].sCP[0].sCPR[177].nSCStart= 865;   sT[0].sCP[0].sCPR[177].nAckStart =0;	  sT[0].sCP[0].sCPR[177].nAckNum=0;   sT[0].sCP[0].sCPR[177].nSPOffsetCS= 4128; sT[0].sCP[0].sCPR[177].nSPOffsetLek= 4129;
 sT[0].sCP[0].sCPR[178].nDCStart= 866;   sT[0].sCP[0].sCPR[178].nDCNum=12;    sT[0].sCP[0].sCPR[178].nSCStart= 877;   sT[0].sCP[0].sCPR[178].nAckStart =0;	  sT[0].sCP[0].sCPR[178].nAckNum=0;   sT[0].sCP[0].sCPR[178].nSPOffsetCS= 4162; sT[0].sCP[0].sCPR[178].nSPOffsetLek= 4163;
+sT[0].sCP[0].sCPR[179].nDCStart= 878;   sT[0].sCP[0].sCPR[179].nDCNum= 9;    sT[0].sCP[0].sCPR[179].nSCStart= 887;   sT[0].sCP[0].sCPR[179].nAckStart =0;	  sT[0].sCP[0].sCPR[179].nAckNum=0;   sT[0].sCP[0].sCPR[179].nSPOffsetCS= 4212; sT[0].sCP[0].sCPR[179].nSPOffsetLek= 4213;
+sT[0].sCP[0].sCPR[180].nDCStart= 888;   sT[0].sCP[0].sCPR[180].nDCNum= 1;    sT[0].sCP[0].sCPR[180].nSCStart= 889;   sT[0].sCP[0].sCPR[180].nAckStart =0;	  sT[0].sCP[0].sCPR[180].nAckNum=0;   sT[0].sCP[0].sCPR[180].nSPOffsetCS= 4228; sT[0].sCP[0].sCPR[180].nSPOffsetLek= 4229;
 
 
 
@@ -2084,6 +2086,24 @@ sT[0].sTI[178].nType = TYP_MOT;
 	sT[0].sMOT[178].nIEC_DP_NUM			= 22;   		/* Két bites értékek száma*/
 	sT[0].sMOT[178].nIEC_NM				= 1284;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[178].nNMNum				= 28;		/* Analóg mérések száma*/
+
+/* Bicske 071/2 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[179].nType = TYP_MOT;
+
+	sT[0].sMOT[179].nIEC_SP				= 4164;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[179].nIEC_SP_NUM			= 48;		/* Egybites értékek száma*/
+	sT[0].sMOT[179].nIEC_DP				= 1191;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[179].nIEC_DP_NUM			= 34;   		/* Két bites értékek száma*/
+	sT[0].sMOT[179].nIEC_NM				= 1312;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[179].nNMNum				= 43;		/* Analóg mérések száma*/
+
+/* Nemesgulács TMOK  ----------------------------------------------------------------*/
+sT[0].sTI[180].nType = TYP_TMOK;
+
+	sT[0].sMOT[180].nIEC_SP				= 4214;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[180].nIEC_DP				= 1225;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[180].nIEC_NM				= 1355;		/* Mérések IEC kezdõcíme */	
+	sT[0].sMOT[180].nNMNum				  = 4;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 

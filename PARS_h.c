@@ -305,6 +305,8 @@ ST[0].nSiteList[175]=10122;	ST[0].nLinkList[175]=RADIO9_5;  /* RADIO9_5 Türje 01
 ST[0].nSiteList[176]=10124;	ST[0].nLinkList[176]=RADIO5_5;  /* RADIO5_5 Rádóckõlked 258                      -  KOR */
 ST[0].nSiteList[177]=10125;	ST[0].nLinkList[177]=RADIO2_1;  /* RADIO2_1 Szentkirályszabadja 056/1            -  VESZ */
 ST[0].nSiteList[178]=10123;	ST[0].nLinkList[178]=RADIO9_1;  /* RADIO9_1 Lesenceistvánd 206/12                -  TAP */
+ST[0].nSiteList[179]=10126;	ST[0].nLinkList[179]=RADIO7_5;  /* RADIO7_5 Bicske 071/2                          -  BICS */
+ST[0].nSiteList[180]=10127;	ST[0].nLinkList[180]=RADIO9_1;  /* RADIO9_1 59297 TMOK                      -  TAP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -422,7 +424,7 @@ ST[0].sRAD_K1[0].nIndx[42]=174;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 80; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 81; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -503,10 +505,11 @@ ST[0].sRAD_K2[0].nIndx[76]=173; /**/
 ST[0].sRAD_K2[0].nIndx[77]=175; /**/
 ST[0].sRAD_K2[0].nIndx[78]=177; /**/
 ST[0].sRAD_K2[0].nIndx[79]=178; /**/
+ST[0].sRAD_K2[0].nIndx[80]=180; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 48;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 49;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -555,6 +558,7 @@ ST[0].sRAD_K3[0].nIndx[44]=162; /**/
 ST[0].sRAD_K3[0].nIndx[45]=166; /**/
 ST[0].sRAD_K3[0].nIndx[46]=167; /**/
 ST[0].sRAD_K3[0].nIndx[47]=176; /**/
+ST[0].sRAD_K3[0].nIndx[48]=179; /**/
 
 
 
