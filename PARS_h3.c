@@ -264,6 +264,9 @@ sT[0].sCP[0].sCPR[177].nDCStart= 861;   sT[0].sCP[0].sCPR[177].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[178].nDCStart= 866;   sT[0].sCP[0].sCPR[178].nDCNum=12;    sT[0].sCP[0].sCPR[178].nSCStart= 877;   sT[0].sCP[0].sCPR[178].nAckStart =0;	  sT[0].sCP[0].sCPR[178].nAckNum=0;   sT[0].sCP[0].sCPR[178].nSPOffsetCS= 4162; sT[0].sCP[0].sCPR[178].nSPOffsetLek= 4163;
 sT[0].sCP[0].sCPR[179].nDCStart= 878;   sT[0].sCP[0].sCPR[179].nDCNum= 9;    sT[0].sCP[0].sCPR[179].nSCStart= 887;   sT[0].sCP[0].sCPR[179].nAckStart =0;	  sT[0].sCP[0].sCPR[179].nAckNum=0;   sT[0].sCP[0].sCPR[179].nSPOffsetCS= 4212; sT[0].sCP[0].sCPR[179].nSPOffsetLek= 4213;
 sT[0].sCP[0].sCPR[180].nDCStart= 888;   sT[0].sCP[0].sCPR[180].nDCNum= 1;    sT[0].sCP[0].sCPR[180].nSCStart= 889;   sT[0].sCP[0].sCPR[180].nAckStart =0;	  sT[0].sCP[0].sCPR[180].nAckNum=0;   sT[0].sCP[0].sCPR[180].nSPOffsetCS= 4228; sT[0].sCP[0].sCPR[180].nSPOffsetLek= 4229;
+sT[0].sCP[0].sCPR[181].nDCStart= 891;   sT[0].sCP[0].sCPR[181].nDCNum= 4;    sT[0].sCP[0].sCPR[181].nSCStart= 895;   sT[0].sCP[0].sCPR[181].nAckStart =0;	  sT[0].sCP[0].sCPR[181].nAckNum=0;   sT[0].sCP[0].sCPR[181].nSPOffsetCS= 4267; sT[0].sCP[0].sCPR[181].nSPOffsetLek= 4268;
+sT[0].sCP[0].sCPR[182].nDCStart= 896;   sT[0].sCP[0].sCPR[182].nDCNum= 4;    sT[0].sCP[0].sCPR[182].nSCStart= 900;   sT[0].sCP[0].sCPR[182].nAckStart =0;	  sT[0].sCP[0].sCPR[182].nAckNum=0;   sT[0].sCP[0].sCPR[182].nSPOffsetCS= 4306; sT[0].sCP[0].sCPR[182].nSPOffsetLek= 4307;
+sT[0].sCP[0].sCPR[183].nDCStart= 901;   sT[0].sCP[0].sCPR[183].nDCNum= 4;    sT[0].sCP[0].sCPR[183].nSCStart= 905;   sT[0].sCP[0].sCPR[183].nAckStart =0;	  sT[0].sCP[0].sCPR[183].nAckNum=0;   sT[0].sCP[0].sCPR[183].nSPOffsetCS= 4345; sT[0].sCP[0].sCPR[183].nSPOffsetLek= 4346;
 
 
 
@@ -2104,6 +2107,51 @@ sT[0].sTI[180].nType = TYP_TMOK;
 	sT[0].sMOT[180].nIEC_DP				= 1225;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[180].nIEC_NM				= 1355;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[180].nNMNum				  = 4;		/* Analóg mérések száma*/
+
+/* Osli 0100/22 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[181].nType = TYP_TAL;
+  
+	sT[0].sTAL[181].nIEC_SP       		= 4230;
+	sT[0].sTAL[181].nIEC_OsszevontHiba	= 4262;
+	sT[0].sTAL[181].nIEC_MT_KommHiba	= 4263;
+	sT[0].sTAL[181].nKommStatusNum		= 2;	
+	sT[0].sTAL[181].nIEC_DP       		= 1226;
+	sT[0].sTAL[181].nIEC_DP_FSZ1  		= 1230;
+	sT[0].sTAL[181].nIEC_NM				= 1359;
+	sT[0].sTAL[181].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[181].nSP_EXTRA_OFFSET		= 4265;
+  sT[0].sTAL[181].nSP_EXTRA_NUM		= 2;
+
+/* Osli 0100/24 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[182].nType = TYP_TAL;
+  
+	sT[0].sTAL[182].nIEC_SP       		= 4269;
+	sT[0].sTAL[182].nIEC_OsszevontHiba	= 4301;
+	sT[0].sTAL[182].nIEC_MT_KommHiba	= 4302;
+	sT[0].sTAL[182].nKommStatusNum		= 2;	
+	sT[0].sTAL[182].nIEC_DP       		= 1234;
+	sT[0].sTAL[182].nIEC_DP_FSZ1  		= 1238;
+	sT[0].sTAL[182].nIEC_NM				= 1368;
+	sT[0].sTAL[182].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[182].nSP_EXTRA_OFFSET		= 4304;
+  sT[0].sTAL[182].nSP_EXTRA_NUM		= 2;
+
+/* Lébény 0586/49 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[183].nType = TYP_TAL;
+  
+	sT[0].sTAL[183].nIEC_SP       		= 4308;
+	sT[0].sTAL[183].nIEC_OsszevontHiba	= 4340;
+	sT[0].sTAL[183].nIEC_MT_KommHiba	= 4341;
+	sT[0].sTAL[183].nKommStatusNum		= 2;	
+	sT[0].sTAL[183].nIEC_DP       		= 1242;
+	sT[0].sTAL[183].nIEC_DP_FSZ1  		= 1246;
+	sT[0].sTAL[183].nIEC_NM				= 1377;
+	sT[0].sTAL[183].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[183].nSP_EXTRA_OFFSET		= 4343;
+  sT[0].sTAL[183].nSP_EXTRA_NUM		= 2;
    
 } /* end fnSetDataPar()*/
 

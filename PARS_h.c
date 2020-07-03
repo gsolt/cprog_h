@@ -307,6 +307,9 @@ ST[0].nSiteList[177]=10125;	ST[0].nLinkList[177]=RADIO2_1;  /* RADIO2_1 Szentkir
 ST[0].nSiteList[178]=10123;	ST[0].nLinkList[178]=RADIO9_1;  /* RADIO9_1 Lesenceistvánd 206/12                -  TAP */
 ST[0].nSiteList[179]=10126;	ST[0].nLinkList[179]=RADIO7_5;  /* RADIO7_5 Bicske 071/2                          -  BICS */
 ST[0].nSiteList[180]=10127;	ST[0].nLinkList[180]=RADIO9_1;  /* RADIO9_1 59297 TMOK                      -  TAP */
+ST[0].nSiteList[181]=10128;	ST[0].nLinkList[181]=RADIO1_6;  /* RADIO1_6 Osli 0100/22                      -  KAP */
+ST[0].nSiteList[182]=10129;	ST[0].nLinkList[182]=RADIO1_6;  /* RADIO1_6 Osli 0100/24                      -  KAP */
+ST[0].nSiteList[183]=10130;	ST[0].nLinkList[183]=LINE11;    /* LINE11   Lébény 0586/49                     - KIM */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -374,7 +377,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS*/
-ST[0].sRAD_K1[0].nRtuNumRad = 43; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 45; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -418,13 +421,15 @@ ST[0].sRAD_K1[0].nIndx[39]=153;
 ST[0].sRAD_K1[0].nIndx[40]=156; 
 ST[0].sRAD_K1[0].nIndx[41]=168; 
 ST[0].sRAD_K1[0].nIndx[42]=174; 
+ST[0].sRAD_K1[0].nIndx[43]=181; 
+ST[0].sRAD_K1[0].nIndx[44]=182; 
 
 
       
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 81; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 82; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -506,6 +511,7 @@ ST[0].sRAD_K2[0].nIndx[77]=175; /**/
 ST[0].sRAD_K2[0].nIndx[78]=177; /**/
 ST[0].sRAD_K2[0].nIndx[79]=178; /**/
 ST[0].sRAD_K2[0].nIndx[80]=180; /**/
+ST[0].sRAD_K2[0].nIndx[81]=183; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
