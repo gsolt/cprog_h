@@ -5505,7 +5505,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 99;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 103;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
@@ -6167,11 +6167,16 @@ ReteszesRTUIndex[64][0] = 135;			   /* Gyõr 452/6 Árki  PV erõmû   */											
 ReteszesTMOK_RTUNum[64] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[64] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 65. TMOK: 11-22 RTU: Gyõr 452/6 Árki  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 65. TMOK: 11-22 RTU: Gyõr 452/6 Árki. Lébény 0586/49  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[65] = 1306; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[65][0] = 1306;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[65][0] = 135;			   /* Gyõr 452/6 Árki  PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[65] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[65][1] = 1306;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[65][1] = 183;			   /* Lébény 0586/49  PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[65] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[65] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 66. TMOK: 15-54 RTU: Gyõr 452/6 Árki  PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6489,6 +6494,40 @@ TMOK_ID[98][0] = 1331;						         /*  TMOK azonosítója a kmenõ táviratban = D
 ReteszesRTUIndex[98][0] = 179;			   /* Bicske 071/2 PV erõmû */															/**/
 ReteszesTMOK_RTUNum[98] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[98] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 99. TMOK: 62-20 RTU: Osli 0100/22, Osli 0100/24 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[99] = 1332; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[99][0] = 1332;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[99][0] = 181;			   /* Osli 0100/22 PV erõmû */															/**/
+
+TMOK_ID[99][1] = 1332;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[99][1] = 182;			   /* Osli 0100/24 PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[99] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[99] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 100. TMOK: 11-20 RTU: Lébény 0586/49 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[100] = 1333; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[100][0] = 1333;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[100][0] = 183;			   /* Lébény 0586/49 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[100] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[100] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 101. TMOK: 11-20 RTU: Lébény 0586/49 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[101] = 1334; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[101][0] = 1334;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[101][0] = 183;			   /* Lébény 0586/49 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[101] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[101] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 102. TMOK: 14-44 RTU: Lébény 0586/49  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[102] = 96; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[102][0] = 96;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[102][0] = 183;			   /* Lébény 0586/49 PV erõmû   */															/**/
+ReteszesTMOK_RTUNum[102] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[102] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[102] = 25;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
