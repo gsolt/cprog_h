@@ -878,6 +878,30 @@ char			message[100];
 		*nDCTblIndx = p_col_parInt[68];	/* Itt van az DC4 tábla sorszáma */
 		*nOffset =  750;
 	}/*end if DC4 */
+	else if (nIECOffset>=1000 && nIECOffset<1250)
+	{								
+		/* Double command 5. */
+		*nDCTblIndx = p_col_parInt[77];	/* Itt van az DC5 tábla sorszáma */
+		*nOffset = 1000;
+	}/*end if DC5 */
+	else if (nIECOffset>=1250 && nIECOffset<1500)
+	{								
+		/* Double command 6. */
+		*nDCTblIndx = p_col_parInt[86];	/* Itt van az DC6 tábla sorszáma */
+		*nOffset = 1250;
+	}/*end if DC6 */
+	else if (nIECOffset>=1500 && nIECOffset<1750)
+	{								
+		/* Double command 7. */
+		*nDCTblIndx = p_col_parInt[103];	/* Itt van az DC7 tábla sorszáma */
+		*nOffset = 1500;
+	}/*end if DC7 */
+	else if (nIECOffset>=1750 && nIECOffset<2000)
+	{								
+		/* Double command 8. */
+		*nDCTblIndx = p_col_parInt[104];	/* Itt van az DC8 tábla sorszáma */
+		*nOffset = 1750;
+	}/*end if DC7 */
 
 	/* Double command */
 	
