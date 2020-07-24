@@ -301,7 +301,7 @@ ST[0].nSiteList[171]=10115;	ST[0].nLinkList[171]=RADIO3_6;  /* RADIO3_6 Királysz
 ST[0].nSiteList[172]=10116;	ST[0].nLinkList[172]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_2             -  VARP */
 ST[0].nSiteList[173]=10117;	ST[0].nLinkList[173]=RADIO3_6;  /* RADIO3_6 Királyszentistván 017/24_3             -  VARP */
 ST[0].nSiteList[174]=10121;	ST[0].nLinkList[174]=RADIO4_1;  /* RADIO4_1 Veszprémvarsány 67/1_2_3             -  VARS */
-ST[0].nSiteList[175]=10122;	ST[0].nLinkList[175]=RADIO9_5;  /* RADIO9_5 Türje 0135/05                                -  TAP */
+ST[0].nSiteList[175]=10122;	ST[0].nLinkList[175]=RADIO9_5;  /* RADIO9_5 Türje 0135/05                                -  SUM */
 ST[0].nSiteList[176]=10124;	ST[0].nLinkList[176]=RADIO5_5;  /* RADIO5_5 Rádóckõlked 258                      -  KOR */
 ST[0].nSiteList[177]=10125;	ST[0].nLinkList[177]=RADIO2_1;  /* RADIO2_1 Szentkirályszabadja 056/1            -  VESZ */
 ST[0].nSiteList[178]=10123;	ST[0].nLinkList[178]=RADIO9_1;  /* RADIO9_1 Lesenceistvánd 206/12                -  TAP */
@@ -310,6 +310,9 @@ ST[0].nSiteList[180]=10127;	ST[0].nLinkList[180]=RADIO9_1;  /* RADIO9_1 59297 TM
 ST[0].nSiteList[181]=10128;	ST[0].nLinkList[181]=RADIO1_6;  /* RADIO1_6 Osli 0100/22                      -  KAP */
 ST[0].nSiteList[182]=10129;	ST[0].nLinkList[182]=RADIO1_6;  /* RADIO1_6 Osli 0100/24                      -  KAP */
 ST[0].nSiteList[183]=10130;	ST[0].nLinkList[183]=LINE11;    /* LINE11   Lébény 0586/49                     - KIM */
+ST[0].nSiteList[184]=10131;	ST[0].nLinkList[184]=RADIO9_5;  /* RADIO9_5 Óhíd 213/8                               - SUM */
+ST[0].nSiteList[185]=10132;	ST[0].nLinkList[185]=RADIO5_1;  /* RADIO5_1 Szany 155/6                         - CSOR */
+ST[0].nSiteList[186]=10133;	ST[0].nLinkList[186]=RADIO5_1;  /* RADIO5_1 Szany 155/7                         - CSOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -429,7 +432,7 @@ ST[0].sRAD_K1[0].nIndx[44]=182;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 82; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 85; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -512,6 +515,9 @@ ST[0].sRAD_K2[0].nIndx[78]=177; /**/
 ST[0].sRAD_K2[0].nIndx[79]=178; /**/
 ST[0].sRAD_K2[0].nIndx[80]=180; /**/
 ST[0].sRAD_K2[0].nIndx[81]=183; /**/
+ST[0].sRAD_K2[0].nIndx[82]=184; /**/
+ST[0].sRAD_K2[0].nIndx[83]=185; /**/
+ST[0].sRAD_K2[0].nIndx[84]=186; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */

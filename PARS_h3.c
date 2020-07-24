@@ -267,6 +267,9 @@ sT[0].sCP[0].sCPR[180].nDCStart= 888;   sT[0].sCP[0].sCPR[180].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[181].nDCStart= 891;   sT[0].sCP[0].sCPR[181].nDCNum= 4;    sT[0].sCP[0].sCPR[181].nSCStart= 895;   sT[0].sCP[0].sCPR[181].nAckStart =0;	  sT[0].sCP[0].sCPR[181].nAckNum=0;   sT[0].sCP[0].sCPR[181].nSPOffsetCS= 4267; sT[0].sCP[0].sCPR[181].nSPOffsetLek= 4268;
 sT[0].sCP[0].sCPR[182].nDCStart= 896;   sT[0].sCP[0].sCPR[182].nDCNum= 4;    sT[0].sCP[0].sCPR[182].nSCStart= 900;   sT[0].sCP[0].sCPR[182].nAckStart =0;	  sT[0].sCP[0].sCPR[182].nAckNum=0;   sT[0].sCP[0].sCPR[182].nSPOffsetCS= 4306; sT[0].sCP[0].sCPR[182].nSPOffsetLek= 4307;
 sT[0].sCP[0].sCPR[183].nDCStart= 901;   sT[0].sCP[0].sCPR[183].nDCNum= 4;    sT[0].sCP[0].sCPR[183].nSCStart= 905;   sT[0].sCP[0].sCPR[183].nAckStart =0;	  sT[0].sCP[0].sCPR[183].nAckNum=0;   sT[0].sCP[0].sCPR[183].nSPOffsetCS= 4345; sT[0].sCP[0].sCPR[183].nSPOffsetLek= 4346;
+sT[0].sCP[0].sCPR[184].nDCStart= 906;   sT[0].sCP[0].sCPR[184].nDCNum= 4;    sT[0].sCP[0].sCPR[184].nSCStart= 910;   sT[0].sCP[0].sCPR[184].nAckStart =0;	  sT[0].sCP[0].sCPR[184].nAckNum=0;   sT[0].sCP[0].sCPR[184].nSPOffsetCS= 4363; sT[0].sCP[0].sCPR[184].nSPOffsetLek= 4364;
+sT[0].sCP[0].sCPR[185].nDCStart= 911;   sT[0].sCP[0].sCPR[185].nDCNum= 4;    sT[0].sCP[0].sCPR[185].nSCStart= 915;   sT[0].sCP[0].sCPR[185].nAckStart =0;	  sT[0].sCP[0].sCPR[185].nAckNum=0;   sT[0].sCP[0].sCPR[185].nSPOffsetCS= 4402; sT[0].sCP[0].sCPR[185].nSPOffsetLek= 4403;
+sT[0].sCP[0].sCPR[186].nDCStart= 916;   sT[0].sCP[0].sCPR[186].nDCNum= 4;    sT[0].sCP[0].sCPR[186].nSCStart= 920;   sT[0].sCP[0].sCPR[186].nAckStart =0;	  sT[0].sCP[0].sCPR[186].nAckNum=0;   sT[0].sCP[0].sCPR[186].nSPOffsetCS= 4441; sT[0].sCP[0].sCPR[186].nSPOffsetLek= 4442;
 
 
 
@@ -2152,6 +2155,46 @@ sT[0].sTI[180].nType = TYP_TMOK;
  
  	sT[0].sTAL[183].nSP_EXTRA_OFFSET		= 4343;
   sT[0].sTAL[183].nSP_EXTRA_NUM		= 2;
+
+/* Óhíd 213/8 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[184].nType = TYP_MOT;
+
+	sT[0].sMOT[184].nIEC_SP				= 4347;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[184].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[184].nIEC_DP				= 1500;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[184].nIEC_DP_NUM			= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[184].nIEC_NM				= 1386;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[184].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Szany 0155/6 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[185].nType = TYP_TAL;
+  
+	sT[0].sTAL[185].nIEC_SP       		= 4365;
+	sT[0].sTAL[185].nIEC_OsszevontHiba	= 4397;
+	sT[0].sTAL[185].nIEC_MT_KommHiba	= 4398;
+	sT[0].sTAL[185].nKommStatusNum		= 2;	
+	sT[0].sTAL[185].nIEC_DP       		= 1504;
+	sT[0].sTAL[185].nIEC_DP_FSZ1  		= 1508;
+	sT[0].sTAL[185].nIEC_NM				= 1395;
+	sT[0].sTAL[185].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[185].nSP_EXTRA_OFFSET		= 4400;
+  sT[0].sTAL[185].nSP_EXTRA_NUM		= 2;
+
+/* Szany 0155/7 PV erõmû ----------------------------------------------*/
+  sT[0].sTI[186].nType = TYP_TAL;
+  
+	sT[0].sTAL[186].nIEC_SP       		= 4404;
+	sT[0].sTAL[186].nIEC_OsszevontHiba	= 4436;
+	sT[0].sTAL[186].nIEC_MT_KommHiba	= 4437;
+	sT[0].sTAL[186].nKommStatusNum		= 2;	
+	sT[0].sTAL[186].nIEC_DP       		= 1512;
+	sT[0].sTAL[186].nIEC_DP_FSZ1  		= 1516;
+	sT[0].sTAL[186].nIEC_NM				= 1404;
+	sT[0].sTAL[186].nNMNum		  		= 9;
+ 
+ 	sT[0].sTAL[186].nSP_EXTRA_OFFSET		= 4439;
+  sT[0].sTAL[186].nSP_EXTRA_NUM		= 2;
    
 } /* end fnSetDataPar()*/
 
