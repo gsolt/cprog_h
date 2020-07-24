@@ -966,6 +966,30 @@ CB_TABLE_INFO   table_SC;
 		*nSCTblIndx = p_col_parInt[69];	/* Itt van az SC4 tábla sorszáma */
 		*nOffset =  750;
 	}/*end if SC4 */
+	else if (nIECOffset>=1000 && nIECOffset<1250)
+	{								
+		/* Single command  5. */
+		*nSCTblIndx = p_col_parInt[78];	/* Itt van az SC5 tábla sorszáma */
+		*nOffset =  1000;
+	}/*end if SC5 */
+	else if (nIECOffset>=1250 && nIECOffset<1500)
+	{								
+		/* Single command  6. */
+		*nSCTblIndx = p_col_parInt[87];	/* Itt van az SC6 tábla sorszáma */
+		*nOffset =  1250;
+	}/*end if SC6 */
+	else if (nIECOffset>=1500 && nIECOffset<1750)
+	{								
+		/* Single command  7. */
+		*nSCTblIndx = p_col_parInt[105];	/* Itt van az SC7 tábla sorszáma */
+		*nOffset =  1500;
+	}/*end if SC7 */
+	else if (nIECOffset>=1750 && nIECOffset<2000)
+	{								
+		/* Single command  8. */
+		*nSCTblIndx = p_col_parInt[106];	/* Itt van az SC8 tábla sorszáma */
+		*nOffset =  1750;
+	}/*end if SC8 */
 
 
 	if (MOSCAD_get_table_info (*nSCTblIndx,&table_SC)!=0 )
