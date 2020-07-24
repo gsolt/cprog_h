@@ -583,7 +583,56 @@ short          *p_col_parInt;
 						*nSPTblIndx = p_col_parInt[73];	/* Itt van az SP24 tábla sorszáma */
 						*nIndx = nIEC_Offset - 5750;
 					}/*end if SP24 */			
+					if (nIEC_Offset>=6000 && nIEC_Offset<6250)
+					{											
+						/* Single point 25. */
+						*nSPTblIndx = p_col_parInt[74];	/* Itt van az SP25 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6000;
+					}/*end if SP25 */			
+					if (nIEC_Offset>=6250 && nIEC_Offset<6500)
+					{											
+						/* Single point 26. */
+						*nSPTblIndx = p_col_parInt[79];	/* Itt van az SP26 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6250;
+					}/*end if SP26 */			
+					if (nIEC_Offset>=6500 && nIEC_Offset<6750)
+					{											
+						/* Single point 27. */
+						*nSPTblIndx = p_col_parInt[80];	/* Itt van az SP27 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6500;
+					}/*end if SP27 */			
+					if (nIEC_Offset>=6750 && nIEC_Offset<7000)
+					{											
+						/* Single point 28. */
+						*nSPTblIndx = p_col_parInt[81];	/* Itt van az SP28 tábla sorszáma */
+						*nIndx = nIEC_Offset - 6750;
+					}/*end if SP28 */			
+					if (nIEC_Offset>=7000 && nIEC_Offset<7250)
+					{											
+						/* Single point 29. */
+						*nSPTblIndx = p_col_parInt[82];	/* Itt van az SP29 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7000;
+					}/*end if SP29 */			
+					if (nIEC_Offset>=7250 && nIEC_Offset<7500)
+					{											
+						/* Single point 30. */
+						*nSPTblIndx = p_col_parInt[83];	/* Itt van az SP30 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7250;
+					}/*end if SP30 */			
+					if (nIEC_Offset>=7500 && nIEC_Offset<7750)
+					{											
+						/* Single point 31. */
+						*nSPTblIndx = p_col_parInt[93];	/* Itt van az SP31 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7500;
+					}/*end if SP31 */			
+					if (nIEC_Offset>=7750 && nIEC_Offset<8000)
+					{											
+						/* Single point 32. */
+						*nSPTblIndx = p_col_parInt[94];	/* Itt van az SP32 tábla sorszáma */
+						*nIndx = nIEC_Offset - 7750;
+					}/*end if SP32 */			
 						
+            
 
 if (*nIndx>249)
 {
@@ -657,6 +706,30 @@ short          *p_col_parInt;
 			/* NM 6. */
 			*nNMTblIndx = p_col_parInt[84]; 	/* Itt van az NM6 tábla sorszáma */
 			*nIndx = nIECOffset - 1200;				
+		}
+		else if (nIECOffset>=1440 && nIECOffset<1680)
+		{
+			/* NM 7. */
+			*nNMTblIndx = p_col_parInt[95]; 	/* Itt van az NM7 tábla sorszáma */
+			*nIndx = nIECOffset - 1440;				
+		}
+		else if (nIECOffset>=1680 && nIECOffset<1920)
+		{
+			/* NM 8. */
+			*nNMTblIndx = p_col_parInt[96]; 	/* Itt van az NM8 tábla sorszáma */
+			*nIndx = nIECOffset - 1680;				
+		}
+		else if (nIECOffset>=1920 && nIECOffset<2160)
+		{
+			/* NM 9. */
+			*nNMTblIndx = p_col_parInt[97]; 	/* Itt van az NM9 tábla sorszáma */
+			*nIndx = nIECOffset - 1920;				
+		}
+		else if (nIECOffset>=2160 && nIECOffset<2400)
+		{
+			/* NM 10. */
+			*nNMTblIndx = p_col_parInt[98]; 	/* Itt van az NM10 tábla sorszáma */
+			*nIndx = nIECOffset - 2160;				
 		}
 
 
