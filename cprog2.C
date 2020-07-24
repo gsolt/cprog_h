@@ -727,6 +727,32 @@ char			message[300];
 		*nDPTblIndx = p_col_parInt[85];	/* Itt van az DP6 tábla sorszáma */
 		*nOffset =  1250;
 	}/*end if DP6 */
+	else if (nIECOffset>= 1500 && nIECOffset<1750)
+	{								
+		/* Double point 7. */
+		*nDPTblIndx = p_col_parInt[99];	/* Itt van az DP7 tábla sorszáma */
+		*nOffset =  1500;
+	}/*end if DP7 */
+	else if (nIECOffset>= 1750 && nIECOffset<2000)
+	{								
+		/* Double point 8. */
+		*nDPTblIndx = p_col_parInt[100];	/* Itt van az DP8 tábla sorszáma */
+		*nOffset =  1750;
+	}/*end if DP8 */
+	else if (nIECOffset>= 2000 && nIECOffset<2250)
+	{								
+		/* Double point 9. */
+		*nDPTblIndx = p_col_parInt[101];	/* Itt van az DP9 tábla sorszáma */
+		*nOffset =  2000;
+	}/*end if DP9 */
+	else if (nIECOffset>= 2250 && nIECOffset<2500)
+	{								
+		/* Double point 10. */
+		*nDPTblIndx = p_col_parInt[102];	/* Itt van az DP10 tábla sorszáma */
+		*nOffset =  2250;
+	}/*end if DP10 */
+  
+  
 
 
 } /* end fnDPTblIndx()*/
