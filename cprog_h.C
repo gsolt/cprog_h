@@ -5505,14 +5505,22 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 103;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 105;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
-/* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû  -----------------------*/								/**/
+/* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû, Szany 0155/6, Szany 0155/7  -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[0] = 1250; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[0][0] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[0][0] = 61;			/* Szil, maperõmû */															/**/
-ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[0][1] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[0][1] = 185;			/* Szany 0115/6  PV erõmû */															/**/
+
+TMOK_ID[0][2] =1250;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[0][2] = 186;			/* Szany 0115/7  PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[0] = 3;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[0] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 
@@ -5765,11 +5773,19 @@ ReteszesRTUIndex[24][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */							
 ReteszesTMOK_RTUNum[24] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[24] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 25. TMOK: 60-71 RTU: Magyargencs 184 hrsz. PV erõmû  -   Tesztelve          -----------------------*/								/**/
+/* 25. TMOK: 60-71 RTU: Magyargencs 184 hrsz. PV erõmû, Szany 0155/6, Szany 0155/7 PV erõmû   -   Tesztelve          -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[25] = 1273; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[25][0] =1273;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[25][0] = 93;			   /* Magyargencs 184 hrsz. PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[25] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[25][1] =1273;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[25][1] = 185;			   /* Szany 077/6 PV erõmû   */															/**/
+
+TMOK_ID[25][2] =1273;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[25][2] = 186;			   /* Szany 077/7 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[25] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[25] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 26. TMOK: 72-44 RTU: Magyargencs 184 hrsz. PV erõmû  -   Tesztelve          -----------------------*/								/**/
@@ -6355,28 +6371,40 @@ ReteszesTMOK_RTUNum[82] = 2;				/* Az adott indexû TMOK ennyi kábelköri állomnás
 nReteszPar[82] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[82] = 23;             /* DC parancs offsete, ha tartozik hozzá DC parancs*/
 
-/* 83. TMOK 60-75 B Front end -> RTU: H: Sobor 077/6, Sobor 077/7 PV  - Tesztelve            -----------------------*/								/**/
+/* 83. TMOK 60-75 B Front end -> RTU: H: Sobor 077/6, Sobor 077/7 PV Szany 0155/6, Szany 0155/7  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[83] = 1318; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[83][0] = 1318;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[83][0] = 158;			   /* Tapolca 0350/38,39,40 PV erõmû   */															/**/
+ReteszesRTUIndex[83][0] = 158;			   /* Sobor 077/6 PV erõmû   */															/**/
 
 TMOK_ID[83][1] = 1318;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[83][1] = 159;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
+ReteszesRTUIndex[83][1] = 159;			   /* Sobor 077/7 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[83] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[83][2] = 1318;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[83][2] = 185;			   /* Szany 0155/6 PV erõmû   */															/**/
+
+TMOK_ID[83][3] = 1318;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[83][3] = 186;			   /* Szany 0155/7 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[83] = 4;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[83] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 84. TMOK 64-20 B Front end -> RTU: H: Sobor 077/6, Sobor 077/7 PV  - Tesztelve            -----------------------*/								/**/
+/* 84. TMOK 64-20 B Front end -> RTU: H: Sobor 077/6, Sobor 077/7 PV, Szany 0155/6, Szany 0155/7  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[84] = 1319; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[84][0] = 1319;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[84][0] = 158;			   /* Tapolca 0350/38,39,40 PV erõmû   */															/**/
+ReteszesRTUIndex[84][0] = 158;			   /* Sobor 077/6  PV erõmû   */															/**/
 
 TMOK_ID[84][1] = 1319;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[84][1] = 159;			   /* Tapolca 0366/42-48 PV erõmû    */															/**/
+ReteszesRTUIndex[84][1] = 159;			   /* Sobor 077/7 PV erõmû    */															/**/
 
-ReteszesTMOK_RTUNum[84] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[84][2] = 1319;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[84][2] = 185;			   /* Szany 0155/6  PV erõmû   */															/**/
+
+TMOK_ID[84][3] = 1319;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[84][3] = 186;			   /* Szany 0155/7 PV erõmû    */															/**/
+
+ReteszesTMOK_RTUNum[84] = 4;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[84] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 85. TMOK 43-25 C Front end -> RTU: H: Vasalja 055/16 PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6528,6 +6556,31 @@ ReteszesRTUIndex[102][0] = 183;			   /* Lébény 0586/49 PV erõmû   */												
 ReteszesTMOK_RTUNum[102] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[102] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[102] = 25;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/* 103. TMOK: 60-70 RTU: Szany 0155/6, Szany 0155/7 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[103] = 1335; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[103][0] = 1335;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[103][0] = 185;			   /* Szany 155/6 PV erõmû */															/**/
+
+TMOK_ID[103][1] = 1335;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[103][1] = 186;			   /* Szany 155/7 PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[103] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[103] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 104. TMOK: 64-57 RTU: Szany 0155/6, Szany 0155/7  PV erõmû  - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[104] = 206; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
+TMOK_ID[104][0] = 206;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[104][0] = 185;			   /* Szany 0155/6 PV erõmû   */															/**/
+
+TMOK_ID[104][1] = 206;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[104][1] = 186;			   /* Szany 0155/7 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[104] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[104] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+nReteszOffset[104] = 26;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
