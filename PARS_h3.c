@@ -270,6 +270,8 @@ sT[0].sCP[0].sCPR[183].nDCStart= 901;   sT[0].sCP[0].sCPR[183].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[184].nDCStart= 906;   sT[0].sCP[0].sCPR[184].nDCNum= 4;    sT[0].sCP[0].sCPR[184].nSCStart= 910;   sT[0].sCP[0].sCPR[184].nAckStart =0;	  sT[0].sCP[0].sCPR[184].nAckNum=0;   sT[0].sCP[0].sCPR[184].nSPOffsetCS= 4363; sT[0].sCP[0].sCPR[184].nSPOffsetLek= 4364;
 sT[0].sCP[0].sCPR[185].nDCStart= 911;   sT[0].sCP[0].sCPR[185].nDCNum= 4;    sT[0].sCP[0].sCPR[185].nSCStart= 915;   sT[0].sCP[0].sCPR[185].nAckStart =0;	  sT[0].sCP[0].sCPR[185].nAckNum=0;   sT[0].sCP[0].sCPR[185].nSPOffsetCS= 4402; sT[0].sCP[0].sCPR[185].nSPOffsetLek= 4403;
 sT[0].sCP[0].sCPR[186].nDCStart= 916;   sT[0].sCP[0].sCPR[186].nDCNum= 4;    sT[0].sCP[0].sCPR[186].nSCStart= 920;   sT[0].sCP[0].sCPR[186].nAckStart =0;	  sT[0].sCP[0].sCPR[186].nAckNum=0;   sT[0].sCP[0].sCPR[186].nSPOffsetCS= 4441; sT[0].sCP[0].sCPR[186].nSPOffsetLek= 4442;
+sT[0].sCP[0].sCPR[187].nDCStart= 924;   sT[0].sCP[0].sCPR[187].nDCNum= 4;    sT[0].sCP[0].sCPR[187].nSCStart= 928;   sT[0].sCP[0].sCPR[187].nAckStart =0;	  sT[0].sCP[0].sCPR[187].nAckNum=0;   sT[0].sCP[0].sCPR[187].nSPOffsetCS= 4475; sT[0].sCP[0].sCPR[187].nSPOffsetLek= 4476;
+sT[0].sCP[0].sCPR[188].nDCStart= 929;   sT[0].sCP[0].sCPR[188].nDCNum= 4;    sT[0].sCP[0].sCPR[188].nSCStart= 933;   sT[0].sCP[0].sCPR[188].nAckStart =0;	  sT[0].sCP[0].sCPR[188].nAckNum=0;   sT[0].sCP[0].sCPR[188].nSPOffsetCS= 4493; sT[0].sCP[0].sCPR[188].nSPOffsetLek= 4494;
 
 
 
@@ -2195,6 +2197,26 @@ sT[0].sTI[184].nType = TYP_MOT;
  
  	sT[0].sTAL[186].nSP_EXTRA_OFFSET		= 4439;
   sT[0].sTAL[186].nSP_EXTRA_NUM		= 2;
+
+/* Pereszteg 0160/2 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[187].nType = TYP_MOT;
+
+	sT[0].sMOT[187].nIEC_SP				= 4459;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[187].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[187].nIEC_DP				= 1520;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[187].nIEC_DP_NUM			= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[187].nIEC_NM				= 1417;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[187].nNMNum				= 9;		/* Analóg mérések száma*/
+
+/* Magyargencs 185 PV erõmû  ----------------------------------------------------------------*/
+sT[0].sTI[188].nType = TYP_MOT;
+
+	sT[0].sMOT[188].nIEC_SP				= 4477;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[188].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[188].nIEC_DP				= 1524;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[188].nIEC_DP_NUM			= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[188].nIEC_NM				= 1426;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[188].nNMNum				= 9;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 

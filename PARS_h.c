@@ -313,6 +313,8 @@ ST[0].nSiteList[183]=10130;	ST[0].nLinkList[183]=LINE11;    /* LINE11   Lébény 0
 ST[0].nSiteList[184]=10131;	ST[0].nLinkList[184]=RADIO9_5;  /* RADIO9_5 Óhíd 213/8                               - SUM */
 ST[0].nSiteList[185]=10132;	ST[0].nLinkList[185]=RADIO5_1;  /* RADIO5_1 Szany 155/6                         - CSOR */
 ST[0].nSiteList[186]=10133;	ST[0].nLinkList[186]=RADIO5_1;  /* RADIO5_1 Szany 155/7                         - CSOR */
+ST[0].nSiteList[187]=10135;	ST[0].nLinkList[187]=RADIO3_1;  /* RADIO3_1 Pereszteg 0160/2                     - SOP */
+ST[0].nSiteList[188]=10136;	ST[0].nLinkList[188]=RADIO4_5;  /* RADIO4_5 Magyargencs 185                      - PAP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -432,7 +434,7 @@ ST[0].sRAD_K1[0].nIndx[44]=182;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 85; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 86; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -518,10 +520,11 @@ ST[0].sRAD_K2[0].nIndx[81]=183; /**/
 ST[0].sRAD_K2[0].nIndx[82]=184; /**/
 ST[0].sRAD_K2[0].nIndx[83]=185; /**/
 ST[0].sRAD_K2[0].nIndx[84]=186; /**/
+ST[0].sRAD_K2[0].nIndx[85]=188; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 49;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 50;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -571,6 +574,7 @@ ST[0].sRAD_K3[0].nIndx[45]=166; /**/
 ST[0].sRAD_K3[0].nIndx[46]=167; /**/
 ST[0].sRAD_K3[0].nIndx[47]=176; /**/
 ST[0].sRAD_K3[0].nIndx[48]=179; /**/
+ST[0].sRAD_K3[0].nIndx[49]=187; /**/
 
 
 
