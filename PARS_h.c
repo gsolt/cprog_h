@@ -192,7 +192,7 @@ ST[0].nSiteList[71]	=10020;	ST[0].nLinkList[71]	=RADIO3_3; 	/* RADIO3_3 Sopron, 
 ST[0].nSiteList[72]	=10021;	ST[0].nLinkList[72]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-18		DOR */
 ST[0].nSiteList[73]	=10022;	ST[0].nLinkList[73]	=RADIO8_4; 	/* RADIO8_4 Kesztölc napelempark, 032-21		DOR */
 
-ST[0].nSiteList[74]	=2580;	ST[0].nLinkList[74]	=LINE10;    /* LINE1    Répceleak DAC					REP */
+ST[0].nSiteList[74]	=2580;	ST[0].nLinkList[74]	=LINE1;    /* LINE1    Répceleak DAC					REP */
 
 
 ST[0].nSiteList[75]	=10023;	ST[0].nLinkList[75]	=RADIO2_1; 	/* RADIO2_1 Veszprém, Vörösmarty tér			VESZ */  /* OK */
