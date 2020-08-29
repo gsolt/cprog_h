@@ -315,6 +315,7 @@ ST[0].nSiteList[185]=10132;	ST[0].nLinkList[185]=RADIO5_1;  /* RADIO5_1 Szany 15
 ST[0].nSiteList[186]=10133;	ST[0].nLinkList[186]=RADIO5_1;  /* RADIO5_1 Szany 155/7                         - CSOR */
 ST[0].nSiteList[187]=10135;	ST[0].nLinkList[187]=RADIO3_1;  /* RADIO3_1 Pereszteg 0160/2                     - SOP */
 ST[0].nSiteList[188]=10136;	ST[0].nLinkList[188]=RADIO4_5;  /* RADIO4_5 Magyargencs 185                      - PAP */
+ST[0].nSiteList[189]=2600;	ST[0].nLinkList[189]	=LINE1;    /* LINE1   Lábatlan DAC					                - REP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -580,10 +581,11 @@ ST[0].sRAD_K3[0].nIndx[49]=187; /**/
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 3;
+ST[0].sLIN[0].nRtuNumLin = 4;
 ST[0].sLIN[0].nIndx[0] =32;
 ST[0].sLIN[0].nIndx[1] =74;
 ST[0].sLIN[0].nIndx[2] =142;
+ST[0].sLIN[0].nIndx[3] =189;
 
 
 
