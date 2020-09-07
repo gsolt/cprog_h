@@ -316,6 +316,9 @@ ST[0].nSiteList[186]=10133;	ST[0].nLinkList[186]=RADIO5_1;  /* RADIO5_1 Szany 15
 ST[0].nSiteList[187]=10135;	ST[0].nLinkList[187]=RADIO3_1;  /* RADIO3_1 Pereszteg 0160/2                     - SOP */
 ST[0].nSiteList[188]=10136;	ST[0].nLinkList[188]=RADIO4_5;  /* RADIO4_5 Magyargencs 185                      - PAP */
 ST[0].nSiteList[189]=2600;	ST[0].nLinkList[189]	=LINE1;    /* LINE1   Lábatlan DAC					                - REP */
+ST[0].nSiteList[190]=2610;	ST[0].nLinkList[190]	=LINE1;    /* LINE1   Zalszentgrót DAC					            - REP */
+ST[0].nSiteList[191]=10137;	ST[0].nLinkList[191]=RADIO1_1;  /* RADIO1_1 Gyõr, Sütóipar					             - GYVAR */
+ST[0].nSiteList[192]=10138;	ST[0].nLinkList[192]=RADIO5_5;  /* RADIO5_5 Nagykõlked 041/3					           - KOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -435,7 +438,7 @@ ST[0].sRAD_K1[0].nIndx[44]=182;
 
 
 /* K2 : VESZ, TAP, PAP, SUM, ESZT, CSOR, KIM, ASZ, GYORV, AJK, VARP */
-ST[0].sRAD_K2[0].nRtuNumRad = 86; /*76*/
+ST[0].sRAD_K2[0].nRtuNumRad = 87; /*76*/
 ST[0].sRAD_K2[0].nIndx[0]=29;
 ST[0].sRAD_K2[0].nIndx[1]=30;
 ST[0].sRAD_K2[0].nIndx[2]=31;
@@ -522,10 +525,11 @@ ST[0].sRAD_K2[0].nIndx[82]=184; /**/
 ST[0].sRAD_K2[0].nIndx[83]=185; /**/
 ST[0].sRAD_K2[0].nIndx[84]=186; /**/
 ST[0].sRAD_K2[0].nIndx[85]=188; /**/
+ST[0].sRAD_K2[0].nIndx[86]=191; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 50;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 51;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -576,6 +580,7 @@ ST[0].sRAD_K3[0].nIndx[46]=167; /**/
 ST[0].sRAD_K3[0].nIndx[47]=176; /**/
 ST[0].sRAD_K3[0].nIndx[48]=179; /**/
 ST[0].sRAD_K3[0].nIndx[49]=187; /**/
+ST[0].sRAD_K3[0].nIndx[50]=192; /**/
 
 
 
@@ -586,6 +591,7 @@ ST[0].sLIN[0].nIndx[0] =32;
 ST[0].sLIN[0].nIndx[1] =74;
 ST[0].sLIN[0].nIndx[2] =142;
 ST[0].sLIN[0].nIndx[3] =189;
+ST[0].sLIN[0].nIndx[4] =190;
 
 
 
