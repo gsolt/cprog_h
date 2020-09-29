@@ -5865,16 +5865,10 @@ TMOKAllasjelzesOffsetek[32] = 483; 	 /* Az állásjelzés offsete a DP adatbázisban
 TMOK_ID[32][0] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[32][0] = 97;			   /* Királyszentistván 036/4 PV erõmû */															/**/
 
-TMOK_ID[32][1] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[32][1] = 171;			   /* Királyszentistván 017/24_1 PV erõmû */															/**/
+TMOK_ID[32][1] =12;						         /*  TMOK azonosítója a kimenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[32][1] = 65;			   /* B redundancia */															/**/
 
-TMOK_ID[32][2] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[32][2] = 172;			   /* Királyszentistván 017/24_2 PV erõmû */															/**/
-
-TMOK_ID[32][3] =483;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
-ReteszesRTUIndex[32][3] = 173;			   /* Királyszentistván 017/24_3 PV erõmû */															/**/
-
-ReteszesTMOK_RTUNum[32] = 4;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+ReteszesTMOK_RTUNum[32] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[32] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[32] = 9;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
