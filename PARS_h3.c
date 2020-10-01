@@ -277,6 +277,7 @@ sT[0].sCP[0].sCPR[190].nDCStart = 0;    sT[0].sCP[0].sCPR[190].nDCNum= 0;    sT[
 sT[0].sCP[0].sCPR[191].nDCStart= 936;   sT[0].sCP[0].sCPR[191].nDCNum= 4;    sT[0].sCP[0].sCPR[191].nSCStart= 940;   sT[0].sCP[0].sCPR[191].nAckStart =0;	  sT[0].sCP[0].sCPR[191].nAckNum=0;   sT[0].sCP[0].sCPR[191].nSPOffsetCS= 4525; sT[0].sCP[0].sCPR[191].nSPOffsetLek= 4526;
 sT[0].sCP[0].sCPR[192].nDCStart= 941;   sT[0].sCP[0].sCPR[192].nDCNum= 4;    sT[0].sCP[0].sCPR[192].nSCStart= 945;   sT[0].sCP[0].sCPR[192].nAckStart =0;	  sT[0].sCP[0].sCPR[192].nAckNum=0;   sT[0].sCP[0].sCPR[192].nSPOffsetCS= 4543; sT[0].sCP[0].sCPR[192].nSPOffsetLek= 4544;
 sT[0].sCP[0].sCPR[193].nDCStart= 946;   sT[0].sCP[0].sCPR[193].nDCNum= 1;    sT[0].sCP[0].sCPR[193].nSCStart= 947;   sT[0].sCP[0].sCPR[193].nAckStart =0;	  sT[0].sCP[0].sCPR[193].nAckNum=0;   sT[0].sCP[0].sCPR[193].nSPOffsetCS= 4559; sT[0].sCP[0].sCPR[193].nSPOffsetLek= 4560;
+sT[0].sCP[0].sCPR[194].nDCStart= 949;   sT[0].sCP[0].sCPR[194].nDCNum= 5;    sT[0].sCP[0].sCPR[194].nSCStart= 954;   sT[0].sCP[0].sCPR[194].nAckStart =0;	  sT[0].sCP[0].sCPR[194].nAckNum=0;   sT[0].sCP[0].sCPR[194].nSPOffsetCS= 4581; sT[0].sCP[0].sCPR[194].nSPOffsetLek= 4582;
 
 
 
@@ -2270,6 +2271,15 @@ sT[0].sTI[193].nType = TYP_TMOK;
 	sT[0].sMOT[193].nIEC_NM				= 1450;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[193].nNMNum				  = 4;		/* Analóg mérések száma*/
 
+/* Tappolca Strand utca  ----------------------------------------------------------------*/
+sT[0].sTI[194].nType = TYP_MOT;
+
+	sT[0].sMOT[194].nIEC_SP				= 4561;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[194].nIEC_SP_NUM			= 20;		/* Egybites értékek száma*/
+	sT[0].sMOT[194].nIEC_DP				= 1542;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[194].nIEC_DP_NUM			= 10;   		/* Két bites értékek száma*/
+	sT[0].sMOT[194].nIEC_NM				= 1462;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[194].nNMNum				= 6;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 
