@@ -321,6 +321,7 @@ ST[0].nSiteList[191]=10137;	ST[0].nLinkList[191]=RADIO1_1;  /* RADIO1_1 Gyõr, Sü
 ST[0].nSiteList[192]=10138;	ST[0].nLinkList[192]=RADIO5_5;  /* RADIO5_5 Nagykõlked 041/3					           - KOR */
 ST[0].nSiteList[193]=10139;	ST[0].nLinkList[193]=RADIO2_2;  /* RADIO2_2 59160                               -  VESZ */
 ST[0].nSiteList[194]=10140;	ST[0].nLinkList[194]=RADIO9_1;  /* RADIO9_1 Tapolca Strand u.                   -  TAP */
+ST[0].nSiteList[195]=800;	  ST[0].nLinkList[195]=   LINE1;  /* LINE1    Körmend2 DAC                       -  DAC */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -590,12 +591,13 @@ ST[0].sRAD_K3[0].nIndx[50]=192; /**/
 
 
 /*RST[0].sLINK RTUk indexei*/
-ST[0].sLIN[0].nRtuNumLin = 4;
+ST[0].sLIN[0].nRtuNumLin = 6;
 ST[0].sLIN[0].nIndx[0] =32;
 ST[0].sLIN[0].nIndx[1] =74;
 ST[0].sLIN[0].nIndx[2] =142;
 ST[0].sLIN[0].nIndx[3] =189;
 ST[0].sLIN[0].nIndx[4] =190;
+ST[0].sLIN[0].nIndx[5] =195;
 
 
 
