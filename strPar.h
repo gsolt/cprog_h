@@ -11,6 +11,8 @@
 #define  TYP_TMOK2		8
 #define  TYP_FRONTEND	11
 #define  TYP_TAL2		12
+#define  TYP_DP		14
+
 
 #define	TOPICAL			1
 #define NOT_TOPICAL		0
