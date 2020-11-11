@@ -280,6 +280,7 @@ sT[0].sCP[0].sCPR[193].nDCStart= 946;   sT[0].sCP[0].sCPR[193].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[194].nDCStart= 949;   sT[0].sCP[0].sCPR[194].nDCNum= 5;    sT[0].sCP[0].sCPR[194].nSCStart= 954;   sT[0].sCP[0].sCPR[194].nAckStart =0;	  sT[0].sCP[0].sCPR[194].nAckNum=0;   sT[0].sCP[0].sCPR[194].nSPOffsetCS= 4581; sT[0].sCP[0].sCPR[194].nSPOffsetLek= 4582;
 sT[0].sCP[0].sCPR[195].nDCStart = 0;    sT[0].sCP[0].sCPR[195].nDCNum= 0;    sT[0].sCP[0].sCPR[195].nSCStart =955;   sT[0].sCP[0].sCPR[195].nAckStart =0;   sT[0].sCP[0].sCPR[195].nAckNum =0;  sT[0].sCP[0].sCPR[195].nSPOffsetCS =4583; sT[0].sCP[0].sCPR[195].nSPOffsetLek =4584;
 sT[0].sCP[0].sCPR[196].nDCStart= 956;   sT[0].sCP[0].sCPR[196].nDCNum= 1;    sT[0].sCP[0].sCPR[196].nSCStart= 957;   sT[0].sCP[0].sCPR[196].nAckStart =0;	  sT[0].sCP[0].sCPR[196].nAckNum=0;   sT[0].sCP[0].sCPR[196].nSPOffsetCS= 4599; sT[0].sCP[0].sCPR[196].nSPOffsetLek= 4600;
+sT[0].sCP[0].sCPR[197].nDCStart= 959;   sT[0].sCP[0].sCPR[197].nDCNum= 4;    sT[0].sCP[0].sCPR[197].nSCStart= 963;   sT[0].sCP[0].sCPR[197].nAckStart =0;	  sT[0].sCP[0].sCPR[197].nAckNum=0;   sT[0].sCP[0].sCPR[197].nSPOffsetCS= 4617; sT[0].sCP[0].sCPR[197].nSPOffsetLek= 4618;
 
 
 
@@ -2298,6 +2299,16 @@ sT[0].sTI[196].nType = TYP_TMOK;
 	sT[0].sMOT[196].nIEC_DP				= 1552;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[196].nIEC_NM				= 1468;		/* Mérések IEC kezdõcíme */	
 	sT[0].sMOT[196].nNMNum				  = 4;		/* Analóg mérések száma*/
+
+/* Mosonszntmiklós 1315/4   ----------------------------------------------------------------*/
+sT[0].sTI[197].nType = TYP_MOT;
+
+	sT[0].sMOT[197].nIEC_SP				= 4601;		/* Egybites értékek IEC kezdõcíme*/
+	sT[0].sMOT[197].nIEC_SP_NUM			= 16;		/* Egybites értékek száma*/
+	sT[0].sMOT[197].nIEC_DP				= 1553;		/* Kétbites értékek IEC kezdõcíme*/
+	sT[0].sMOT[197].nIEC_DP_NUM			= 4;   		/* Két bites értékek száma*/
+	sT[0].sMOT[197].nIEC_NM				= 1472;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[197].nNMNum				= 9;		/* Analóg mérések száma*/
    
 } /* end fnSetDataPar()*/
 
