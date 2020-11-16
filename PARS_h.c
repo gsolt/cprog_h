@@ -324,6 +324,8 @@ ST[0].nSiteList[194]=10140;	ST[0].nLinkList[194]=RADIO9_1;  /* RADIO9_1 Tapolca 
 ST[0].nSiteList[195]=800;	  ST[0].nLinkList[195]=   LINE1;  /* LINE1    Körmend2 DAC                       -  DAC */
 ST[0].nSiteList[196]=145;  	ST[0].nLinkList[196]=RADIO6_7;  /* RADIO6_7 41-35                               -  REP */
 ST[0].nSiteList[197]=10141; ST[0].nLinkList[197]=  LINE11;  /* LINE11   Mosonszentmiklós 1315/4             -  KIM */
+ST[0].nSiteList[198]=10142; ST[0].nLinkList[198]=  LINE11;  /* LINE11   Kimle 068/4_26                      -  KIM */
+ST[0].nSiteList[199]=10143; ST[0].nLinkList[199]=  LINE11;  /* LINE11   Kimle 068/4_26_2                      -  KIM */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -391,7 +393,7 @@ short			*p_col_SCAct;*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR, KAP, VARS, REP, KIM*/
-ST[0].sRAD_K1[0].nRtuNumRad = 47; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 49; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=13; 
 ST[0].sRAD_K1[0].nIndx[1]=14; 
 ST[0].sRAD_K1[0].nIndx[2]=15; 
@@ -439,6 +441,8 @@ ST[0].sRAD_K1[0].nIndx[43]=181;
 ST[0].sRAD_K1[0].nIndx[44]=182; 
 ST[0].sRAD_K1[0].nIndx[45]=196; 
 ST[0].sRAD_K1[0].nIndx[46]=197; 
+ST[0].sRAD_K1[0].nIndx[47]=198; 
+ST[0].sRAD_K1[0].nIndx[48]=199; 
 
 
       

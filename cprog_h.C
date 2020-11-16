@@ -861,7 +861,7 @@ void tx_command(void)
  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161 && nI!=178)
+			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161 && nI!=178 && nI!=198 && nI!=199)
 			{						
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -873,7 +873,7 @@ void tx_command(void)
  		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 	     } /* end if   */			
-			else if ( nI==133 || nI==150 || nI==155 || nI==161 || nI==178) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
+			else if ( nI==133 || nI==150 || nI==155 || nI==161 || nI==178 || nI==198 || nI==199) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		  nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -1165,7 +1165,7 @@ if (pMOT->nIEC_SP_NUM > 0)
   
 if (	nDPStart > 0)
 {
-	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 40; nI++)
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 48; nI++)
 	{	
   
 
@@ -1218,6 +1218,12 @@ if (	nDPStart > 0)
 			nData = p_col_RxBuf[12];	
 			nValH = (nData << (nI-32)*2 ) & 0x8000;	
 			nValL = (nData << ((nI-32)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 40 && nI <48)
+		{
+			nData = p_col_RxBuf[13];	
+			nValH = (nData << (nI-40)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-40)*2+1)) & 0x8000;								
 		}
 		
  				if (nValH > 0)
