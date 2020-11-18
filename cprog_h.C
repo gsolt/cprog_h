@@ -5511,7 +5511,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 109;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 110;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû, Szany 0155/6, Szany 0155/7  -----------------------*/								/**/
@@ -6681,6 +6681,13 @@ TMOK_ID[108][0] = 1338;						         /*  TMOK azonosítója a kmenõ táviratban = 
 ReteszesRTUIndex[108][0] = 197;			   /* Mosonszentmiklós 1315/4 PV erõmû */															/**/
 ReteszesTMOK_RTUNum[108] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[108] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 109. TMOK: 70-09 RTU: TMKK: Mihályháza 016/6_8 - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[109] = 1339; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[109][0] = 1339;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[109][0] = 200;			   /* Mihályháza 016/6_8 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[109] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[109] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/

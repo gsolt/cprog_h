@@ -283,6 +283,7 @@ sT[0].sCP[0].sCPR[196].nDCStart= 956;   sT[0].sCP[0].sCPR[196].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[197].nDCStart= 959;   sT[0].sCP[0].sCPR[197].nDCNum= 4;    sT[0].sCP[0].sCPR[197].nSCStart= 963;   sT[0].sCP[0].sCPR[197].nAckStart =0;	  sT[0].sCP[0].sCPR[197].nAckNum=0;   sT[0].sCP[0].sCPR[197].nSPOffsetCS= 4617; sT[0].sCP[0].sCPR[197].nSPOffsetLek= 4618;
 sT[0].sCP[0].sCPR[198].nDCStart= 964;   sT[0].sCP[0].sCPR[198].nDCNum=18;    sT[0].sCP[0].sCPR[198].nSCStart= 982;   sT[0].sCP[0].sCPR[198].nAckStart =0;	  sT[0].sCP[0].sCPR[198].nAckNum=0;   sT[0].sCP[0].sCPR[198].nSPOffsetCS= 4667; sT[0].sCP[0].sCPR[198].nSPOffsetLek= 4668;
 sT[0].sCP[0].sCPR[199].nDCStart= 983;   sT[0].sCP[0].sCPR[199].nDCNum=14;    sT[0].sCP[0].sCPR[199].nSCStart= 997;   sT[0].sCP[0].sCPR[199].nAckStart =0;	  sT[0].sCP[0].sCPR[199].nAckNum=0;   sT[0].sCP[0].sCPR[199].nSPOffsetCS= 4701; sT[0].sCP[0].sCPR[199].nSPOffsetLek= 4702;
+sT[0].sCP[0].sCPR[200].nDCStart= 998;   sT[0].sCP[0].sCPR[200].nDCNum= 7;    sT[0].sCP[0].sCPR[200].nSCStart=1005;   sT[0].sCP[0].sCPR[200].nAckStart =0;	  sT[0].sCP[0].sCPR[200].nAckNum=0;   sT[0].sCP[0].sCPR[200].nSPOffsetCS= 4751; sT[0].sCP[0].sCPR[200].nSPOffsetLek= 4752;
 
 
 
@@ -2331,6 +2332,23 @@ sT[0].sTI[199].nType = TYP_MOT;
 	sT[0].sMOT[199].nIEC_DP_NUM			=32;   		/* Két bites értékek száma*/
 	sT[0].sMOT[199].nIEC_NM				= 0;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[199].nNMNum				= 0;		/* Analóg mérések száma*/
+  
+/* Mihályháza 016/6_8 PV erõmû -----------------------------------------------------------*/
+sT[0].sTI[200].nType = TYP_TAL2;
+
+		sT[0].sTAL[200].nIEC_SP       		= 4703;
+		sT[0].sTAL[200].nIEC_OsszevontHiba	= 4735;
+		sT[0].sTAL[200].nIEC_MT_KommHiba		= 4736;
+		sT[0].sTAL[200].nIEC_DP       		= 1637;
+		sT[0].sTAL[200].nIEC_DP_FSZ1  		= 1641;
+		sT[0].sTAL[200].nIEC_NM				= 1498;
+		sT[0].sTAL[200].nNMNum		  		= 19;
+		sT[0].sTAL[200].nKommStatusNum		= 2;
+  	sT[0].sTAL[200].nSP_EXTRA_OFFSET		= 4738;
+	  sT[0].sTAL[200].nSP_EXTRA_NUM		= 13;
+  	sT[0].sTAL[200].nDP_EXTRA_OFFSET		= 1645;
+	  sT[0].sTAL[200].nDP_EXTRA_NUM		= 12;
+  
    
 } /* end fnSetDataPar()*/
 
