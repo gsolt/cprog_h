@@ -323,10 +323,11 @@ ST[0].nSiteList[193]=10139;	ST[0].nLinkList[193]=RADIO9_9;  /* RADIO9_9 59160   
 ST[0].nSiteList[194]=10140;	ST[0].nLinkList[194]=RADIO9_1;  /* RADIO9_1 Tapolca Strand u.                   -  TAP */
 ST[0].nSiteList[195]=800;	  ST[0].nLinkList[195]=   LINE1;  /* LINE1    Körmend2 DAC                       -  DAC */
 ST[0].nSiteList[196]=145;  	ST[0].nLinkList[196]=RADIO6_7;  /* RADIO6_7 41-35                               -  REP */
-ST[0].nSiteList[197]=10141; ST[0].nLinkList[197]=  LINE11;  /* LINE11   Mosonszentmiklós 1315/4             -  KIM */
+ST[0].nSiteList[197]=10141; ST[0].nLinkList[197]=RADIO1_5;  /* LINE11   Mosonszentmiklós 1315/4             -  KIM */
 ST[0].nSiteList[198]=10142; ST[0].nLinkList[198]=  LINE11;  /* LINE11   Kimle 068/4_26                      -  KIM */
 ST[0].nSiteList[199]=10143; ST[0].nLinkList[199]=  LINE11;  /* LINE11   Kimle 068/4_26_2                      -  KIM */
 ST[0].nSiteList[200]=10144; ST[0].nLinkList[200]=RADIO4_5;  /* RADIO4_5 Mihályháza 016/6_8                    - PAP */
+ST[0].nSiteList[201]=10145; ST[0].nLinkList[201]=RADIO7_5;  /* RADIO7_5 Bicske 074                    - PAP */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -544,7 +545,7 @@ ST[0].sRAD_K2[0].nIndx[89]=200; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 51;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 52;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -596,6 +597,7 @@ ST[0].sRAD_K3[0].nIndx[47]=176; /**/
 ST[0].sRAD_K3[0].nIndx[48]=179; /**/
 ST[0].sRAD_K3[0].nIndx[49]=187; /**/
 ST[0].sRAD_K3[0].nIndx[50]=192; /**/
+ST[0].sRAD_K3[0].nIndx[51]=201; /**/
 
 
 
