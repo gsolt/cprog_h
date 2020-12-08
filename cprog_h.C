@@ -5518,7 +5518,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 111;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 112;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû, Szany 0155/6, Szany 0155/7  -----------------------*/								/**/
@@ -6559,7 +6559,7 @@ ReteszesRTUIndex[95][1] = 192;			   /* Nagykölked 041/3 PV erõmû */													
 ReteszesTMOK_RTUNum[95] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[95] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
-/* 96. TMOK: 40-68 RTU: Radóckölked 258 PV erõmû,  Nagykölked 04/3 PV erõmû - - Tesztelve            -----------------------*/								/**/
+/* 96. TMOK: 40-68 RTU: Radóckölked 258 PV erõmû,  Nagykölked 04/3, Nemesrempehollós 259/7 07/4 PV erõmû - - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[96] = 1329; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
 
 TMOK_ID[96][0] = 1329;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
@@ -6568,7 +6568,10 @@ ReteszesRTUIndex[96][0] = 176;			   /* Radóckölked 258 PV erõmû */														
 TMOK_ID[96][1] = 1329;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[96][1] = 192;			   /* Nagykölked 041/3 PV erõmû */															/**/
 
-ReteszesTMOK_RTUNum[96] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+TMOK_ID[96][2] = 1329;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[96][2] = 203;			   /* Nemesrempehollós 259/7 07/4 PV erõmû */															/**/
+
+ReteszesTMOK_RTUNum[96] = 3;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[96] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 97. TMOK: 52-98 RTU: Lesenceistvánd 0206/12 PV erõmû - Tesztelve            -----------------------*/								/**/
@@ -6707,6 +6710,13 @@ TMOK_ID[110][0] = 1340;						         /*  TMOK azonosítója a kmenõ táviratban = 
 ReteszesRTUIndex[110][0] = 202;			   /* Tapolca 0258, 0259 PV erõmû */															/**/
 ReteszesTMOK_RTUNum[110] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[110] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/* 111. TMOK: 41-26 RTU: TMKK: Nemesrempehollós 259/7 07/4 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[111] = 1341; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[111][0] = 1341;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[111][0] = 203;			   /* Nemesrempehollós 259/7 07/4 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[111] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[111] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/

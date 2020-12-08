@@ -329,6 +329,7 @@ ST[0].nSiteList[199]=10143; ST[0].nLinkList[199]=  LINE11;  /* LINE11   Kimle 06
 ST[0].nSiteList[200]=10144; ST[0].nLinkList[200]=RADIO4_5;  /* RADIO4_5 Mihályháza 016/6_8                    - PAP */
 ST[0].nSiteList[201]=10145; ST[0].nLinkList[201]=RADIO7_5;  /* RADIO7_5 Bicske 074                    - PAP */
 ST[0].nSiteList[202]=10146; ST[0].nLinkList[202]=RADIO9_1;  /* RADIO9_1 Tapolca 0258,0259                    - TAP */
+ST[0].nSiteList[203]=10147; ST[0].nLinkList[203]=RADIO5_5;  /* RADIO5_5 Nemesrempehollós 259/7 06/4          - KOR */
 
 
 ST[0].nSiteList[249]=0;		ST[0].nLinkList[249]	=ALL_LINK;	/* RTUALL */
@@ -547,7 +548,7 @@ ST[0].sRAD_K2[0].nIndx[90]=202; /**/
 
 
 /* K3 : DOR, SOP, KOR, BI, GYVAR, FSZM */
-ST[0].sRAD_K3[0].nRtuNumRad = 52;  /**/
+ST[0].sRAD_K3[0].nRtuNumRad = 53;  /**/
 ST[0].sRAD_K3[0].nIndx[0]=0; /**/
 ST[0].sRAD_K3[0].nIndx[1]=1; /**/
 ST[0].sRAD_K3[0].nIndx[2]=2; /**/
@@ -600,6 +601,7 @@ ST[0].sRAD_K3[0].nIndx[48]=179; /**/
 ST[0].sRAD_K3[0].nIndx[49]=187; /**/
 ST[0].sRAD_K3[0].nIndx[50]=192; /**/
 ST[0].sRAD_K3[0].nIndx[51]=201; /**/
+ST[0].sRAD_K3[0].nIndx[52]=203; /**/
 
 
 
