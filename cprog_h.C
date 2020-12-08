@@ -5511,7 +5511,7 @@ int     DP1,DP2;          /*  */
 ReteszAllapotokKezdoCim = 210;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 230;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 110;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
+ReteszesTMOKNum = 111;					      /* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/
 p_col_Stat[98]  = ReteszesTMOKNum;	/* Hogy lehessen monitorozni */
 																													/**/
 /* 0. TMOK: Front end D -> 60-84; RTU: Szil, naperõmû, Szany 0155/6, Szany 0155/7  -----------------------*/								/**/
@@ -6300,11 +6300,16 @@ ReteszesTMOK_RTUNum[72] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állom
 nReteszPar[72] = 1;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[72] = 18;             /* DC parancs és DP állapot offsete, ha tartozik hozzá DC parancs*/
 
-/* 73. TMOK: 72-91 RTU: Kolontár 321  PV erõmû  - Tesztelve            -----------------------*/								/**/
+/* 73. TMOK: 72-91 RTU: Kolontár 321, Tapolca 0258, 0259  PV erõmû  - Tesztelve            -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[73] = 1313; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+
 TMOK_ID[73][0] = 1313;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
 ReteszesRTUIndex[73][0] = 140;			   /* Kolontár 324 PV erõmû   */															/**/
-ReteszesTMOK_RTUNum[73] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+TMOK_ID[73][1] = 1313;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[73][1] = 202;			   /* Tapolca 0258, 0259 PV erõmû   */															/**/
+
+ReteszesTMOK_RTUNum[73] = 2;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[73] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /* 74. TMOK: 61-59 RTU: Fertõd 072/14,15,16,19,20 PV erõm  PV erõmû  - Tesztelve            -----------------------*/								/**/
@@ -6689,6 +6694,13 @@ ReteszesRTUIndex[109][0] = 200;			   /* Mihályháza 016/6_8 PV erõmû */										
 ReteszesTMOK_RTUNum[109] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[109] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
+/* 110. TMOK: 50-97 RTU: TMKK: Tapolca 0258, 0259 PV erõmû - Tesztelve            -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[110] = 1340; 	 /* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[110][0] = 1340;						         /*  TMOK azonosítója a kmenõ táviratban = DP offset */								/**/															
+ReteszesRTUIndex[110][0] = 202;			   /* Tapolca 0258, 0259 PV erõmû */															/**/
+ReteszesTMOK_RTUNum[110] = 1;				   /* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[110] = 0;                   /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
 /**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
@@ -7041,3 +7053,307 @@ if (nOffset <1500)
 	
 }
 /* end fnDP_LEK ***************************************************************************/
+
+/****************************************************************************/
+/* MOTOROLA allomas adatfeldolgozas, Tapolca 0258, 0259 PV erõmû miatt											*/
+/****************************************************************************/
+void MOT_DATA2(STATION_DESC_MOT	*pMOT, unsigned char *rx_buf)
+{
+int		nI;				
+
+int		nIEC_Offset;
+int		nMoscadOffset;
+
+int		nDPTblIndx;
+
+
+
+
+int		nNMStart;
+
+int		nDPStart;
+unsigned int		nData;
+
+
+
+
+
+
+
+
+
+int		nVal;
+
+int		nValH; 
+int		nValL; 
+int		nMin;
+int		nMs1;
+int		nMs2;
+int		nSynchronized;
+
+
+	p_col_RxBuf = (short *)(rx_buf);	
+
+
+
+
+ 		nMin		 = p_col_RxBuf[25] & 0xff;
+		nMs1		 = p_col_RxBuf[26] & 0xff;
+		nMs2		 = p_col_RxBuf[26] >>8;
+		nSynchronized= p_col_RxBuf[20];
+
+     /*   MOSCAD_sprintf(message,"TMOK data: nMin: %d, nMs1: %d, nMs2: %d, nSync: %d", nMin, nMs1, nMs2, nSynchronized);
+        MOSCAD_error(message );*/
+
+	
+
+
+
+
+
+	/* Mérések feldolgozása ----------------------------------------------------------------------------------------*/
+	/*  !!!!! Ha LiveZero = 1, akkor azt a letra programban kell jelezni !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+if (pMOT->nNMNum > 0)
+{
+	nNMStart = pMOT->nIEC_NM;
+	
+	for (nI=0; nI < pMOT->nNMNum && nI<30; nI++)
+	{
+		fnWriteNM( nNMStart+nI,p_col_RxBuf[28+nI]);			
+	
+	} /*end for*/
+} /* end if */
+	
+
+	
+/* Egybites jelzések feldolgozása ----------------------------------------------------------------------------------------*/
+if (pMOT->nIEC_SP_NUM > 0)
+{
+	for (nI=0; nI < pMOT->nIEC_SP_NUM && nI<88; nI++)
+	{
+		if (nI<16)
+		{
+			nData = p_col_RxBuf[0];
+			nVal = (nData << nI) & 0x8000;
+		}
+		else if (nI>=16 && nI<32)
+		{
+			nData = p_col_RxBuf[1];
+			nVal = (nData << (nI-16)) & 0x8000;
+		}
+		else if (nI>=32 && nI<48)
+		{
+			nData = p_col_RxBuf[2];
+			nVal = (nData << (nI-32)) & 0x8000;
+		}
+		else if (nI>=48 && nI<64)
+		{
+			nData = p_col_RxBuf[3];
+			nVal = (nData << (nI-48)) & 0x8000;
+		}
+		else if (nI>=64 && nI<80)
+		{
+			nData = p_col_RxBuf[4];
+			nVal = (nData << (nI-64)) & 0x8000;
+		}
+		else if (nI>=80 && nI<96)
+		{
+			nData = p_col_RxBuf[5];
+			nVal = (nData << (nI-80)) & 0x8000;
+		}
+
+		
+		nIEC_Offset = pMOT->nIEC_SP + nI;
+				
+		if (nSynchronized == 0)
+		{		
+		fnWriteSPData(nIEC_Offset,nVal,  0,0,0,0);			
+		}
+		else
+		{
+		fnWriteSPData(nIEC_Offset,nVal,  nMs1,nMs2,nMin,1);				
+		}
+		
+	} /*end for*/
+} /*end if*/
+/* Egybites FLAG jelzések feldolgozása ----------------------------------------------------------------------------------------*/
+/*if (pMOT->nIEC_SP_FLAG_NUM > 0)
+{
+	for (nI=0; nI < pMOT->nIEC_SP_FLAG_NUM && nI<16; nI++)
+	{
+		nIEC_Offset = pMOT->nIEC_SP_FLAG + nI;
+		nData = p_col_RxBuf[1];
+		
+		nVal = (nData << nI) & 0x8000;		
+		fnWriteSPData(nIEC_Offset,nVal,  0,0,0,0);
+		
+				
+		
+	} 
+}end if*/
+/* Kétbites állásjelzések, feldolgozása ----------------------------------------------------------------------------------------*/
+/* A program feltetelezi, hogy a ketbites jelzesek a 8. szotol kezdodnek az RxBuf-ban*/
+
+
+	nDPStart = 	pMOT->nIEC_DP;						
+  
+if (	nDPStart > 0)
+{
+	for (nI=0; nI < pMOT->nIEC_DP_NUM && nI < 80; nI++)
+	{	
+  
+
+	/* DP tabla indexe, es offsete */
+	fnDPTblIndx(nDPStart+nI,&nDPTblIndx,&nMoscadOffset);
+
+	/* 2 bites */
+   	if (MOSCAD_get_table_info (nDPTblIndx,&table_DP)!=0 )
+   		{
+        MOSCAD_sprintf(message,"No valid information in table: %d",nDPTblIndx);
+        MOSCAD_error(message );
+        return;
+   		}
+
+	p_col_DPH     = (short *)(table_DP.ColDataPtr[0]);			/* DPH -> CLOSE */
+	p_col_DPL     = (short *)(table_DP.ColDataPtr[1]);			/* DPL -> OPEN */
+	p_col_DP_CT   = (short *)(table_DP.ColDataPtr[5]); 		
+	p_col_DP_MS1  = (short *)(table_DP.ColDataPtr[2]);
+	p_col_DP_MS2  = (short *)(table_DP.ColDataPtr[3]);
+	p_col_DP_MIN  = (short *)(table_DP.ColDataPtr[4]);
+  
+  
+  
+		if ( nI < 8 )
+		{
+			nData = p_col_RxBuf[6];	
+			nValH = (nData << nI*2) & 0x8000;		
+			nValL = (nData << (nI*2+1)) & 0x8000;				
+		}
+		else if (nI >= 8 && nI <16)
+		{
+			nData = p_col_RxBuf[7];	
+			nValH = (nData << (nI-8)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-8)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 16 && nI <24)
+		{
+			nData = p_col_RxBuf[8];	
+			nValH = (nData << (nI-16)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-16)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 24 && nI <32)
+		{
+			nData = p_col_RxBuf[9];	
+			nValH = (nData << (nI-24)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-24)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 32 && nI <40)
+		{
+			nData = p_col_RxBuf[10];	
+			nValH = (nData << (nI-32)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-32)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 40 && nI <48)
+		{
+			nData = p_col_RxBuf[11];	
+			nValH = (nData << (nI-40)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-40)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 48 && nI <56)
+		{
+			nData = p_col_RxBuf[12];	
+			nValH = (nData << (nI-48)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-48)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 56 && nI <64)
+		{
+			nData = p_col_RxBuf[13];	
+			nValH = (nData << (nI-56)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-56)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 64 && nI <72)
+		{
+			nData = p_col_RxBuf[14];	
+			nValH = (nData << (nI-64)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-64)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 72 && nI <80)
+		{
+			nData = p_col_RxBuf[15];	
+			nValH = (nData << (nI-72)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-72)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 80 && nI <88)
+		{
+			nData = p_col_RxBuf[16];	
+			nValH = (nData << (nI-80)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-80)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 88 && nI <96)
+		{
+			nData = p_col_RxBuf[17];	
+			nValH = (nData << (nI-88)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-88)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 96 && nI <104)
+		{
+			nData = p_col_RxBuf[18];	
+			nValH = (nData << (nI-96)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-96)*2+1)) & 0x8000;								
+		}
+		else if (nI >= 104 && nI <112)
+		{
+			nData = p_col_RxBuf[19];	
+			nValH = (nData << (nI-104)*2 ) & 0x8000;	
+			nValL = (nData << ((nI-104)*2+1)) & 0x8000;								
+		}
+		
+ 				if (nValH > 0)
+					{
+						p_col_DPH[nDPStart+nI - nMoscadOffset]= 1;
+					}
+					else
+					{
+						p_col_DPH[nDPStart+nI - nMoscadOffset]= 0;
+					}
+		
+				if (nValL > 0)
+					{
+						p_col_DPL[nDPStart+nI - nMoscadOffset]= 1;
+					}
+					else
+					{
+						p_col_DPL[nDPStart+nI - nMoscadOffset]= 0;
+
+
+					}	
+		if (nSynchronized == 0)
+		{		
+			/* A front end idõt kell használni */
+			p_col_DP_CT[nDPStart+nI-nMoscadOffset] = 0;	
+		}
+		else
+		{
+			/* Az RTU-ból jött idõt kell használni */
+			p_col_DP_CT[nDPStart+nI-nMoscadOffset] = 1;	
+		}
+						
+					
+			/* Perc beirasa */		
+			p_col_DP_MIN[nDPStart+nI - nMoscadOffset] = nMin;	
+															
+			/* MS1 beirasa */		
+			p_col_DP_MS1[nDPStart+nI- nMoscadOffset] = nMs1;
+						
+			/* MS2 beirasa */		
+			p_col_DP_MS2[nDPStart+nI- nMoscadOffset] = nMs2;
+					
+					
+					
+	}
+}/*end if*/	
+
+}
+
+/************************************************************************************************************************/
