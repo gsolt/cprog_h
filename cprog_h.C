@@ -757,7 +757,14 @@ nMoscadHours = mdt.hours;
 
  				MOT_DATA(&sMOT[site_inx],rx_buffer);
  				 				
+ 			} 
+			else if ( nType == TYP_MOT2  )
+ 			{
+
+ 				MOT_DATA2(&sMOT[site_inx],rx_buffer);
+ 				 				
  			} 			
+       			
 			else if (nType == TYP_TMOK && nRxBuf[0] == 15 && buff_len == 12 * 2)
  			{
  				TMOK_DATA(&sMOT[site_inx],rx_buffer);
@@ -768,7 +775,7 @@ nMoscadHours = mdt.hours;
  				TMOK_DATA2(&sMOT[site_inx],rx_buffer);
  			} 	
 	
-			else if ( (nType == TYP_TAL || nType == TYP_MOT  ||  nType == TYP_TAL2 || nType == TYP_TMOK) && nRxBuf[0] == 101 && buff_len == 3 * 2 ) /* A front enden keresztüli reteszkezelés miatt */
+			else if ( (nType == TYP_TAL || nType == TYP_MOT  ||  nType == TYP_MOT2  ||  nType == TYP_TAL2 || nType == TYP_TMOK) && nRxBuf[0] == 101 && buff_len == 3 * 2 ) /* A front enden keresztüli reteszkezelés miatt */
  			{
  				
 				fnDP_LEK( rx_buffer, site_inx);		
@@ -861,7 +868,7 @@ void tx_command(void)
  
    		   	
 			/* Tavirat elkuldese */
-			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161 && nI!=178 && nI!=198 && nI!=199)
+			if ( nI!=133 && nI!=150 && nI!=155 && nI!=161 && nI!=178 && nI!=198 && nI!=199 && nI!=202)
 			{						
 				nTxBuf[9] = value_CComX(nI)+1;   		   	   		   	
    		   		nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
@@ -873,7 +880,7 @@ void tx_command(void)
  		   		/* Mindenkeppen visszanullaz */
    				p_col_DCAct[nJ-nOffset] = 0;
 	     } /* end if   */			
-			else if ( nI==133 || nI==150 || nI==155 || nI==161 || nI==178 || nI==198 || nI==199) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
+			else if ( nI==133 || nI==150 || nI==155 || nI==161 || nI==178 || nI==198 || nI==199  || nI==202) /* Csabrendek 0469 PV erõmû, Gyõr Audi PV, Tapolca 0355/42-48,Tapolca 0355/34-37,  */
 			{			
 				nTxBuf[20] = value_CComX(nI)+1;   		   	   		   	
    		  nTxBuf[nJ - sCP.sCPR[nI].nDCStart] = p_col_DCAct[nJ-nOffset];
